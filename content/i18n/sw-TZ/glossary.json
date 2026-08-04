@@ -1,0 +1,1666 @@
+{
+  "angahewa": {
+    "word": "angahewa",
+    "definition": "tabaka la hewa linalozunguka dunia.",
+    "variations": [
+      "hewa"
+    ],
+    "emoji": "🌤️🌍"
+  },
+  "ardhi": {
+    "word": "ardhi",
+    "definition": "Sehemu ngumu ya uso wa dunia ambayo haijafunikwa na maji.",
+    "variations": [
+      "uso wa ardhi",
+      "maumbo ya ardhi"
+    ],
+    "emoji": "🟫🌍"
+  },
+  "asili": {
+    "word": "asili",
+    "definition": "Kitu cha kawaida kilichopo bila kutengenezwa na binadamu.",
+    "variations": [
+      "asili",
+      "vya asili"
+    ],
+    "emoji": "🌱⛰️"
+  },
+  "athari": {
+    "word": "athari",
+    "definition": "matokeo mazuri au mabaya yanayotokea baada ya jambo fulani kufanyika.",
+    "variations": [
+      "athari"
+    ],
+    "emoji": "⚠️📉"
+  },
+  "bahari": {
+    "word": "bahari",
+    "definition": "Eneo kubwa la maji ya chumvi lililoenea sehemu kubwa ya uso wa dunia.",
+    "variations": [
+      "mwambao wa bahari"
+    ],
+    "emoji": "🌊🐚"
+  },
+  "barabara": {
+    "word": "barabara",
+    "definition": "Njia iliyotengenezwa kwa ajili ya watu na vyombo vya usafiri kupita.",
+    "variations": [
+      "barabara",
+      "barabara kuu"
+    ],
+    "emoji": "🛣️🚗"
+  },
+  "barafu": {
+    "word": "barafu",
+    "definition": "maji yaliyoganda kwa sababu ya baridi kali",
+    "variations": [
+      "barafu nyingi"
+    ],
+    "emoji": "🧊❄️"
+  },
+  "baruti": {
+    "word": "baruti",
+    "definition": "dutu hatari inayoweza kulipuka na hutumika kutengeneza milipuko au silaha.",
+    "variations": [
+      "baruti"
+    ],
+    "emoji": "💥⚠️"
+  },
+  "bendera": {
+    "word": "bendera",
+    "definition": "Kitambaa chenye rangi maalumu kinachowakilisha taifa au kundi.",
+    "variations": [
+      "bendera",
+      "bendera ya taifa"
+    ],
+    "emoji": "🚩🇹🇿"
+  },
+  "besini": {
+    "word": "besini",
+    "definition": "Eneo la ardhi lililo chini kama bakuli kubwa na huzungukwa na maeneo ya juu.",
+    "variations": [
+      "mabesini"
+    ],
+    "emoji": "🗻⬇️"
+  },
+  "binadamu": {
+    "word": "binadamu",
+    "definition": "Mtu; kiumbe anayeishi na kutumia mazingira yanayomzunguka.",
+    "variations": [
+      "binadamu",
+      "wanadamu"
+    ],
+    "emoji": "👤🧑"
+  },
+  "bonde": {
+    "word": "bonde",
+    "definition": "eneo la ardhi lililo chini na mara nyingi huwa katikati ya milima au vilima",
+    "variations": [
+      "mabonde"
+    ],
+    "emoji": "🏞️⬇️"
+  },
+  "bonde la ufa": {
+    "word": "bonde la ufa",
+    "definition": "eneo refu la ardhi lililopasuka na kushuka katikati.",
+    "variations": [
+      "bonde la ufa",
+      "Bonde la ufa la Afrika Mashariki"
+    ],
+    "emoji": "🗺️⛰️"
+  },
+  "bustani": {
+    "word": "bustani",
+    "definition": "Eneo lililopandwa maua, miti, nyasi, matunda au mbogamboga.",
+    "variations": [
+      "bustani za maua"
+    ],
+    "emoji": "🌷🌿"
+  },
+  "bwawa": {
+    "word": "bwawa",
+    "definition": "eneo la maji yaliyotuama au yaliyohifadhiwa kwa matumizi mbalimbali",
+    "variations": [
+      "mabwawa"
+    ],
+    "emoji": "💧🏞️"
+  },
+  "darasa": {
+    "word": "darasa",
+    "definition": "chumba cha kujifunzia shuleni.",
+    "variations": [
+      "darasa",
+      "madarasa"
+    ],
+    "emoji": "🏫📚"
+  },
+  "dekio": {
+    "word": "dekio",
+    "definition": "kitambaa, gunia au ufagio wa kusafishia sakafu kwa kutumia maji",
+    "variations": [
+      "dekio la sakafu"
+    ],
+    "emoji": "🧹💧"
+  },
+  "dunia": {
+    "word": "dunia",
+    "definition": "Sayari tunayoishi sisi wanadamu.",
+    "variations": [
+      "dunia"
+    ],
+    "emoji": "🌍"
+  },
+  "endelevu": {
+    "word": "endelevu",
+    "definition": "Jambo linalofanyika kwa namna ya kudumu bila kuharibu mazingira au rasilimali.",
+    "variations": [
+      "endelevu"
+    ],
+    "emoji": "♻️🌍"
+  },
+  "fagio": {
+    "word": "fagio",
+    "definition": "kifaa kinachotumika kufagia uchafu.",
+    "variations": [
+      "fagio",
+      "fagio la kutoa tandabui"
+    ],
+    "emoji": "🧹"
+  },
+  "faini": {
+    "word": "faini",
+    "definition": "fedha anayolipa mtu kama adhabu kwa kufanya kosa.",
+    "variations": [
+      "faini"
+    ],
+    "emoji": "💸⚠️"
+  },
+  "fedha za kigeni": {
+    "word": "fedha za kigeni",
+    "definition": "pesa inayopatikana kutoka nchi nyingine kwa biashara au shughuli nyingine.",
+    "variations": [
+      "fedha ya kigeni",
+      "fedha za kigeni"
+    ],
+    "emoji": "💱💵"
+  },
+  "gesi asilia": {
+    "word": "gesi asilia",
+    "definition": "gesi inayopatikana ardhini na hutumika kama chanzo cha nishati.",
+    "variations": [
+      "gesi asilia"
+    ],
+    "emoji": "🔥🛢️"
+  },
+  "haki": {
+    "word": "haki",
+    "definition": "Jambo analostahili kupata au kulindwa nalo kila mtu.",
+    "variations": [
+      "haki ya mazingira safi"
+    ],
+    "emoji": "⚖️✅"
+  },
+  "hali ya hewa": {
+    "word": "hali ya hewa",
+    "definition": "Hali ya anga ya eneo fulani kwa wakati fulani, kama joto, baridi, mvua au upepo.",
+    "variations": [
+      "joto",
+      "baridi",
+      "mvua",
+      "upepo"
+    ],
+    "emoji": "☀️🌧️💨"
+  },
+  "hewa": {
+    "word": "hewa",
+    "definition": "Kitu kisichoonekana tunachovuta ili kuishi.",
+    "variations": [
+      "hewa"
+    ],
+    "emoji": "💨🌬️"
+  },
+  "hewaukaa": {
+    "word": "hewaukaa",
+    "definition": "gesi inayotokana na moshi na shughuli nyingine, na huchangia ongezeko la joto duniani",
+    "variations": [
+      "gesi ya hewaukaa"
+    ],
+    "emoji": "🌍💨"
+  },
+  "hifadhi": {
+    "word": "hifadhi",
+    "definition": "kitendo cha kulinda kitu ili kisiharibike au kisipotee.",
+    "variations": [
+      "hifadhi",
+      "kuhifadhi"
+    ],
+    "emoji": "🛡️🌳"
+  },
+  "hifadhi ya taifa": {
+    "word": "hifadhi ya taifa",
+    "definition": "eneo lililotengwa na kulindwa kwa ajili ya wanyama, mimea au mazingira ya asili",
+    "variations": [
+      "hifadhi za taifa"
+    ],
+    "emoji": "🦁🌿🏞️"
+  },
+  "Jiografia": {
+    "word": "Jiografia",
+    "definition": "Somo linalotusaidia kuelewa dunia, sehemu mbalimbali za ardhi, na mazingira yanayotuzunguka.",
+    "variations": [
+      "Jiografia na Mazingira"
+    ],
+    "emoji": "🗺️🌍"
+  },
+  "kamati": {
+    "word": "kamati",
+    "definition": "kundi la watu waliochaguliwa kusimamia au kufanya kazi fulani.",
+    "variations": [
+      "kamati",
+      "kamati mbalimbali"
+    ],
+    "emoji": "👥📌"
+  },
+  "kemikali": {
+    "word": "kemikali",
+    "definition": "vitu au mchanganyiko wa vitu vinavyotumika kwa kazi mbalimbali, kama kuua wadudu au kutengeneza bidhaa.",
+    "variations": [
+      "kemikali za kuua wadudu"
+    ],
+    "emoji": "🧪⚠️"
+  },
+  "kilele": {
+    "word": "kilele",
+    "definition": "sehemu ya juu kabisa ya mlima au kilima",
+    "variations": [
+      "vilele",
+      "kilele cha mlima"
+    ],
+    "emoji": "🏔️🔝"
+  },
+  "kilima": {
+    "word": "kilima",
+    "definition": "sehemu ya ardhi iliyoinuka, lakini si ndefu kama mlima",
+    "variations": [
+      "vilima"
+    ],
+    "emoji": "⛰️🌿"
+  },
+  "kilimo": {
+    "word": "kilimo",
+    "definition": "shughuli ya kulima na kuzalisha mazao ya chakula au biashara.",
+    "variations": [
+      "mkulima",
+      "kulima",
+      "mazao"
+    ],
+    "emoji": "🌾🚜"
+  },
+  "kilimo endelevu": {
+    "word": "kilimo endelevu",
+    "definition": "Njia ya kilimo inayotunza ardhi na mazingira kwa muda mrefu.",
+    "variations": [
+      "kilimo cha kudumu",
+      "mbinu endelevu za kilimo"
+    ],
+    "emoji": "🚜🌱"
+  },
+  "kilimo mseto": {
+    "word": "kilimo mseto",
+    "definition": "aina ya kilimo ambapo mazao zaidi ya moja hulimwa katika shamba moja.",
+    "variations": [
+      "mseto"
+    ],
+    "emoji": "🌽🥬"
+  },
+  "kipindupindu": {
+    "word": "kipindupindu",
+    "definition": "ugonjwa hatari unaoweza kusababishwa na maji au chakula kichafu.",
+    "variations": [
+      "kipindupindu"
+    ],
+    "emoji": "💧🤒⚠️"
+  },
+  "kokoro": {
+    "word": "kokoro",
+    "definition": "nyavu zenye matundu madogo zinazotumika kuvua samaki, na zinaweza kukamata hata samaki wadogo na mayai.",
+    "variations": [
+      "kokoro"
+    ],
+    "emoji": "🐟🕸️"
+  },
+  "kuhamasisha": {
+    "word": "kuhamasisha",
+    "definition": "kuwatia watu moyo au kuwachochea kufanya jambo fulani.",
+    "variations": [
+      "kuhamasisha",
+      "hamasisha"
+    ],
+    "emoji": "📣🙌"
+  },
+  "kuhifadhi": {
+    "word": "kuhifadhi",
+    "definition": "Kuweka kitu salama ili kisiharibike au kipotee.",
+    "variations": [
+      "kuhifadhi",
+      "hifadhi",
+      "kuhifadhiwa"
+    ],
+    "emoji": "🛡️📦"
+  },
+  "kurejelezwa": {
+    "word": "kurejelezwa",
+    "definition": "kutumika tena baada ya kuchakatwa ili kutengeneza kitu kingine au kilekile",
+    "variations": [
+      "kurejeleza",
+      "urejelezaji",
+      "rejelezwa"
+    ],
+    "emoji": "♻️🔄"
+  },
+  "kusindika": {
+    "word": "kusindika",
+    "definition": "kuandaa au kubadilisha mazao ili yatumike au yadumu zaidi.",
+    "variations": [
+      "kusindika",
+      "kusindikwa",
+      "yaliyosindikwa"
+    ],
+    "emoji": "🏭🐟"
+  },
+  "kutunza": {
+    "word": "kutunza",
+    "definition": "Kulinda au kuweka kitu katika hali nzuri.",
+    "variations": [
+      "kutunza",
+      "tunza",
+      "hutunza"
+    ],
+    "emoji": "🧹🌱"
+  },
+  "maabara": {
+    "word": "maabara",
+    "definition": "Chumba maalumu cha kufanya majaribio au kujifunza kwa vitendo.",
+    "variations": [
+      "maabara",
+      "maabara za masomo"
+    ],
+    "emoji": "🧪🔬"
+  },
+  "maambukizi": {
+    "word": "maambukizi",
+    "definition": "kuenea kwa ugonjwa kutoka kwa kitu au mtu mmoja kwenda kwa mwingine.",
+    "variations": [
+      "maambukizi"
+    ],
+    "emoji": "🦠↪️"
+  },
+  "mabadiliko ya tabianchi": {
+    "word": "mabadiliko ya tabianchi",
+    "definition": "mabadiliko ya hali ya hewa yanayotokea kwa muda mrefu katika eneo au duniani.",
+    "variations": [
+      "mabadiliko ya tabianchi"
+    ],
+    "emoji": "🌍🌡️"
+  },
+  "mabara": {
+    "word": "mabara",
+    "definition": "Sehemu kubwa sana za nchi kavu duniani.",
+    "variations": [
+      "bara",
+      "mabara"
+    ],
+    "emoji": "🗺️🌍"
+  },
+  "mabonde": {
+    "word": "mabonde",
+    "definition": "Sehemu za ardhi zilizo chini kati ya maeneo ya juu.",
+    "variations": [
+      "bonde"
+    ],
+    "emoji": "🏞️⛰️"
+  },
+  "mabweni": {
+    "word": "mabweni",
+    "definition": "Majengo au vyumba vya kulala wanafunzi shuleni.",
+    "variations": [
+      "bweni",
+      "mabweni"
+    ],
+    "emoji": "🛏️🏫"
+  },
+  "machimbo": {
+    "word": "machimbo",
+    "definition": "maeneo ambayo watu huchimba madini au vitu vingine kutoka ardhini.",
+    "variations": [
+      "shimo la uchimbaji",
+      "machimbo"
+    ],
+    "emoji": "⛏️🕳️"
+  },
+  "madarasa": {
+    "word": "madarasa",
+    "definition": "Vyumba vya shule ambamo wanafunzi hujifunzia.",
+    "variations": [
+      "darasa",
+      "madarasa"
+    ],
+    "emoji": "🏫🪑"
+  },
+  "madawati": {
+    "word": "madawati",
+    "definition": "Meza za wanafunzi za kuandikia na kujifunzia darasani.",
+    "variations": [
+      "dawati",
+      "madawati"
+    ],
+    "emoji": "🪑📘"
+  },
+  "madini": {
+    "word": "madini",
+    "definition": "maliasili zinazopatikana ardhini na kuchimbwa kwa matumizi mbalimbali.",
+    "variations": [
+      "uchimbaji madini",
+      "jiwe la madini"
+    ],
+    "emoji": "⛏️💎"
+  },
+  "mafisicho": {
+    "word": "mafisicho",
+    "definition": "sehemu ambazo mtu au kiumbe anaweza kujificha",
+    "variations": [
+      "maficho",
+      "sehemu za kujificha"
+    ],
+    "emoji": "🙈🫥"
+  },
+  "mafuriko": {
+    "word": "mafuriko",
+    "definition": "Maji mengi yanayofunika eneo ambalo kawaida halifunikwi na maji.",
+    "variations": [
+      "furiko",
+      "mafuriko ya asili"
+    ],
+    "emoji": "🌊⚠️"
+  },
+  "magogo": {
+    "word": "magogo",
+    "definition": "mashina makubwa ya miti yaliyokatwa.",
+    "variations": [
+      "gogo",
+      "magogo"
+    ],
+    "emoji": "🪵"
+  },
+  "majanga ya asili": {
+    "word": "majanga ya asili",
+    "definition": "Matatizo makubwa yanayotokea kiasili kama mafuriko, vimbunga au ukame.",
+    "variations": [
+      "janga la asili",
+      "majanga"
+    ],
+    "emoji": "⚠️🌪️🌊"
+  },
+  "maji baridi": {
+    "word": "maji baridi",
+    "definition": "maji yasiyo na chumvi, kama ya mito, maziwa, na mabwawa.",
+    "variations": [
+      "maji baridi"
+    ],
+    "emoji": "💧🏞️"
+  },
+  "maji chumvi": {
+    "word": "maji chumvi",
+    "definition": "maji yenye chumvi, kama maji ya bahari.",
+    "variations": [
+      "maji chumvi"
+    ],
+    "emoji": "🌊🧂"
+  },
+  "maji taka": {
+    "word": "maji taka",
+    "definition": "Maji machafu yanayotoka majumbani, viwandani au sehemu nyingine.",
+    "variations": [
+      "majitaka",
+      "maji machafu"
+    ],
+    "emoji": "🚱💧"
+  },
+  "majitaka": {
+    "word": "majitaka",
+    "definition": "maji machafu yanayotoka majumbani, viwandani au sehemu nyingine baada ya kutumika.",
+    "variations": [
+      "taka za maji"
+    ],
+    "emoji": "💧🛑"
+  },
+  "makazi": {
+    "word": "makazi",
+    "definition": "mahali ambapo watu au viumbe wanaishi",
+    "variations": [
+      "kujenga makazi"
+    ],
+    "emoji": "🏠🌍"
+  },
+  "maktaba": {
+    "word": "maktaba",
+    "definition": "Sehemu yenye vitabu vya kusoma na kujifunzia.",
+    "variations": [
+      "maktaba"
+    ],
+    "emoji": "📚🏫"
+  },
+  "malaria": {
+    "word": "malaria",
+    "definition": "ugonjwa unaoenezwa na mbu na husababisha homa kali na udhaifu wa mwili.",
+    "variations": [
+      "malaria"
+    ],
+    "emoji": "🦟🤒"
+  },
+  "maliasili": {
+    "word": "maliasili",
+    "definition": "vitu vya asili vinavyopatikana katika mazingira na vinafaa kwa matumizi ya binadamu.",
+    "variations": [
+      "rasilimali za asili"
+    ],
+    "emoji": "🌍⛏️🌿"
+  },
+  "malighafi": {
+    "word": "malighafi",
+    "definition": "vitu vya asili vinavyotumika kutengeneza bidhaa viwandani.",
+    "variations": [
+      "ighafi",
+      "malighafi za viwandani"
+    ],
+    "emoji": "🏭📦"
+  },
+  "malisho": {
+    "word": "malisho",
+    "definition": "majani au eneo ambalo mifugo hulia chakula.",
+    "variations": [
+      "lisho",
+      "malishoni"
+    ],
+    "emoji": "🌿🐄"
+  },
+  "mamlaka husika": {
+    "word": "mamlaka husika",
+    "definition": "Watu au taasisi zenye kazi ya kusimamia jambo fulani rasmi.",
+    "variations": [
+      "mamlaka",
+      "taasisi husika"
+    ],
+    "emoji": "🏢📢"
+  },
+  "mandhari": {
+    "word": "mandhari",
+    "definition": "muonekano wa kuvutia wa mazingira ya eneo fulani",
+    "variations": [
+      "uzuri wa mandhari"
+    ],
+    "emoji": "🌄👀"
+  },
+  "maofisa mazingira": {
+    "word": "maofisa mazingira",
+    "definition": "watu wenye kazi ya kusimamia na kuongoza shughuli za utunzaji wa mazingira.",
+    "variations": [
+      "maofisa mazingira",
+      "afisa mazingira"
+    ],
+    "emoji": "👮🌿"
+  },
+  "matumizi endelevu": {
+    "word": "matumizi endelevu",
+    "definition": "Kutumia rasilimali kwa uangalifu ili zisiharibike na ziwepo hata kwa baadaye.",
+    "variations": [
+      "endelevu",
+      "matumizi sahihi na endelevu"
+    ],
+    "emoji": "♻️🌿"
+  },
+  "maua": {
+    "word": "maua",
+    "definition": "Sehemu ya mmea inayochanua na mara nyingi huwa na rangi au harufu nzuri.",
+    "variations": [
+      "ua",
+      "maua ya tageta",
+      "maua ya kalendula"
+    ],
+    "emoji": "🌸🌼"
+  },
+  "mazalia": {
+    "word": "mazalia",
+    "definition": "maeneo maalumu ambako samaki hutaga mayai na samaki wadogo hukua.",
+    "variations": [
+      "zalia",
+      "mazalia"
+    ],
+    "emoji": "🐟🥚🌊"
+  },
+  "mazingira": {
+    "word": "mazingira",
+    "definition": "Vitu vyote vinavyotuzunguka mahali tunapoishi, kusoma au kufanya shughuli.",
+    "variations": [
+      "mazingira ya nyumbani",
+      "mazingira ya shule",
+      "mazingira ya asili"
+    ],
+    "emoji": "🌍🏡"
+  },
+  "mazingira machafu": {
+    "word": "mazingira machafu",
+    "definition": "mazingira yenye uchafu unaoweza kusababisha magonjwa au hatari.",
+    "variations": [
+      "mazingira machafu",
+      "machafu"
+    ],
+    "emoji": "🗑️🤢"
+  },
+  "mazingira safi": {
+    "word": "mazingira safi",
+    "definition": "mazingira yasiyo na uchafu na yaliyo katika hali nzuri ya afya.",
+    "variations": [
+      "mazingira safi",
+      "safi"
+    ],
+    "emoji": "✨🧼🌿"
+  },
+  "mbao": {
+    "word": "mbao",
+    "definition": "vipande vya miti vilivyokatwa na kutumika kujenga au kutengeneza vitu.",
+    "variations": [
+      "ubao",
+      "mbao"
+    ],
+    "emoji": "🪵🏠"
+  },
+  "mboji": {
+    "word": "mboji",
+    "definition": "mbolea ya asili inayotokana na majani, mabaki ya chakula na vitu vingine vinavyooza",
+    "variations": [
+      "mbolea ya mboji"
+    ],
+    "emoji": "🌿🪱"
+  },
+  "mbolea": {
+    "word": "mbolea",
+    "definition": "kitu kinachowekwa shambani au bustanini ili kuongeza rutuba ya udongo na kusaidia mimea kukua.",
+    "variations": [
+      "mbolea za viwandani",
+      "mbolea ya mboji",
+      "samadi"
+    ],
+    "emoji": "🌱🪴"
+  },
+  "mbolea ya mboji": {
+    "word": "mbolea ya mboji",
+    "definition": "Mbolea inayotengenezwa kwa taka zinazooza ili kurutubisha udongo.",
+    "variations": [
+      "mboji",
+      "mbolea za mboji"
+    ],
+    "emoji": "🌱💩🍂"
+  },
+  "mbu": {
+    "word": "mbu",
+    "definition": "mdudu mdogo anayeuma na anaweza kueneza malaria.",
+    "variations": [
+      "mbu"
+    ],
+    "emoji": "🦟🩸"
+  },
+  "mfumo wa upumuaji": {
+    "word": "mfumo wa upumuaji",
+    "definition": "sehemu za mwili zinazotusaidia kupumua kama pua, koo na mapafu.",
+    "variations": [
+      "mfumo wa upumuaji"
+    ],
+    "emoji": "🫁💨"
+  },
+  "mgandamizo wa angahewa": {
+    "word": "mgandamizo wa angahewa",
+    "definition": "nguvu ya hewa inayobonyeza juu ya uso wa dunia.",
+    "variations": [
+      "mgandamizo wa angahewa"
+    ],
+    "emoji": "🌬️🌍"
+  },
+  "miche": {
+    "word": "miche",
+    "definition": "Mimea midogo inayopandwa ili ikue kuwa mikubwa.",
+    "variations": [
+      "mche",
+      "miche ya kupanda"
+    ],
+    "emoji": "🌱🪴"
+  },
+  "milima": {
+    "word": "milima",
+    "definition": "Maumbo ya ardhi yaliyoinuka juu kuliko maeneo yanayoyazunguka.",
+    "variations": [
+      "mlima"
+    ],
+    "emoji": "⛰️🏔️"
+  },
+  "milipuko": {
+    "word": "milipuko",
+    "definition": "matukio ya kutokea kwa jambo kwa ghafla na kwa wingi, kama magonjwa au mlio mkubwa wa mlipuko.",
+    "variations": [
+      "mlipuko",
+      "milipuko"
+    ],
+    "emoji": "💥⚠️"
+  },
+  "mimea": {
+    "word": "mimea",
+    "definition": "Viumbe vinavyoota ardhini kama miti, nyasi na maua.",
+    "variations": [
+      "mmea",
+      "mimea rafiki",
+      "mimea inayofukuza wadudu"
+    ],
+    "emoji": "🌿🌱"
+  },
+  "misitu": {
+    "word": "misitu",
+    "definition": "maeneo yenye miti mingi inayotoa makazi, hewa safi na kulinda udongo",
+    "variations": [
+      "msitu",
+      "misitu"
+    ],
+    "emoji": "🌳🌲"
+  },
+  "misitu ya asili": {
+    "word": "misitu ya asili",
+    "definition": "misitu iliyoota yenyewe bila kupandwa na binadamu.",
+    "variations": [
+      "msitu wa asili",
+      "misitu ya asili"
+    ],
+    "emoji": "🌳🌲"
+  },
+  "misitu ya kupandwa": {
+    "word": "misitu ya kupandwa",
+    "definition": "misitu iliyopandwa na watu kwa kusudi maalumu.",
+    "variations": [
+      "msitu wa kupandwa",
+      "misitu ya kupandwa"
+    ],
+    "emoji": "🌲👨‍🌾"
+  },
+  "mito": {
+    "word": "mito",
+    "definition": "Maji yanayotiririka kutoka sehemu moja kwenda nyingine.",
+    "variations": [
+      "mto",
+      "mito"
+    ],
+    "emoji": "🏞️💧"
+  },
+  "miundombinu": {
+    "word": "miundombinu",
+    "definition": "Njia, majengo na huduma muhimu zinazosaidia maisha na shughuli za watu, kama barabara, shule na hospitali.",
+    "variations": [
+      "huduma za jamii"
+    ],
+    "emoji": "🛣️🏫🏥"
+  },
+  "miundombinu ya darasa": {
+    "word": "miundombinu ya darasa",
+    "definition": "vitu vya darasa kama meza, madawati, kuta na sakafu vinavyosaidia kujifunzia.",
+    "variations": [
+      "miundombinu ya darasa",
+      "miundombinu"
+    ],
+    "emoji": "🏫🪑"
+  },
+  "mlima": {
+    "word": "mlima",
+    "definition": "sehemu ya ardhi iliyoinuka sana juu kuliko maeneo ya karibu yake",
+    "variations": [
+      "milima"
+    ],
+    "emoji": "⛰️🏔️"
+  },
+  "mmomonyoko wa udongo": {
+    "word": "mmomonyoko wa udongo",
+    "definition": "hali ya udongo kuondolewa au kusombwa na maji au upepo.",
+    "variations": [
+      "mmomonyoko",
+      "udongo"
+    ],
+    "emoji": "🌧️🟫"
+  },
+  "moshi": {
+    "word": "moshi",
+    "definition": "Hewa chafu inayotoka wakati kitu kinapoungua au kutoka viwandani na magari.",
+    "variations": [
+      "moshi wa viwandani",
+      "moshi kutoka magari"
+    ],
+    "emoji": "🚗🏭🌫️"
+  },
+  "msitu": {
+    "word": "msitu",
+    "definition": "Eneo lenye miti mingi iliyoota pamoja.",
+    "variations": [
+      "misitu"
+    ],
+    "emoji": "🌳🌲"
+  },
+  "mtawanyiko": {
+    "word": "mtawanyiko",
+    "definition": "Namna vitu au maumbo yalivyoenea katika eneo fulani.",
+    "variations": [
+      "mtawanyiko wa maumbo"
+    ],
+    "emoji": "🗺️📍"
+  },
+  "mteremko": {
+    "word": "mteremko",
+    "definition": "sehemu ya mlima au kilima inayoshuka kutoka juu kwenda chini",
+    "variations": [
+      "miteremko"
+    ],
+    "emoji": "↘️⛰️"
+  },
+  "mti": {
+    "word": "mti",
+    "definition": "Mmea mkubwa wenye shina, matawi na majani.",
+    "variations": [
+      "miti",
+      "mti wa matunda",
+      "upandaji miti"
+    ],
+    "emoji": "🌳🌲"
+  },
+  "mto": {
+    "word": "mto",
+    "definition": "maji yanayotiririka kutoka sehemu moja kwenda nyingine",
+    "variations": [
+      "mito"
+    ],
+    "emoji": "🏞️💧"
+  },
+  "mwambao": {
+    "word": "mwambao",
+    "definition": "Sehemu ya nchi iliyo karibu na bahari au ziwa.",
+    "variations": [
+      "mwambao wa bahari"
+    ],
+    "emoji": "🏖️🌊"
+  },
+  "mwinuko": {
+    "word": "mwinuko",
+    "definition": "hali ya ardhi kuwa juu kuliko sehemu nyingine",
+    "variations": [
+      "miinuko",
+      "mwinuko wa ardhi"
+    ],
+    "emoji": "⬆️⛰️"
+  },
+  "naitrasi oksidi": {
+    "word": "naitrasi oksidi",
+    "definition": "gesi inayotanda angani na huchangia ongezeko la joto duniani.",
+    "variations": [
+      "naitrasi oksidi"
+    ],
+    "emoji": "🌫️🌍"
+  },
+  "naitrojeni": {
+    "word": "naitrojeni",
+    "definition": "aina ya gesi inayopatikana kwa wingi angani na pia hupatikana kwenye baadhi ya mbolea.",
+    "variations": [
+      "naitrojeni"
+    ],
+    "emoji": "🧪🌬️"
+  },
+  "ndoo": {
+    "word": "ndoo",
+    "definition": "chombo kinachotumika kubeba au kuhifadhi maji.",
+    "variations": [
+      "ndoo",
+      "ndoo ya kuwekea maji"
+    ],
+    "emoji": "🪣💧"
+  },
+  "nishati mbadala": {
+    "word": "nishati mbadala",
+    "definition": "nishati inayotokana na vyanzo vinavyoweza kutumika tena kama jua, upepo na maji.",
+    "variations": [
+      "nishati",
+      "mbadala"
+    ],
+    "emoji": "☀️💨💧"
+  },
+  "nyasi": {
+    "word": "nyasi",
+    "definition": "Mimea mifupi inayoota ardhini na kufunika sehemu ya udongo.",
+    "variations": [
+      "nyasi za bustani",
+      "upandaji wa nyasi"
+    ],
+    "emoji": "🌱🍃"
+  },
+  "ofisi": {
+    "word": "ofisi",
+    "definition": "Chumba au sehemu ya kufanyia kazi za utawala au kazi nyingine.",
+    "variations": [
+      "ofisi",
+      "ofisi za walimu"
+    ],
+    "emoji": "🏢📄"
+  },
+  "oksijeni": {
+    "word": "oksijeni",
+    "definition": "Hewa muhimu ambayo binadamu na wanyama huvuta ili kuishi.",
+    "variations": [
+      "hewa ya oksijeni"
+    ],
+    "emoji": "💨🌿"
+  },
+  "ongezeko la joto": {
+    "word": "ongezeko la joto",
+    "definition": "hali ya joto kuongezeka duniani au katika eneo fulani.",
+    "variations": [
+      "ongezeko la joto"
+    ],
+    "emoji": "🌡️☀️"
+  },
+  "pato la taifa": {
+    "word": "pato la taifa",
+    "definition": "jumla ya thamani ya mali na huduma zinazozalishwa nchini kwa kipindi fulani.",
+    "variations": [
+      "pato la taifa"
+    ],
+    "emoji": "📈💰"
+  },
+  "plastiki": {
+    "word": "plastiki",
+    "definition": "aina ya kitu kinachotengenezwa viwandani na huchukua muda mrefu sana kuoza",
+    "variations": [
+      "taka za plastiki",
+      "mifuko ya plastiki",
+      "chupa za plastiki"
+    ],
+    "emoji": "🧴🛍️"
+  },
+  "pumu": {
+    "word": "pumu",
+    "definition": "ugonjwa unaofanya mtu apate shida kupumua vizuri.",
+    "variations": [
+      "pumu"
+    ],
+    "emoji": "🫁😮‍💨"
+  },
+  "ranchi": {
+    "word": "ranchi",
+    "definition": "shamba kubwa linalotumika kufugia mifugo mingi.",
+    "variations": [
+      "ranchi za mifugo"
+    ],
+    "emoji": "🐄🌾"
+  },
+  "rasilimali": {
+    "word": "rasilimali",
+    "definition": "kitu muhimu kinachopatikana katika mazingira na kutumika kwa manufaa ya watu na viumbe wengine",
+    "variations": [
+      "rasilimali muhimu",
+      "rasilimali za mazingira"
+    ],
+    "emoji": "🌍💎"
+  },
+  "rutuba": {
+    "word": "rutuba",
+    "definition": "ubora wa udongo unaosaidia mimea kukua vizuri",
+    "variations": [
+      "udongo wenye rutuba"
+    ],
+    "emoji": "🌱🌾"
+  },
+  "rutuba ya udongo": {
+    "word": "rutuba ya udongo",
+    "definition": "uwezo wa udongo kusaidia mimea kukua vizuri",
+    "variations": [
+      "rutuba",
+      "udongo wenye rutuba"
+    ],
+    "emoji": "🌱🟤"
+  },
+  "sakafu": {
+    "word": "sakafu",
+    "definition": "sehemu ya chini ya chumba unayokanyaga.",
+    "variations": [
+      "sakafu"
+    ],
+    "emoji": "🟫👣"
+  },
+  "samadi": {
+    "word": "samadi",
+    "definition": "Mbolea ya asili inayotokana na kinyesi cha mifugo.",
+    "variations": [
+      "mbolea ya samadi",
+      "samadi ya mifugo"
+    ],
+    "emoji": "🐄🌿"
+  },
+  "samani": {
+    "word": "samani",
+    "definition": "vitu vya ndani ya nyumba au ofisi kama meza, viti, na makabati.",
+    "variations": [
+      "samani"
+    ],
+    "emoji": "🪑🛋️"
+  },
+  "shughuli": {
+    "word": "shughuli",
+    "definition": "Kazi au mambo ambayo mtu hufanya kila siku.",
+    "variations": [
+      "shughuli",
+      "shughuli zake"
+    ],
+    "emoji": "🧑‍🏫🛠️"
+  },
+  "shule": {
+    "word": "shule",
+    "definition": "Mahali ambapo wanafunzi hujifunza.",
+    "variations": [
+      "shule",
+      "shuleni"
+    ],
+    "emoji": "🏫📚"
+  },
+  "sumu": {
+    "word": "sumu",
+    "definition": "kitu hatari kinachoweza kuua au kuleta madhara kwa viumbe.",
+    "variations": [
+      "sumu"
+    ],
+    "emoji": "☠️⚠️"
+  },
+  "sura ya nchi": {
+    "word": "sura ya nchi",
+    "definition": "muonekano wa eneo la ardhi wa mahali fulani, kama lina milima, mabonde, vilima au tambarare",
+    "variations": [
+      "sura za nchi",
+      "maumbo ya sura ya nchi"
+    ],
+    "emoji": "🌍🗺️"
+  },
+  "taasisi": {
+    "word": "taasisi",
+    "definition": "kikundi au chombo kilichoanzishwa kufanya kazi fulani rasmi.",
+    "variations": [
+      "taasisi",
+      "taasisi za kusimamia"
+    ],
+    "emoji": "🏢📋"
+  },
+  "tabianchi": {
+    "word": "tabianchi",
+    "definition": "hali ya hewa ya eneo kwa muda mrefu.",
+    "variations": [
+      "mabadiliko ya tabianchi"
+    ],
+    "emoji": "🌦️🌍"
+  },
+  "taka": {
+    "word": "taka",
+    "definition": "uchafu unaobaki baada ya matumizi na mara nyingi hutupwa.",
+    "variations": [
+      "taka"
+    ],
+    "emoji": "🗑️♻️"
+  },
+  "taka ngumu": {
+    "word": "taka ngumu",
+    "definition": "taka ambazo si za kimiminika, kama chupa, mifuko na mabaki ya vitu mbalimbali",
+    "variations": [
+      "taka ngumu"
+    ],
+    "emoji": "🗑️📦"
+  },
+  "taka za kimiminika": {
+    "word": "taka za kimiminika",
+    "definition": "taka za hali ya maji au majimaji zinazoweza kuchafua mazingira",
+    "variations": [
+      "vimiminika",
+      "taka za vimiminika"
+    ],
+    "emoji": "💧🚫"
+  },
+  "taka zinazooza": {
+    "word": "taka zinazooza",
+    "definition": "Taka zinazoweza kuoza au kuvunjika zenyewe, kama mabaki ya chakula na majani.",
+    "variations": [
+      "taka inayooza",
+      "taka za kuoza",
+      "mabaki yanayooza"
+    ],
+    "emoji": "🍂🗑️"
+  },
+  "taka zisizooza": {
+    "word": "taka zisizooza",
+    "definition": "taka zisizovunjika kirahisi kama plastiki na chupa.",
+    "variations": [
+      "taka zisizooza"
+    ],
+    "emoji": "🧴🗑️"
+  },
+  "tambarare": {
+    "word": "tambarare",
+    "definition": "eneo la ardhi lililo sawa bila milima au vilima vikubwa",
+    "variations": [
+      "maeneo tambarare"
+    ],
+    "emoji": "🏜️🌍"
+  },
+  "tandabui": {
+    "word": "tandabui",
+    "definition": "utando unaotengenezwa na buibui",
+    "variations": [
+      "utando wa buibui"
+    ],
+    "emoji": "🕸️🕷️"
+  },
+  "theluji": {
+    "word": "theluji",
+    "definition": "barafu laini nyeupe inayotokea maeneo ya baridi kali",
+    "variations": [
+      "theluji nyingi"
+    ],
+    "emoji": "❄️🏔️"
+  },
+  "uchafu": {
+    "word": "uchafu",
+    "definition": "taka au hali isiyo safi.",
+    "variations": [
+      "uchafu"
+    ],
+    "emoji": "🗑️😷"
+  },
+  "uchafuzi wa anga": {
+    "word": "uchafuzi wa anga",
+    "definition": "hali ya hewa ya angani kuwa chafu kwa moshi, gesi au chembe hatari.",
+    "variations": [
+      "uchafuzi wa anga",
+      "uchafuzi"
+    ],
+    "emoji": "🌫️🏭🚗"
+  },
+  "uchafuzi wa hewa": {
+    "word": "uchafuzi wa hewa",
+    "definition": "hali ya hewa kuwa chafu kwa moshi, gesi au vumbi vinavyodhuru afya na mazingira",
+    "variations": [
+      "hewa chafu",
+      "kuchafua hewa"
+    ],
+    "emoji": "🌫️🏭"
+  },
+  "uchafuzi wa mazingira": {
+    "word": "uchafuzi wa mazingira",
+    "definition": "hali ya mazingira kuwa machafu kwa hewa chafu, taka, moshi, kelele au maji machafu.",
+    "variations": [
+      "uchafuzi",
+      "kuchafua mazingira"
+    ],
+    "emoji": "🌫️🗑️🌍"
+  },
+  "uchakataji": {
+    "word": "uchakataji",
+    "definition": "hatua ya kubadilisha malighafi ili kupata bidhaa au kitu kingine chenye matumizi.",
+    "variations": [
+      "kuchakata",
+      "uchakatwa"
+    ],
+    "emoji": "⚙️📦"
+  },
+  "uchimbaji": {
+    "word": "uchimbaji",
+    "definition": "kitendo cha kuchimba ardhi ili kupata kitu kama madini.",
+    "variations": [
+      "uchimbaji",
+      "kuchimba",
+      "wanachimba"
+    ],
+    "emoji": "⛏️🕳️"
+  },
+  "uchimbaji wa madini": {
+    "word": "uchimbaji wa madini",
+    "definition": "shughuli ya kutoa madini kutoka ardhini.",
+    "variations": [
+      "uchimbaji wa madini",
+      "madini"
+    ],
+    "emoji": "⛏️🪨"
+  },
+  "udongo": {
+    "word": "udongo",
+    "definition": "Sehemu ya juu ya ardhi ambamo mimea hupandwa na hukua.",
+    "variations": [
+      "udongo wa kupanda",
+      "udongo wenye unyevu"
+    ],
+    "emoji": "🟤🌱"
+  },
+  "udongo wa rutuba": {
+    "word": "udongo wa rutuba",
+    "definition": "Udongo wenye virutubisho unaofaa kwa mimea kukua vizuri.",
+    "variations": [
+      "rutuba"
+    ],
+    "emoji": "🌱🟤"
+  },
+  "ufugaji": {
+    "word": "ufugaji",
+    "definition": "shughuli ya kutunza wanyama kama ng’ombe, mbuzi au kondoo",
+    "variations": [
+      "shughuli za ufugaji"
+    ],
+    "emoji": "🐄🐐"
+  },
+  "ufukweni": {
+    "word": "ufukweni",
+    "definition": "eneo la pembeni mwa bahari au ziwa.",
+    "variations": [
+      "ufukweni",
+      "ufukwe"
+    ],
+    "emoji": "🏖️🌊"
+  },
+  "ufundishaji": {
+    "word": "ufundishaji",
+    "definition": "Kitendo cha mwalimu kufundisha wanafunzi.",
+    "variations": [
+      "ufundishaji",
+      "kufundisha"
+    ],
+    "emoji": "🧑‍🏫📖"
+  },
+  "uharibifu wa mazingira": {
+    "word": "uharibifu wa mazingira",
+    "definition": "hali ya mazingira kuharibika na kupoteza uzuri au uwezo wake wa kusaidia viumbe kuishi vizuri.",
+    "variations": [
+      "mazingira",
+      "uharibifu"
+    ],
+    "emoji": "🌍⚠️"
+  },
+  "uhifadhi": {
+    "word": "uhifadhi",
+    "definition": "utunzaji wa kitu ili kisiharibike au kipatikane kwa matumizi ya baadaye.",
+    "variations": [
+      "uhifadhi",
+      "hifadhi"
+    ],
+    "emoji": "🛖💧🌿"
+  },
+  "ujifunzaji": {
+    "word": "ujifunzaji",
+    "definition": "Kitendo cha mwanafunzi kujipatia maarifa au stadi.",
+    "variations": [
+      "ujifunzaji",
+      "kujifunza"
+    ],
+    "emoji": "📘🧠"
+  },
+  "ukame": {
+    "word": "ukame",
+    "definition": "hali ya kukosekana kwa mvua kwa muda mrefu na kusababisha upungufu wa maji.",
+    "variations": [
+      "hali ya ukame"
+    ],
+    "emoji": "☀️ drought💧"
+  },
+  "ukataji miti ovyo": {
+    "word": "ukataji miti ovyo",
+    "definition": "kukata miti bila mpangilio au bila sababu zinazolinda mazingira",
+    "variations": [
+      "kukata miti ovyo",
+      "ukataji wa miti"
+    ],
+    "emoji": "🪓🌳"
+  },
+  "umbo la ardhi": {
+    "word": "umbo la ardhi",
+    "definition": "aina ya muonekano wa ardhi, kwa mfano mlima, kilima, bonde au tambarare",
+    "variations": [
+      "maumbo ya ardhi",
+      "umbo la nchi"
+    ],
+    "emoji": "⛰️🌄"
+  },
+  "umeme": {
+    "word": "umeme",
+    "definition": "nguvu inayotumika kuwasha taa na kuendesha vifaa mbalimbali",
+    "variations": [
+      "kuzalisha umeme"
+    ],
+    "emoji": "⚡💡"
+  },
+  "umwagiliaji": {
+    "word": "umwagiliaji",
+    "definition": "kitendo cha kupeleka maji shambani ili kusaidia mazao kukua",
+    "variations": [
+      "kilimo cha umwagiliaji"
+    ],
+    "emoji": "💧🌾"
+  },
+  "unyevu": {
+    "word": "unyevu",
+    "definition": "Kiasi cha maji kilichopo kwenye udongo au hewani.",
+    "variations": [
+      "unyevu wa udongo",
+      "upungufu wa unyevu"
+    ],
+    "emoji": "💧🌫️"
+  },
+  "unyevuanga": {
+    "word": "unyevuanga",
+    "definition": "kiasi cha mvuke wa maji kilichopo hewani.",
+    "variations": [
+      "unyevuanga"
+    ],
+    "emoji": "💧🌫️"
+  },
+  "unyevunyevu": {
+    "word": "unyevunyevu",
+    "definition": "hali ya kuwa na maji kidogo ndani ya udongo au hewani",
+    "variations": [
+      "unyevu",
+      "unyevunyevu wa udongo"
+    ],
+    "emoji": "💧🌿"
+  },
+  "uoto": {
+    "word": "uoto",
+    "definition": "mimea inayoota na kufunika eneo fulani la ardhi.",
+    "variations": [
+      "uoto wa asili"
+    ],
+    "emoji": "🌿🌱"
+  },
+  "upasuaji wa mbao": {
+    "word": "upasuaji wa mbao",
+    "definition": "shughuli ya kukata na kupasua magogo ili kupata mbao.",
+    "variations": [
+      "upasuaji wa mbao",
+      "kupasua mbao"
+    ],
+    "emoji": "🪚🪵"
+  },
+  "upumuaji": {
+    "word": "upumuaji",
+    "definition": "mfumo wa mwili unaohusika na kuvuta na kutoa hewa.",
+    "variations": [
+      "upumuaji",
+      "mfumo wa upumuaji"
+    ],
+    "emoji": "🫁🌬️"
+  },
+  "urejelezaji taka": {
+    "word": "urejelezaji taka",
+    "definition": "kutumia tena taka kwa kuzibadilisha ziwe na matumizi mapya.",
+    "variations": [
+      "urejelezaji",
+      "rejeleza taka"
+    ],
+    "emoji": "♻️🗑️"
+  },
+  "usafiri wa ardhini": {
+    "word": "usafiri wa ardhini",
+    "definition": "kusafiri kwa kutumia njia za nchi kavu kama barabara au reli.",
+    "variations": [
+      "usafiri wa ardhini"
+    ],
+    "emoji": "🚗🛤️"
+  },
+  "usimamizi": {
+    "word": "usimamizi",
+    "definition": "kuongoza, kufuatilia na kuhakikisha jambo linafanyika vizuri.",
+    "variations": [
+      "usimamizi",
+      "kusimamia"
+    ],
+    "emoji": "📋👀"
+  },
+  "uso wa dunia": {
+    "word": "uso wa dunia",
+    "definition": "Sehemu ya juu ya dunia tunayoiona na kuishi juu yake.",
+    "variations": [
+      "uso wa dunia"
+    ],
+    "emoji": "🌍🏞️"
+  },
+  "ustawi": {
+    "word": "ustawi",
+    "definition": "hali ya kuwa na maisha mazuri au afya nzuri.",
+    "variations": [
+      "ustawi"
+    ],
+    "emoji": "😊💚"
+  },
+  "utalii": {
+    "word": "utalii",
+    "definition": "shughuli ya kutembelea maeneo ya kuvutia kwa kujifunza au kuburudika",
+    "variations": [
+      "vivutio vya utalii",
+      "shughuli za utalii"
+    ],
+    "emoji": "🧳🌍📸"
+  },
+  "utunzaji": {
+    "word": "utunzaji",
+    "definition": "Kitendo cha kulinda, kusafisha, au kuhifadhi kitu ili kibaki salama na kizuri.",
+    "variations": [
+      "kutunza",
+      "tunza",
+      "utunzaji wa mazingira"
+    ],
+    "emoji": "🧹🤲"
+  },
+  "utunzaji wa mazingira": {
+    "word": "utunzaji wa mazingira",
+    "definition": "Kuyalinda na kuyahifadhi mazingira ili yaendelee kuwa salama na safi.",
+    "variations": [
+      "kutunza mazingira",
+      "uhifadhi wa mazingira"
+    ],
+    "emoji": "🌱🧹♻️"
+  },
+  "utupaji taka ovyo": {
+    "word": "utupaji taka ovyo",
+    "definition": "kutupa taka mahali pasipofaa badala ya kuzihifadhi au kuzitupa sehemu maalumu",
+    "variations": [
+      "kutupa taka ovyo",
+      "taka ovyo"
+    ],
+    "emoji": "🗑️⚠️"
+  },
+  "uvuvi": {
+    "word": "uvuvi",
+    "definition": "shughuli ya kuvua samaki au viumbe wengine wa majini",
+    "variations": [
+      "shughuli za uvuvi"
+    ],
+    "emoji": "🐟🎣"
+  },
+  "uvuvi haramu": {
+    "word": "uvuvi haramu",
+    "definition": "uvuvi unaofanyika kwa kutumia njia zisizokubalika na zinazoharibu mazingira.",
+    "variations": [
+      "uvuvi haramu"
+    ],
+    "emoji": "🚫🎣"
+  },
+  "uwanda wa juu": {
+    "word": "uwanda wa juu",
+    "definition": "eneo la ardhi lililo juu lakini sehemu yake kubwa ni tambarare",
+    "variations": [
+      "nyanda za juu",
+      "uwanda wa juu wa kusini"
+    ],
+    "emoji": "🏞️⬆️"
+  },
+  "vifungashio": {
+    "word": "vifungashio",
+    "definition": "vitu vinavyotumika kufungia au kubebea bidhaa.",
+    "variations": [
+      "kifungashio",
+      "vifungashio"
+    ],
+    "emoji": "📦🛍️"
+  },
+  "vihifadhia taka": {
+    "word": "vihifadhia taka",
+    "definition": "Vyombo au sehemu maalumu za kuweka taka.",
+    "variations": [
+      "kihifadhia taka",
+      "vihifadhio vya taka",
+      "hifadhia taka"
+    ],
+    "emoji": "🗑️♻️"
+  },
+  "vimbunga": {
+    "word": "vimbunga",
+    "definition": "Upepo mkali unaozunguka kwa nguvu na unaweza kusababisha uharibifu.",
+    "variations": [
+      "kimbunga",
+      "vimbunga vya asili"
+    ],
+    "emoji": "🌪️⚠️"
+  },
+  "viroboto": {
+    "word": "viroboto",
+    "definition": "wadudu wadogo wanaonyonya damu na wanaweza kuleta usumbufu au magonjwa.",
+    "variations": [
+      "kiroboto",
+      "viroboto"
+    ],
+    "emoji": "🦟⚠️"
+  },
+  "vitalu": {
+    "word": "vitalu",
+    "definition": "Sehemu maalumu ambapo miche huandaliwa kabla ya kupandwa mahali pengine.",
+    "variations": [
+      "kitalu",
+      "vitalu vya miti",
+      "vitalu vya maua"
+    ],
+    "emoji": "🪴🌱"
+  },
+  "viumbe hatarishi": {
+    "word": "viumbe hatarishi",
+    "definition": "wanyama au wadudu wanaoweza kuleta madhara kwa watu.",
+    "variations": [
+      "viumbe hatarishi"
+    ],
+    "emoji": "⚠️🐍🦟"
+  },
+  "viumbe vya majini": {
+    "word": "viumbe vya majini",
+    "definition": "viumbe wanaoishi ndani ya maji kama samaki na wengineo.",
+    "variations": [
+      "kiumbe wa majini",
+      "viumbe vya majini"
+    ],
+    "emoji": "🐟💧"
+  },
+  "viumbehai": {
+    "word": "viumbehai",
+    "definition": "vitu vyote vyenye uhai kama watu, wanyama na mimea",
+    "variations": [
+      "kiumbehai",
+      "viumbe hai"
+    ],
+    "emoji": "🧍🐘🌿"
+  },
+  "viwanda": {
+    "word": "viwanda",
+    "definition": "mahali ambapo malighafi huchakatwa au bidhaa hutengenezwa kwa kutumia mashine.",
+    "variations": [
+      "kiwanda",
+      "viwandani"
+    ],
+    "emoji": "🏭⚙️"
+  },
+  "viwanja vya michezo": {
+    "word": "viwanja vya michezo",
+    "definition": "Maeneo ya wazi yanayotumika kuchezea michezo.",
+    "variations": [
+      "kiwanja cha michezo",
+      "viwanja vya michezo"
+    ],
+    "emoji": "⚽🏃"
+  },
+  "vumbi": {
+    "word": "vumbi",
+    "definition": "Chembechembe ndogo za udongo au uchafu zinazopaa hewani.",
+    "variations": [
+      "vumbi la migodini",
+      "vumbi hewani"
+    ],
+    "emoji": "🌬️🟤"
+  },
+  "vyanzo vya maji": {
+    "word": "vyanzo vya maji",
+    "definition": "sehemu ambako maji hupatikana, kama mto, bwawa, chemchemi au ziwa",
+    "variations": [
+      "chanzo cha maji",
+      "vyanzo vya maji"
+    ],
+    "emoji": "💧🏞️"
+  },
+  "vyoo": {
+    "word": "vyoo",
+    "definition": "Sehemu maalumu za kujisaidia.",
+    "variations": [
+      "choo",
+      "vyoo"
+    ],
+    "emoji": "🚻"
+  },
+  "wadudu waharibifu": {
+    "word": "wadudu waharibifu",
+    "definition": "Wadudu wanaoharibu mimea au mazao.",
+    "variations": [
+      "mdudu waharibifu",
+      "wadudu"
+    ],
+    "emoji": "🐛🌿"
+  },
+  "wajibu": {
+    "word": "wajibu",
+    "definition": "Jambo ambalo mtu anapaswa kulifanya.",
+    "variations": [
+      "wajibu"
+    ],
+    "emoji": "✅🤝"
+  },
+  "wanyama": {
+    "word": "wanyama",
+    "definition": "Viumbe hai wasio binadamu, kama simba, ng'ombe, au ndege.",
+    "variations": [
+      "mnyama",
+      "wanyama"
+    ],
+    "emoji": "🐘🐦"
+  },
+  "zebaki": {
+    "word": "zebaki",
+    "definition": "metali ya kimiminika inayotumika katika shughuli kama kuchenjua dhahabu.",
+    "variations": [
+      "zebaki"
+    ],
+    "emoji": "⚗️🪙"
+  },
+  "ziwa": {
+    "word": "ziwa",
+    "definition": "eneo kubwa la maji yaliyokusanyika katikati ya nchi kavu",
+    "variations": [
+      "maziwa"
+    ],
+    "emoji": "🌊🏞️"
+  }
+}
