@@ -1,14 +1,14 @@
-# Jiografia na Mazingira Darasa la 3: Kitabu cha Mwanafunzi — ADT Bundle Reference
+# Jiografia na Mazingira — ADT Bundle Reference
 
 This document describes the structure of this Accessible Digital Textbook (ADT) bundle. Use it to orient yourself when doing post-processing.
 
 ## About This Book
 
-**Jiografia na Mazingira Darasa la 3: Kitabu cha Mwanafunzi** — Hiki ni kitabu cha mwanafunzi cha somo la Jiografia na Mazingira kilichoandaliwa na Taasisi ya Elimu Tanzania kwa elimu ya msingi, kikilenga hasa wanafunzi wa Darasa la III hadi VI na kikiwa kimeandikwa kwa lugha ya Kiswahili. Maudhui yake yanahusu dhana ya jiografia na mazingira, sura ya nchi, utunzaji wa mazingira, uharibifu wa mazingira, pamoja na athari za shughuli za binadamu na mabadiliko ya tabianchi katika muktadha wa Tanzania. Kitabu kina asili ya Tanzania na kinatumia mbinu shirikishi za ufundishaji kupitia matini, vielelezo, kazi za kufanya na mazoezi, huku kikisisitiza ujenzi wa maarifa, stadi na mitazamo ya matumizi endelevu ya rasilimali na uhifadhi wa mazingira.
+**Jiografia na Mazingira** — Hiki ni kitabu cha mwanafunzi cha Jiografia na Mazingira kilichoandaliwa na Taasisi ya Elimu Tanzania kwa elimu ya msingi, hasa ngazi ya Darasa la III hadi VI, na kimeandikwa kwa Kiswahili cha Tanzania. Kinaeleza dhana za jiografia na mazingira, sura ya nchi ya Tanzania, utunzaji wa mazingira, na athari za uharibifu wa mazingira pamoja na mabadiliko ya tabianchi. Kutokana na maudhui, mifano ya maeneo ya Tanzania, na shughuli za vitendo, kitabu hiki kimetokana na Tanzania na kinatumia mbinu ya kujifunza kwa umahiri kupitia matini, michoro, kazi za kufanya, na mazoezi ya kujenga maarifa, stadi, na tabia ya kuhifadhi mazingira na maliasili.
 
 - **Source language**: `sw-TZ`
 - **Available languages in this bundle**: `sw-TZ`
-- **Total pages**: 129
+- **Total pages**: 88
 - **Glossary**: yes
 
 ## Quick Overview
@@ -185,7 +185,7 @@ Every piece of displayable text has a unique, stable **text ID**. This ID is the
 | Pattern | What it is | Example |
 |---|---|---|
 | `pg{NNN}_gp{NNN}_tx{NNN}` | Page body text | `pg001_gp001_tx001` |
-| `pg{NNN}_im{NNN}` | Image alt text / description | `pg001_im002` |
+| `pg{NNN}_im{NNN}` | Image alt text / description | `pg001_im001` |
 | `gl{NNN}` | Glossary word | `gl001` |
 | `gl{NNN}_def` | Glossary definition | `gl001_def` |
 
@@ -220,9 +220,9 @@ A flat `Record<textId, string>` containing every piece of text in the book. Exam
 ```json
 {
   "pg001_gp001_tx001": "",
-  "pg001_im002": "Jalada lenye maandishi: Jiografia na Mazingira, Kitabu cha Mwanafunzi, Darasa la 3.",
-  "gl001": "angahewa",
-  "gl001_def": "tabaka la hewa linalozunguka dunia."
+  "pg001_im001": "Cheti cha ithibati cha Wizara ya Elimu, Sayansi na Teknolojia kwa kitabu cha Jiografia na Mazingira Kitabu cha Mwanafunzi Darasa la Tatu, Na. 1143, kikiidhinishwa tarehe 23 Oktoba 2023 na kusainiwa na Kamishna wa Elimu, Dkt. Lyabwene M. Mtahabwa.",
+  "gl001": "afya",
+  "gl001_def": "hali ya mwili na akili kuwa salama na vizuri."
 }
 ```
 
@@ -245,11 +245,11 @@ Keyed by word (lowercase). Each entry has the word, a simple definition, inflect
 
 ```json
 {
-  "angahewa": {
-    "word": "angahewa",
-    "definition": "tabaka la hewa linalozunguka dunia.",
-    "variations": ["hewa"],
-    "emoji": "🌤️🌍"
+  "afya": {
+    "word": "afya",
+    "definition": "hali ya mwili na akili kuwa salama na vizuri.",
+    "variations": ["afya"],
+    "emoji": "💪❤️"
   }
 }
 ```
@@ -262,7 +262,7 @@ Controls which features the reader UI enables. This book's config:
 
 ```json
 {
-  "title": "Jiografia na Mazingira Darasa la 3: Kitabu cha Mwanafunzi",
+  "title": "Jiografia na Mazingira",
   "bundleVersion": "1",
   "languages": {
     "available": [
@@ -330,7 +330,7 @@ Each page is a standalone HTML file at the root of `adt/`. Key structural elemen
         <section role="article" data-section-type="text_and_single_image"
                  data-section-id="pg007_sec001">
             <!-- Images use relative paths and carry data-id for alt text lookup -->
-            <img data-id="pg001_im002" src="images/pg001_im002.png" ...>
+            <img data-id="pg001_im001" src="images/pg001_im001.png" ...>
 
             <!-- Text elements carry data-id for i18n and TTS -->
             <span data-id="pg001_gp001_tx001"></span>

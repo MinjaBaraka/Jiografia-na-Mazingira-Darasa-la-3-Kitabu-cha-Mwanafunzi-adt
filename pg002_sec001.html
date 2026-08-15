@@ -2,62 +2,198 @@
 <html lang="sw-TZ">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jiografia na Mazingira Darasa la 3: Kitabu cha Mwanafunzi</title>
-    <meta name="title-id" content="pg002_sec001">
-    <meta name="page-section-id" content="2">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jiografia na Mazingira</title>
+    <meta name="title-id" content="pg002_sec001" />
+    <meta name="page-section-id" content="2" />
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
+    <style>
+      /* Page 2 follows the printed copyright page: its teal rule and footer
+         frame the publishing details without reducing the reading column. */
+      .inside-cover {
+        --teal: #16808d;
+        --teal-deep: #006878;
+        box-sizing: border-box;
+        min-height: max(72rem, calc(100vh - var(--nav-height, 5rem)));
+        padding: clamp(3rem, 6vw, 6rem) clamp(1.5rem, 7vw, 7.5rem) 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .inside-cover__top {
+        display: grid;
+        grid-template-columns: clamp(3rem, 5vw, 4.5rem) minmax(0, 1fr);
+        gap: clamp(2rem, 6vw, 6.5rem);
+        align-items: start;
+      }
+
+      .inside-cover__rule {
+        width: 100%;
+        height: auto;
+        margin-top: 0;
+      }
+
+      .inside-cover__details {
+        min-width: 0;
+        padding-top: clamp(4.5rem, 8vw, 8rem);
+        max-width: 54rem;
+      }
+
+      .inside-cover .adt-body {
+        font-size: clamp(1.2rem, 1.65vw, 1.7rem);
+        line-height: 1.52;
+      }
+
+      .inside-cover__copyright,
+      .inside-cover__address,
+      .inside-cover__contact {
+        font-style: italic;
+      }
+
+      .inside-cover__copyright { margin-bottom: clamp(5rem, 10vw, 10rem); }
+      .inside-cover__isbn { margin-bottom: clamp(5rem, 10vw, 10rem); }
+      .inside-cover__address { margin-bottom: clamp(5rem, 10vw, 10rem); }
+      .inside-cover__contact { margin-bottom: clamp(4rem, 8vw, 7.5rem); }
+
+      .inside-cover__copyright .adt-body,
+      .inside-cover__isbn .adt-body {
+        font-size: clamp(1.35rem, 1.95vw, 2rem);
+      }
+
+      .inside-cover__edition,
+      .inside-cover__contact .adt-body {
+        white-space: pre-wrap;
+        tab-size: 8;
+      }
+
+      .inside-cover__contact .adt-body:nth-child(2),
+      .inside-cover__contact .adt-body:nth-child(3) {
+        color: var(--color-indigo-700);
+      }
+
+      .inside-cover__contact .adt-body:nth-child(3) {
+        text-decoration: underline;
+        text-underline-offset: 0.25rem;
+      }
+
+      .inside-cover__rights {
+        max-width: 36rem;
+        margin: auto 0 clamp(3rem, 6vw, 5.5rem) 0;
+        font-style: italic;
+        text-align: left;
+      }
+
+      .inside-cover__footer {
+        position: relative;
+        height: clamp(6.5rem, 12vw, 11rem);
+        margin-inline: calc(clamp(1.5rem, 7vw, 7.5rem) * -1);
+        margin-bottom: calc(var(--nav-height, 5rem) + 0.5rem);
+        overflow: hidden;
+        background: linear-gradient(171deg, transparent 0 27%, var(--teal) 27.2% 100%);
+      }
+
+      .inside-cover__footer::before {
+        content: "";
+        position: absolute;
+        inset: 0 46% 0 0;
+        background: linear-gradient(171deg, transparent 0 22%, var(--teal-deep) 22.4% 100%);
+      }
+
+      .inside-cover__footer::after {
+        content: "i";
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        display: grid;
+        place-items: center;
+        width: clamp(4.5rem, 7vw, 6.5rem);
+        height: clamp(5.5rem, 9vw, 8rem);
+        border-radius: 1.8rem 1.8rem 0 0;
+        color: #194a83;
+        background: linear-gradient(#047c8b, #006878);
+        box-shadow: inset 0 0.4rem 0.6rem rgb(255 255 255 / 24%);
+        font-family: Georgia, serif;
+        font-size: clamp(2.4rem, 4vw, 3.75rem);
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      .inside-cover__footer-icon {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        bottom: clamp(1rem, 2vw, 1.5rem);
+        transform: translateX(-50%);
+        width: clamp(3.25rem, 5vw, 4.6rem);
+        aspect-ratio: 1;
+        border-radius: 999px;
+        background: #fff;
+      }
+
+      .inside-cover__footer-icon::after {
+        content: "i";
+        position: absolute;
+        inset: 0;
+        display: grid;
+        place-items: center;
+        color: #194a83;
+        font-family: Georgia, serif;
+        font-size: clamp(2.4rem, 4vw, 3.75rem);
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      @media (max-width: 40rem) {
+        .inside-cover { min-height: auto; padding-top: 2rem; }
+        .inside-cover__top { gap: 1.5rem; }
+        .inside-cover__details { padding-top: 2rem; }
+        .inside-cover__rights { margin-left: 0; }
+      }
+    </style>
 </head>
 
 <body class="min-h-screen flex items-center justify-center">
     <main class="w-full">
-      <h1 class="sr-only" id="page-heading">Jiografia na Mazingira Darasa la 3: Kitabu cha Mwanafunzi</h1>
-      <div id="content" class="container bg-white opacity-0">
-  <section data-section-type="inside_cover" data-section-id="pg002_sec001" class="relative overflow-hidden bg-white min-h-screen">
-    <div class="absolute left-0 top-10 h-60 w-12 rounded-br-3xl bg-cyan-700/70 max-sm:top-8 max-sm:h-60 max-sm:w-12"></div>
-
-    <div class="mx-auto w-full max-w-5xl px-8 pt-24 pb-56 max-lg:pb-48 max-sm:px-5 max-sm:pt-16 max-sm:pb-44 relative z-20">
-      <div class="space-y-16 max-sm:space-y-10">
-        <p class="adt-body text-left text-neutral-800 leading-relaxed ml-24 max-lg:ml-28 max-sm:ml-14 max-sm:pr-6">
-          <span data-id="pg002_n0002" class="block">&#xa9; Taasisi ya Elimu Tanzania 2023</span><span data-id="pg002_n0003" class="block mt-1">Toleo la kwanza   2023</span>
-        </p>
-
-        <p data-id="pg002_n0004" class="adt-body text-left text-neutral-800 ml-20 max-lg:ml-24 max-sm:ml-14 max-sm:pr-6">ISBN: 978-9987-09-966-5</p>
-
-        <div class="ml-20 max-lg:ml-24 max-sm:ml-14 max-sm:pr-6 space-y-2 text-left text-neutral-800">
-          <p data-id="pg002_n0006" class="adt-body">Taasisi ya Elimu Tanzania</p>
-          <p data-id="pg002_n0007" class="adt-body">Eneo la Mikocheni</p>
-          <p data-id="pg002_n0008" class="adt-body">132 Barabara ya Ali Hassan Mwinyi</p>
-          <p data-id="pg002_n0009" class="adt-body">S.L.P. 35094</p>
-          <p data-id="pg002_n0010" class="adt-body">14112 Dar-es-Salaam</p>
-        </div>
-
-        <div class="ml-20 max-lg:ml-24 max-sm:ml-14 max-sm:pr-6 space-y-2 text-left text-neutral-800 max-w-3xl">
-          <p data-id="pg002_n0012" class="adt-body">Simu: +255735041170/735041168</p>
-          <p data-id="pg002_n0013" class="adt-body break-words text-indigo-700">Baruapepe: director.general@tie.go.tz</p>
-          <p data-id="pg002_n0014" class="adt-body break-words text-indigo-700 underline">Tovuti: www.tie.go.tz</p>
-        </div>
-
-        <p class="adt-body text-left text-neutral-800 leading-relaxed ml-20 max-lg:ml-24 max-sm:ml-14 max-w-4xl max-sm:pr-6">
-          <span data-id="pg002_n0016">Haki zote zimehifadhiwa.</span><span data-id="pg002_n0017" class="ml-2">Hairuhusiwi kunakili, kurudufu, kuchapisha, kutafsiri, wala kukitoa kitabu hiki kwa namna yoyote ile bila idhini ya maandishi kutoka Taasisi ya Elimu Tanzania.</span>
-        </p>
+      <h1 class="sr-only" id="page-heading">Jiografia na Mazingira</h1>
+      <div id="content" class="container opacity-0"><section data-section-type="inside_cover" data-section-id="pg002_sec001" class="inside-cover mx-auto w-full max-w-5xl bg-white text-slate-800 relative overflow-hidden">
+  <div class="inside-cover__top">
+    <img src="images/pg002_im001.png" alt="" data-id="pg002_im001" class="inside-cover__rule shrink-0" style="max-width: 100%; height: auto;" role="presentation" aria-hidden="true">
+    <div class="inside-cover__details">
+      <div class="inside-cover__copyright text-left text-slate-800 leading-relaxed">
+        <div class="adt-body"><span data-id="pg002_n0002">&#xa9; Taasisi ya Elimu Tanzania 2023</span></div>
+        <div class="adt-body"><span data-id="pg002_n0003" class="inside-cover__edition">Toleo la kwanza&#9;2023</span></div>
       </div>
-    </div>
 
-    <div class="pointer-events-none absolute inset-0 flex items-center justify-center z-10 max-sm:items-end max-sm:justify-start">
-      <div data-id="pg002_n0018" class="adt-h1 rotate-[-48deg] text-pink-300/50 tracking-wide max-sm:rotate-[-52deg] max-sm:text-pink-300/25 max-sm:ml-8 max-sm:mb-56">FOR ONLINE READING ONLY</div>
-    </div>
+      <div class="inside-cover__isbn text-left">
+        <p class="adt-body font-medium"><span data-id="pg002_n0004">ISBN: 978-9987-09-966-5</span></p>
+      </div>
 
-    <div class="absolute bottom-0 left-0 right-0 h-40 max-sm:h-32">
-      <div class="absolute inset-x-0 bottom-0 h-24 bg-cyan-700/70 max-sm:h-20"></div>
-      <div class="absolute left-0 bottom-20 h-0 w-0 border-b-[52px] border-b-cyan-800 border-r-[55vw] border-r-transparent max-sm:bottom-20 max-sm:border-b-[42px] max-sm:border-r-[58vw]"></div>
-      <div class="absolute left-1/2 -translate-x-1/2 bottom-0 h-32 w-20 rounded-t-3xl bg-cyan-800 max-sm:h-24 max-sm:w-16"></div>
+      <div class="inside-cover__address text-left text-slate-800 leading-relaxed">
+        <div class="adt-body"><span data-id="pg002_n0006">Taasisi ya Elimu Tanzania</span></div>
+        <div class="adt-body"><span data-id="pg002_n0007">Eneo la Mikocheni</span></div>
+        <div class="adt-body"><span data-id="pg002_n0008">132 Barabara ya Ali Hassan Mwinyi</span></div>
+        <div class="adt-body"><span data-id="pg002_n0009">S.L.P. 35094</span></div>
+        <div class="adt-body"><span data-id="pg002_n0010">14112 Dar-es-Salaam</span></div>
+      </div>
+
+      <div class="inside-cover__contact text-left leading-relaxed">
+        <div class="adt-body"><span data-id="pg002_n0012">Simu:&#9;&#9;&#9;&#9;&#9;&#9;+255735041170/735041168</span></div>
+        <div class="adt-body"><span data-id="pg002_n0013">Baruapepe:&#9;&#9;&#9;&#9;&#9;director.general@tie.go.tz</span></div>
+        <div class="adt-body"><span data-id="pg002_n0014">Tovuti:&#9;&#9;&#9;&#9;&#9;&#9;www.tie.go.tz</span></div>
+      </div>
+
+      <p class="inside-cover__rights adt-body text-left leading-relaxed">
+        <span data-id="pg002_n0016">Haki zote zimehifadhiwa.</span>
+        <span data-id="pg002_n0017">Hairuhusiwi kunakili, kurudufu, kuchapisha, kutafsiri, wala kukitoa kitabu hiki kwa namna yoyote ile bila idhini ya maandishi kutoka Taasisi ya Elimu Tanzania.</span>
+      </p>
     </div>
-  </section>
-</div>
+  </div>
+  <div class="inside-cover__footer" aria-hidden="true"><span class="inside-cover__footer-icon"></span></div>
+</section></div>
     </main>
 
     <div class="relative z-50" id="interface-container"></div>

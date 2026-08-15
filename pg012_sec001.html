@@ -1,87 +1,82 @@
 <!DOCTYPE html>
 <html lang="sw-TZ">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jiografia na Mazingira Darasa la 3: Kitabu cha Mwanafunzi</title>
-    <meta name="title-id" content="pg012_sec001">
-    <meta name="page-section-id" content="14">
-    <link href="./content/tailwind_output.css" rel="stylesheet">
-    <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="./assets/fonts.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiografia na Mazingira</title>
+  <meta name="title-id" content="pg012_sec001" />
+  <meta name="page-section-id" content="12" />
+  <link href="./content/tailwind_output.css" rel="stylesheet">
+  <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="./assets/fonts.css" rel="stylesheet">
+  <style>
+    #content .pg12-page{position:relative;box-sizing:border-box;min-height:2000px;overflow:hidden;padding:175px 8.7% 180px;background:#fff;color:#202020;font-family:'Atkinson Hyperlegible',sans-serif!important}
+    #content .pg12-page::before{content:'';position:absolute;top:48px;left:4.8%;width:64px;height:322px;border-radius:0 0 0 34px;background:#3593a1}
+    #content .pg12-page::after{content:'FOR ONLINE READING ONLY';position:absolute;z-index:0;left:50%;top:55%;transform:translate(-50%,-50%) rotate(-46deg);color:rgba(255,104,94,.34);font:700 67px/1 Arial,sans-serif;white-space:nowrap;pointer-events:none}
+    #content .pg12-content{position:relative;z-index:1;max-width:1110px;margin:0 auto}
+    #content .pg12-title{margin:0 0 14px;font-family:'Atkinson Hyperlegible',sans-serif!important;font-size:44px!important;font-weight:800;line-height:1.08}
+    #content .pg12-activity{position:relative;margin:0 0 45px;padding:70px 45px 34px;border-radius:0 28px 28px 28px;background:#f8e7d5;box-shadow:inset 0 0 20px rgba(158,89,41,.22)}
+    #content .pg12-activity::before{content:'';position:absolute;top:0;left:68px;right:0;height:69px;border-radius:0 28px 0 0;background:linear-gradient(90deg,#9e4212 0%,#ba541b 44%,#a73975 74%,#d64782 100%)}
+    #content .pg12-activity-heading{position:absolute;z-index:2;top:0;left:105px;right:0;margin:0;color:#fff;font-family:'Atkinson Hyperlegible',sans-serif!important;font-size:39px!important;font-weight:800;line-height:69px}
+    #content .pg12-icon{position:absolute;z-index:3;top:-2px;left:-27px;display:grid;width:119px;height:119px;place-items:center;border-radius:50%;background:linear-gradient(135deg,#536fc7,#e14b89 66%,#b8325e);box-shadow:0 3px 8px rgba(80,25,45,.32)}
+    #content .pg12-icon-inner{display:grid;width:91px;height:91px;place-items:center;border:2px solid #cab5bb;border-radius:50%;background:#fff}
+    #content .pg12-icon svg{width:68px;height:68px;stroke:#3a171c;stroke-width:2.2;fill:none;stroke-linecap:round;stroke-linejoin:round}
+    #content .pg12-prompt{margin:0 0 28px 70px;font-family:'Atkinson Hyperlegible',sans-serif!important;font-size:34px!important;line-height:1.28;font-style:italic}
+    #content .pg12-images{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin:0 auto;max-width:1030px}
+    #content .pg12-images figure{margin:0;text-align:center}
+    #content .pg12-images img{display:block;width:100%;aspect-ratio:1.29/1;object-fit:cover}
+    #content .pg12-images figcaption{margin-top:8px;font-family:'Atkinson Hyperlegible',sans-serif!important;font-size:31px!important;font-weight:700}
+    #content .pg12-caption{margin:20px 0 0;text-align:center;font-family:'Atkinson Hyperlegible',sans-serif!important;font-size:30px!important;font-style:italic}
+    #content .pg12-caption strong{font-weight:800;font-style:normal}
+    #content .pg12-questions{margin:0 0 21px}
+    #content .pg12-question-label{display:inline-block;margin:0;padding:10px 54px 11px 29px;border-radius:0 24px 24px 0;background:#087db8;color:#fff;font-family:'Atkinson Hyperlegible',sans-serif!important;font-size:39px!important;font-weight:800;line-height:1}
+    #content .pg12-question-body{margin-top:-1px;padding:18px 38px 21px;border-radius:0 13px 13px 13px;background:#d2e7f0}
+    #content .pg12-question-body p{margin:0 0 14px;font-family:'Atkinson Hyperlegible',sans-serif!important;font-size:31px!important;line-height:1.3;font-style:italic}
+    #content .pg12-question-body p:last-child{margin-bottom:0}
+    #content .pg12-question-body textarea{display:none}
+    #content .pg12-copy{margin:22px 0 0;font-family:'Atkinson Hyperlegible',sans-serif!important;font-size:33px!important;line-height:1.33;font-style:italic;text-align:justify}
+    #content .pg12-copy span{display:inline}
+    #content .pg12-footer{position:absolute;left:3.4%;bottom:0;width:93.2%;height:162px;background:#3593a1}
+    #content .pg12-footer::before{content:'';position:absolute;left:0;top:-44px;width:52%;height:54px;background:#006d7f;clip-path:polygon(0 0,100% 100%,0 100%);box-shadow:0 -3px 7px rgba(0,0,0,.19)}
+    #content .pg12-footer::after{content:'';position:absolute;right:0;top:-43px;width:51%;height:53px;background:#006d7f;clip-path:polygon(0 100%,100% 0,100% 100%);box-shadow:0 -3px 7px rgba(0,0,0,.19)}
+    #content .pg12-number{position:absolute;z-index:2;left:50%;bottom:0;width:106px;height:110px;transform:translateX(-50%);border-radius:28px 28px 0 0;background:#006579}
+    #content .pg12-number span{position:absolute;top:18px;left:15px;display:grid;width:76px;height:76px;place-items:center;border-radius:50%;background:#fff;color:#174c80;font:400 37px/1 'Atkinson Hyperlegible',sans-serif}
+    @media(max-width:850px){#content .pg12-page{min-height:auto;padding:72px 28px 130px}#content .pg12-page::before{top:30px;left:14px;width:33px;height:190px}#content .pg12-page::after{font-size:29px}#content .pg12-title{font-size:34px!important}#content .pg12-activity{padding:61px 20px 26px;border-radius:0 20px 20px 20px}#content .pg12-activity::before{left:45px;height:58px;border-radius:0 20px 0 0}#content .pg12-activity-heading{left:68px;font-size:27px!important;line-height:58px;white-space:nowrap}#content .pg12-icon{left:-17px;width:82px;height:82px}.pg12-icon-inner{width:64px!important;height:64px!important}.pg12-icon svg{width:48px!important;height:48px!important}#content .pg12-prompt{margin:0 0 20px;font-size:26px!important}#content .pg12-images{gap:10px}#content .pg12-images figcaption{font-size:25px!important}#content .pg12-caption{font-size:24px!important}#content .pg12-question-label{font-size:29px!important;padding:9px 38px 10px 20px}#content .pg12-question-body{padding:15px 20px}#content .pg12-question-body p,#content .pg12-copy{font-size:25px!important;text-align:left}#content .pg12-footer{height:100px;width:calc(100% - 28px);left:14px}#content .pg12-number{width:72px;height:76px;border-radius:18px 18px 0 0}#content .pg12-number span{top:13px;left:11px;width:50px;height:50px;font-size:25px}}
+  </style>
 </head>
-
-<body class="min-h-screen flex items-center justify-center">
-    <main class="w-full">
-      <div id="content" class="container opacity-0">
-  <section data-section-type="text_and_images" data-section-id="pg012_sec001" class="bg-white text-slate-800">
-    <div class="w-full bg-white py-10">
-      <div class="mx-auto w-full max-w-5xl px-8 max-sm:px-5">
-        <div class="flex items-start gap-6">
-          <div class="h-60 w-8 shrink-0 rounded-b-3xl bg-teal-600 max-lg:h-44 max-sm:h-32"></div>
-          <h1 data-id="pg012_n0002" class="adt-h1 z-10 pt-16 text-left font-bold text-slate-800 max-lg:pt-10 max-sm:pt-6">Mazingira ya nyumbani</h1>
-        </div>
+<body>
+  <div id="content" class="opacity-0">
+    <section role="article" data-section-type="activity_open_ended_answer" data-section-id="pg012_sec001" class="pg12-page">
+      <div class="pg12-content">
+        <h1 class="pg12-title" data-id="pg012_n0002">Mazingira ya nyumbani</h1>
+        <section class="pg12-activity" aria-label="Kazi ya kufanya">
+          <div class="pg12-icon" aria-hidden="true"><div class="pg12-icon-inner"><svg viewBox="0 0 80 80"><ellipse cx="48" cy="19" rx="18" ry="11"/><path d="M35 32c-8 6-13 17-15 32M37 33c8 5 11 12 13 25M20 64h44M42 40h20M38 50h22"/></svg></div></div>
+          <h2 class="pg12-activity-heading" data-id="pg012_n0004">Kazi ya kufanya namba 3</h2>
+          <p class="pg12-prompt" data-id="pg012_n0005">Chunguza Kielelezo namba 5, kisha jibu maswali yanayofuata:</p>
+          <div class="pg12-images">
+            <figure><img data-id="pg012_im001" src="images/pg012_im001.jpg" alt="Mazingira ya nyumbani ya kijijini yenye nyumba ya msonge, mwanamke akipika, watu wawili wakiwa nje ya nyumba, banda la kuku, miti na wanyama kama ng’ombe, mbuzi na kuku."><figcaption data-id="pg012_n0008">(i)</figcaption></figure>
+            <figure><img data-id="pg012_im002" src="images/pg012_im002.jpg" alt="Mazingira ya nyumbani ya mjini yenye nyumba ya kisasa, gari lililoegeshwa mbele ya nyumba, barabara, nguzo za umeme na nyumba nyingine jirani."><figcaption data-id="pg012_n0010">(ii)</figcaption></figure>
+          </div>
+          <p class="pg12-caption" data-id="pg012_n0011"><strong>Kielelezo namba 5:</strong> Mazingira ya nyumbani</p>
+        </section>
+        <section class="pg12-questions">
+          <h2 class="pg12-question-label" data-id="pg012_n0013">Maswali</h2>
+          <div class="pg12-question-body">
+            <p data-id="pg012_n0014">1. Ni vitu gani unaviona katika Kielelezo namba 5?</p>
+            <textarea data-aria-id="aria-1-0-0" aria-label="Jibu la swali la kwanza kuhusu vitu vinavyoonekana katika Kielelezo namba 5"></textarea>
+            <p data-id="pg012_n0015">2. Ni vitu gani katika Kielelezo namba 5, vipo katika mazingira ya nyumbani kwenu?</p>
+            <textarea data-aria-id="aria-1-0-1" aria-label="Jibu la swali la pili kuhusu vitu vya Kielelezo namba 5 vilivyopo katika mazingira ya nyumbani"></textarea>
+          </div>
+        </section>
+        <p class="pg12-copy"><span data-id="pg012_n0017">Mazingira ya nyumbani ni vitu vyote vinavyopatikana mahali tunapoishi.</span> <span data-id="pg012_n0018">Vitu hivyo vinaweza kuwa nje au ndani ya nyumba.</span> <span data-id="pg012_n0019">Mazingira ya nje ya nyumba yanaweza kuwa na vitu kama miti, magari, maua, ndege, wadudu, wanyama, mito, milima, mabonde na vitu vingine kulingana na mahali tunapoishi.</span> <span data-id="pg012_n0020">Pia, mazingira ya ndani ya nyumba yanaweza kuwa na vitu kama kitanda, makochi, vyombo vya kupikia, vifaa vya usafi, pamoja na vitu vingine vyote</span></p>
       </div>
-    </div>
-
-    <div class="mx-auto w-full max-w-5xl px-8 max-sm:px-5">
-      <div class="overflow-hidden rounded-[2rem] bg-orange-50 shadow-md ring-1 ring-orange-100">
-        <div class="flex items-center bg-gradient-to-r from-pink-400 via-pink-500 to-fuchsia-500 px-6 py-0">
-          <div class="-ml-10 mr-4 flex h-24 w-24 items-center justify-center rounded-full bg-gradient-to-br from-indigo-400 via-pink-300 to-red-400 p-2 shadow-lg max-sm:h-20 max-sm:w-20">
-            <div class="h-full w-full rounded-full border-2 border-slate-400 bg-white"></div>
-          </div>
-          <div class="rounded-2xl bg-gradient-to-r from-amber-700 to-orange-600 px-6 py-3 shadow-inner">
-            <h2 data-id="pg012_n0004" class="adt-h2 z-10 text-left font-bold text-white">Kazi ya kufanya namba 3</h2>
-          </div>
-        </div>
-
-        <div class="px-8 pb-6 pt-4 max-sm:px-5">
-          <p data-id="pg012_n0005" class="adt-body z-10 mb-6 text-left text-slate-800">Chunguza Kielelezo namba 5, kisha jibu maswali yanayofuata:</p>
-
-          <div class="grid grid-cols-2 gap-4 max-lg:grid-cols-1">
-            <div class="flex flex-col items-center">
-              <img src="images/pg012_im001.jpg" alt="Mazingira ya nyumbani kijijini yenye nyumba ya jadi, mwanamke akipika, mwanaume na mtoto wakiwa nje, pamoja na mbuzi, ng&#x2019;ombe na kuku karibu na nyumba." data-id="pg012_im001" class="h-auto w-full rounded-sm object-cover" style="max-width: 100%; height: auto;">
-              <div data-id="pg012_n0008" class="adt-body mt-2 text-slate-800">(i)</div>
-            </div>
-            <div class="flex flex-col items-center">
-              <img src="images/pg012_im002.jpg" alt="Mazingira ya nyumbani ya kisasa yenye nyumba, gari lililoegeshwa mbele, barabara, nyumba za jirani na nguzo za umeme." data-id="pg012_im002" class="h-auto w-full rounded-sm object-cover" style="max-width: 100%; height: auto;">
-              <div data-id="pg012_n0010" class="adt-body mt-2 text-slate-800">(ii)</div>
-            </div>
-          </div>
-
-          <p class="mt-5 text-center">
-            <span data-id="pg012_n0012" class="adt-caption font-semibold text-slate-800">Kielelezo namba 5:</span>
-            <span data-id="pg012_n0013" class="adt-caption ml-1 italic text-slate-800">Mazingira ya nyumbani</span>
-          </p>
-        </div>
-      </div>
-
-      <aside class="float-right mb-6 ml-8 mt-8 w-[38%] overflow-hidden rounded-2xl bg-sky-100 shadow-sm max-lg:float-none max-lg:ml-0 max-lg:w-full">
-        <div class="bg-gradient-to-r from-blue-700 to-sky-500 px-6 py-3">
-          <h3 data-id="pg012_n0015" class="adt-h3 z-10 text-left font-bold text-white">Maswali</h3>
-        </div>
-        <ol class="px-6 py-4 text-left text-slate-800">
-          <li data-id="pg012_n0018" class="adt-body mb-3">1. Ni vitu gani unaviona katika Kielelezo namba 5?</li>
-          <li data-id="pg012_n0020" class="adt-body">2. Ni vitu gani katika Kielelezo namba 5, vipo katika mazingira ya nyumbani kwenu?</li>
-        </ol>
-      </aside>
-
-      <p class="adt-body mt-8 text-left leading-relaxed text-slate-800">
-        <span data-id="pg012_n0022">Mazingira ya nyumbani ni vitu vyote vinavyopatikana mahali tunapoishi.</span><span data-id="pg012_n0023" class="ml-1">Vitu hivyo vinaweza kuwa nje au ndani ya nyumba.</span><span data-id="pg012_n0024" class="ml-1">Mazingira ya nje ya nyumba yanaweza kuwa na vitu kama miti, magari, maua, ndege, wadudu, wanyama, mito, milima, mabonde na vitu vingine kulingana na mahali tunapoishi.</span><span data-id="pg012_n0025" class="ml-1">Pia, mazingira ya ndani ya nyumba yanaweza kuwa na vitu kama kitanda, makochi, vyombo vya kupikia, vifaa vya usafi, pamoja na vitu vingine vyote</span>
-      </p>
-
-      <div data-id="pg012_n0026" class="sr-only">FOR ONLINE READING ONLY</div>
-    </div>
-  </section>
-</div>
-    </main>
-
-    <div class="relative z-50" id="interface-container"></div>
-    <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js"></script>
-    <script src="./assets/scorm.js"></script>
-    <script src="./assets/base.bundle.local.js"></script>
+      <div class="pg12-footer" aria-hidden="true"></div><div class="pg12-number" aria-hidden="true"><span>6</span></div>
+    </section>
+  </div>
+  <div class="relative z-50" id="interface-container"></div>
+  <div class="relative z-50" id="nav-container"></div>
+  <script src="./assets/offline-preloader.js"></script>
+  <script src="./assets/scorm.js"></script>
+  <script src="./assets/base.bundle.local.js"></script>
 </body>
-
 </html>

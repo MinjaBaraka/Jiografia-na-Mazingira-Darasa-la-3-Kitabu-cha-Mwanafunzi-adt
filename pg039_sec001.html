@@ -1,27 +1,88 @@
 <!DOCTYPE html>
 <html lang="sw-TZ">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jiografia na Mazingira Darasa la 3: Kitabu cha Mwanafunzi</title>
-    <meta name="title-id" content="pg039_sec001">
-    <meta name="page-section-id" content="58">
-    <link href="./content/tailwind_output.css" rel="stylesheet">
-    <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="./assets/fonts.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiografia na Mazingira</title>
+  <meta name="title-id" content="pg039_sec001" />
+  <meta name="page-section-id" content="39" />
+  <link href="./content/tailwind_output.css" rel="stylesheet">
+  <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="./assets/fonts.css" rel="stylesheet">
+  <style>
+    .source-page, .source-page * { font-family: 'Atkinson Hyperlegible', sans-serif !important; }
+    .source-page { width: 100%; max-width: 46rem; color: #292526; font-style: italic; overflow: hidden; }
+    .source-page .source-heading { font-family: 'Merriweather', serif !important; font-style: italic; }
+    .source-page .top-marker { position: absolute; right: 0; top: 0; height: 5rem; width: 2rem; border-radius: 0 0 1.25rem 1.25rem; background: #4c93a4; }
+    .source-page .source-list { max-width: 36rem; margin: 0 auto 1rem; padding: 0 2rem; font-size: 1.45rem; line-height: 1.28; }
+    .source-page .activity-wrap, .source-page .questions-wrap { max-width: 40rem; margin-left: auto; margin-right: auto; padding: 0 1.25rem; }
+    .source-page .activity-card { position: relative; margin-top: 2rem; padding-top: 2rem; overflow: visible; border-radius: 0 0 1.4rem 1.4rem; background: #f7e6d6; box-shadow: 0 2px 4px rgb(0 0 0 / 0.12); }
+    .source-page .activity-rail { position: absolute; inset: 0 0 auto; height: 1.75rem; border-radius: 1.25rem 1.25rem 0 0; background: linear-gradient(90deg, #cf6c1d, #a9508b, #e95a91); }
+    .source-page .activity-icon { position: absolute; z-index: 10; left: -1.5rem; top: -.25rem; display: flex; height: 4.6rem; width: 4.6rem; align-items: center; justify-content: center; border-radius: 9999px; background: linear-gradient(135deg, #6e73ff, #a753d7, #e96662); padding: .25rem; box-shadow: 0 2px 4px rgb(0 0 0 / 0.12); }
+    .source-page .activity-title { position: relative; display: inline-block; margin-top: -2rem; border-radius: 0 .75rem .75rem 0; background: linear-gradient(#d37528, #a64008); padding: .25rem 1.25rem .25rem 4rem; color: white; font-size: 1.45rem; font-weight: 700; line-height: 1.2; box-shadow: 0 2px 4px rgb(0 0 0 / 0.12); }
+    .source-page .activity-prompt { margin: .5rem 1.5rem; font-size: 1.4rem; line-height: 1.25; }
+    .source-page .figure-frame { margin: 0 .75rem; padding: 0 .75rem .75rem; background: #f5e0d2; }
+    .source-page .figure-caption { padding-top: .5rem; text-align: center; font-size: 1.1rem; line-height: 1.2; }
+    .source-page .questions-card { position: relative; margin-top: 1.75rem; border-radius: .75rem; background: #dcecf7; padding: 2rem 2.5rem 1.25rem; }
+    .source-page .questions-title { position: absolute; top: -.75rem; left: 1.5rem; border-radius: 0 9999px 9999px 0; background: linear-gradient(90deg, #0067b3, #16a6e8); padding: .25rem 1.75rem; color: white; font-size: 1.45rem; font-weight: 700; line-height: 1.2; box-shadow: 0 2px 4px rgb(0 0 0 / 0.12); }
+    .source-page .questions-list { margin: 0; padding-left: 2rem; font-size: 1.35rem; line-height: 1.35; }
+    .source-page .page-footer { position: relative; height: 7rem; margin-top: 2rem; }
+    .source-page .page-footer-base { position: absolute; inset: auto 0 0; height: 5rem; background: #4c93a4; }
+    .source-page .page-footer-left { position: absolute; bottom: 0; left: 0; height: 7rem; width: 53%; background: #4c93a4; clip-path: polygon(0 25%, 100% 70%, 100% 100%, 0 100%); }
+    .source-page .page-footer-right { position: absolute; right: 0; bottom: 0; height: 7rem; width: 54%; background: #00687d; clip-path: polygon(0 70%, 100% 25%, 100% 100%, 0 100%); }
+    .source-page .page-number { position: absolute; bottom: 0; left: 50%; display: flex; height: 5rem; width: 3.5rem; transform: translateX(-50%); align-items: center; justify-content: center; border-radius: 1rem 1rem 0 0; background: #00677e; }
+    @media (max-width: 639px) { .source-page .source-list { padding: 0 1.25rem; font-size: 1.05rem; } .source-page .activity-wrap, .source-page .questions-wrap { padding: 0 1rem; } .source-page .activity-title, .source-page .questions-title { font-size: 1.05rem; } .source-page .activity-prompt { font-size: 1.05rem; } .source-page .questions-list { font-size: 1.05rem; padding-left: 1.5rem; } }
+  </style>
 </head>
-
 <body class="min-h-screen flex items-center justify-center">
-    <main class="w-full">
-      <div class="container mx-auto max-w-5xl bg-white px-20 max-lg:px-10 max-sm:px-6 pt-10 pb-12 opacity-0" id="content"><section data-section-type="activity_open_ended_answer" data-section-id="pg039_sec001" class="mx-auto max-w-5xl"><div class="mb-10 space-y-3 text-gray-800 adt-body leading-relaxed"><div><span data-id="pg039_n0003">(e) kukusanya taka kwa kuzitenganisha taka zinazoza na zisizooza na kuzihifadhi katika vifaa maalumu;</span></div><div><span data-id="pg039_n0005">(f) kudeki sakafu;</span></div><div><span data-id="pg039_n0007">(g) kupanga madawati na meza za darasa; na</span></div><div><span data-id="pg039_n0009">(h) kufagia na kuokota uchafu maeneo ya nje kuzunguka darasa.</span></div></div><div class="mb-8 overflow-hidden rounded-[2rem] bg-gradient-to-r from-orange-600 via-pink-500 to-pink-400 shadow-sm"><div class="px-8 py-4 max-sm:px-5 max-sm:py-3"><h1 class="font-bold text-white adt-h2 leading-tight" data-id="pg039_n0012">Kazi ya kufanya namba 5</h1></div></div><p class="mb-5 text-gray-900 adt-body leading-relaxed"><span data-id="pg039_n0013">Chunguza Kielelezo namba 2, kisha jibu maswali yanayofuata:</span></p><div class="mb-9 rounded-[1.75rem] bg-[#f6e4d5] px-4 pb-4 pt-4 max-sm:px-3 max-sm:pb-3"><div class="overflow-hidden rounded-md"><img src="images/pg039_im001.jpg" alt="Kielelezo namba 2: Wanafunzi wakifanya usafi wa darasa" class="w-full h-auto block" data-id="pg039_im001" style="max-width: 100%; height: auto;"></div><div class="pt-4 text-center text-gray-900 adt-body leading-relaxed max-sm:px-2"><span class="font-semibold" data-id="pg039_n0015">Kielelezo namba 2: Wanafunzi wakifanya usafi wa darasa</span></div></div><div class="rounded-2xl bg-sky-100 px-7 pb-7 pt-0 max-sm:px-5 max-sm:pb-5"><div class="mb-6 -translate-y-3 max-sm:mb-4"><div class="inline-block rounded-r-full bg-gradient-to-r from-blue-700 to-sky-500 px-6 py-2 shadow-sm"><span class="font-bold text-white adt-h3" data-id="pg039_n0018">Maswali</span></div></div><div class="mb-7"><p class="mb-3 text-gray-900 adt-body leading-relaxed"><span data-id="pg039_n0020">1. Bainisha kazi wanazofanya wanafunzi katika Kielelezo namba 2.</span></p><textarea class="w-full rounded-md border border-gray-400 bg-white/50 p-3 min-h-36 resize-none" data-aria-id="aria-1-0-0" aria-label="Jibu la swali la kwanza kuhusu kazi wanazofanya wanafunzi katika Kielelezo namba 2" tabindex="0"></textarea></div><div><p class="mb-3 text-gray-900 adt-body leading-relaxed"><span data-id="pg039_n0021">2. Bainisha vifaa vya usafi vinavyokosekana katika Kielelezo namba 2.</span></p><textarea class="w-full rounded-md border border-gray-400 bg-white/50 p-3 min-h-36 resize-none" data-aria-id="aria-1-0-1" aria-label="Jibu la swali la pili kuhusu vifaa vya usafi vinavyokosekana katika Kielelezo namba 2" tabindex="0"></textarea></div></div></section></div>
-    </main>
+  <main class="w-full">
+    <div id="content" class="mx-auto max-w-5xl bg-white px-3 sm:px-5 lg:px-8 pt-4 pb-0 opacity-0">
+      <section data-section-type="activity_open_ended_answer" data-section-id="pg039_sec001" class="source-page relative mx-auto max-w-[46rem] overflow-hidden">
+        <div class="relative min-h-[4.5rem] sm:min-h-[5.5rem]"><div class="top-marker"></div></div>
 
-    <div class="relative z-50" id="interface-container"></div>
-    <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js"></script>
-    <script src="./assets/scorm.js"></script>
-    <script src="./assets/base.bundle.local.js"></script>
+        <div class="source-list">
+          <span data-id="pg039_n0003" class="block">(e) kukusanya taka kwa kuzitenganisha taka zinazoza na zisizoza na kuzihifadhi katika vifaa maalumu;</span>
+          <span data-id="pg039_n0005" class="block">(f) kudeki sakafu;</span>
+          <span data-id="pg039_n0007" class="block">(g) kupanga madawati na meza za darasa; na</span>
+          <span data-id="pg039_n0009" class="block">(h) kufagia na kuokota uchafu maeneo ya nje kuzunguka darasa.</span>
+        </div>
+
+        <div class="activity-wrap">
+          <div class="activity-card">
+            <div class="activity-rail"></div>
+            <div class="activity-icon">
+              <div class="flex h-full w-full items-center justify-center rounded-full bg-white"><svg viewBox="0 0 64 64" class="h-9 w-9 sm:h-11 sm:w-11 text-[#432f38]" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="36" cy="18" r="10" /><path d="M16 48c4-11 9-18 16-18 5 0 8 2 12 5" /><path d="M24 29l-6 19" /><path d="M28 35l-6-6" /><path d="M30 48h22" /></svg></div>
+            </div>
+            <div data-id="pg039_n0011" class="source-heading activity-title">Kazi ya kufanya namba 5</div>
+            <p data-id="pg039_n0012" class="activity-prompt">Chunguza Kielelezo namba 2, kisha jibu maswali yanayofuata:</p>
+            <figure class="figure-frame">
+              <img src="images/pg039_im001.jpg" alt="Wanafunzi wakifanya usafi wa darasa kwa kufuta meza na ubao, kufagia sakafu, na kukusanya uchafu kwa kutumia vifaa vya usafi." data-id="pg039_im001" class="block w-full" style="max-width: 100%; height: auto;">
+              <figcaption data-id="pg039_n0014" class="figure-caption"><strong class="not-italic">Kielelezo namba 2:</strong> Wanafunzi wakifanya usafi wa darasa</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="questions-wrap">
+          <div class="questions-card">
+            <div data-id="pg039_n0015" class="source-heading questions-title">Maswali</div>
+            <ol class="questions-list">
+              <li data-id="pg039_n0016">Bainisha kazi wanazofanya wanafunzi katika Kielelezo namba 2.</li>
+              <li data-id="pg039_n0017">Bainisha vifaa vya usafi vinavyokosekana katika Kielelezo namba 2.</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="page-footer">
+          <div class="page-footer-base"></div><div class="page-footer-left"></div><div class="page-footer-right"></div>
+          <div class="page-number"><div class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[1rem] not-italic text-[#245083] sm:h-12 sm:w-12 sm:text-[1.1rem]">33</div></div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <div class="relative z-50" id="interface-container"></div>
+  <div class="relative z-50" id="nav-container"></div>
+  <script src="./assets/offline-preloader.js"></script>
+  <script src="./assets/scorm.js"></script>
+  <script src="./assets/base.bundle.local.js"></script>
 </body>
-
 </html>

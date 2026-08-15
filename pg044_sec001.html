@@ -1,28 +1,80 @@
 <!DOCTYPE html>
 <html lang="sw-TZ">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jiografia na Mazingira Darasa la 3: Kitabu cha Mwanafunzi</title>
-    <meta name="title-id" content="pg044_sec001">
-    <meta name="page-section-id" content="65">
-    <link href="./content/tailwind_output.css" rel="stylesheet">
-    <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="./assets/fonts.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiografia na Mazingira</title>
+  <meta name="title-id" content="pg044_sec001" />
+  <meta name="page-section-id" content="44" />
+  <link href="./content/tailwind_output.css" rel="stylesheet">
+  <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="./assets/fonts.css" rel="stylesheet">
+  <style>
+    .source-page, .source-page * { font-family: 'Atkinson Hyperlegible', sans-serif !important; }
+    .source-page { width: 100%; max-width: 46rem; overflow: hidden; color: #292526; font-style: italic; }
+    .source-page .book-heading { font-family: 'Merriweather', serif !important; font-style: italic; }
+    .source-page .top-marker { position: absolute; top: 1rem; left: 0; height: 8.4rem; width: 2.1rem; border-radius: 0 0 1.25rem 0; background: #5797a9; }
+    .source-page .intro { max-width: 36rem; margin: 5.5rem auto 1.5rem; padding: 0 2rem; font-size: 1.45rem; line-height: 1.28; }
+    .source-page .intro span { display: block; }
+    .source-page .card-wrap, .source-page .exercise-wrap { max-width: 40rem; margin-left: auto; margin-right: auto; padding: 0 1.25rem; }
+    .source-page .activity-card { position: relative; margin-top: 1rem; overflow: visible; border-radius: 0 0 1.4rem 1.4rem; background: #f7e6d6; padding: 2rem 2.25rem 1.5rem; box-shadow: 0 2px 4px rgb(0 0 0 / .12); }
+    .source-page .activity-rail { position: absolute; inset: 0 0 auto; height: 1.75rem; border-radius: 1.25rem 1.25rem 0 0; background: linear-gradient(90deg, #cf6c1d, #a9508b, #e95a91); }
+    .source-page .activity-icon { position: absolute; z-index: 10; top: -.25rem; left: -1.5rem; display: flex; height: 4.6rem; width: 4.6rem; align-items: center; justify-content: center; border-radius: 9999px; background: linear-gradient(135deg, #6e73ff, #a753d7, #e96662); padding: .25rem; box-shadow: 0 2px 4px rgb(0 0 0 / .12); }
+    .source-page .activity-title { position: relative; display: inline-block; margin-top: -2rem; margin-left: -2.25rem; border-radius: 0 .75rem .75rem 0; background: linear-gradient(#d37528, #a64008); padding: .25rem 1.25rem .25rem 4rem; color: white; font-size: 1.45rem; font-weight: 700; line-height: 1.2; box-shadow: 0 2px 4px rgb(0 0 0 / .12); }
+    .source-page .activity-copy { margin: .5rem 0 .5rem; font-size: 1.4rem; line-height: 1.27; }
+    .source-page .activity-list { margin: .25rem 0 0; padding-left: 1.75rem; font-size: 1.35rem; line-height: 1.35; }
+    .source-page .activity-list li { margin-bottom: .25rem; }
+    .source-page .exercise-card { position: relative; margin-top: 3.25rem; border: .6rem solid #e2ebfa; border-radius: 1.25rem; background: white; padding: 2.25rem 2rem 1.5rem; box-shadow: inset 0 -8px 0 #d3d5d8, 0 2px 3px rgb(0 0 0 / .1); }
+    .source-page .exercise-title { position: absolute; top: -2rem; left: 3rem; border-radius: .95rem; background: linear-gradient(#7560af, #55418b); padding: .45rem 3rem; color: white; font-size: 1.4rem; font-weight: 700; line-height: 1.2; box-shadow: 0 2px 4px rgb(0 0 0 / .15); }
+    .source-page .exercise-wave { position: absolute; top: -.45rem; left: 22rem; right: 4rem; height: .6rem; border-top: 4px wavy #55418b; }
+    .source-page .exercise-list { margin: 0; padding-left: 1.5rem; font-size: 1.35rem; line-height: 1.35; }
+    .source-page .exercise-list li { margin-bottom: .3rem; }
+    .source-page .footer { position: relative; height: 7rem; margin-top: 2.5rem; }
+    .source-page .footer-base { position: absolute; inset: auto 0 0; height: 5rem; background: #4c93a4; }
+    .source-page .footer-left { position: absolute; bottom: 0; left: 0; height: 7rem; width: 53%; background: #4c93a4; clip-path: polygon(0 25%, 100% 70%, 100% 100%, 0 100%); }
+    .source-page .footer-right { position: absolute; right: 0; bottom: 0; height: 7rem; width: 54%; background: #00687d; clip-path: polygon(0 70%, 100% 25%, 100% 100%, 0 100%); }
+    .source-page .page-number { position: absolute; bottom: 0; left: 50%; display: flex; height: 5rem; width: 3.5rem; transform: translateX(-50%); align-items: center; justify-content: center; border-radius: 1rem 1rem 0 0; background: #00677e; }
+    @media (max-width: 639px) { .source-page .intro { margin-top: 4.5rem; padding: 0 1.25rem; font-size: 1.05rem; } .source-page .card-wrap, .source-page .exercise-wrap { padding: 0 1rem; } .source-page .activity-card { padding: 1.75rem 1.25rem 1rem; } .source-page .activity-title { margin-left: -1.25rem; padding-left: 3.4rem; font-size: 1.05rem; } .source-page .activity-copy, .source-page .activity-list, .source-page .exercise-list { font-size: 1.05rem; } .source-page .exercise-card { padding: 2rem 1rem 1rem; } .source-page .exercise-title { left: 2rem; padding: .4rem 1.5rem; font-size: 1.05rem; } .source-page .exercise-wave { display: none; } }
+  </style>
 </head>
-
 <body class="min-h-screen flex items-center justify-center">
-    <main class="w-full">
-      <h1 class="sr-only" id="page-heading">Jiografia na Mazingira Darasa la 3: Kitabu cha Mwanafunzi</h1>
-      <div id="content" class="container opacity-0"><section data-section-type="text_only" data-section-id="pg044_sec001" class="w-full bg-white"><div class="mx-auto w-full max-w-5xl px-8 max-sm:px-5 py-16 max-sm:py-10"><div class="flex"><div class="w-10 rounded-b-3xl bg-teal-500/80 mr-10 max-sm:mr-5"></div><p class="adt-body text-left leading-relaxed text-zinc-800 max-w-4xl z-10"><span data-id="pg044_n0002">na upungufu wa unyevu katika udongo na kupalilia kila inapohitajika.</span><span data-id="pg044_n0003">Aidha, ili kuzuia wadudu waharibifu, tutumie mbinu za kuzuia wadudu ambazo ni rafiki kwa mazingira.</span><span data-id="pg044_n0004">Mfano, kupanda mimea inayofukuza wadudu kama vile maua ya tageta (marigold) na kalendula.</span></p></div></div></section></div>
-    </main>
+  <main class="w-full">
+    <div id="content" class="mx-auto max-w-5xl bg-white px-3 sm:px-5 lg:px-8 pt-0 pb-0 opacity-0">
+      <section data-section-type="activity_open_ended_answer" data-section-id="pg044_sec001" class="source-page relative mx-auto">
+        <div class="top-marker"></div>
+        <div class="intro">
+          <span data-id="pg044_n0002">na upungufu wa unyevu katika udongo na kupalilia kila inapohitajika.</span>
+          <span data-id="pg044_n0003">Aidha, ili kuzuia wadudu waharibifu, tutumie mbinu za kuzuia wadudu ambazo ni rafiki kwa mazingira.</span>
+          <span data-id="pg044_n0004">Mfano, kupanda mimea inayofukuza wadudu kama vile maua ya tageta (marigold) na kalendula.</span>
+        </div>
 
-    <div class="relative z-50" id="interface-container"></div>
-    <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js"></script>
-    <script src="./assets/scorm.js"></script>
-    <script src="./assets/base.bundle.local.js"></script>
+        <div class="card-wrap"><div class="activity-card">
+          <div class="activity-rail"></div>
+          <div class="activity-icon"><div class="flex h-full w-full items-center justify-center rounded-full bg-white"><svg viewBox="0 0 64 64" class="h-10 w-10 text-[#432f38]" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="32" cy="17" r="10" /><path d="M18 52V35c0-7 6-12 14-12s14 5 14 12v17" /><path d="M24 25l-4 10M40 25l4 10M20 52h24" /></svg></div></div>
+          <div data-id="pg044_n0007" class="book-heading activity-title">Kazi ya kufanya namba 9</div>
+          <p class="activity-copy"><span data-id="pg044_n0009">Sikiliza au angalia video zinazohusu uandaaji wa vitalu vya miti, nyasi na maua.</span> <span data-id="pg044_n0010">Kisha:</span></p>
+          <ol class="activity-list">
+            <li data-id="pg044_n0013">Andaa vitalu vya miti, nyasi na maua shuleni kwako.</li>
+            <li data-id="pg044_n0015">Baini maeneo yanayohitaji kupandwa miti, nyasi na maua.</li>
+            <li data-id="pg044_n0017">Panda miti, nyasi na maua kwa kufuata hatua ulizojifunza.</li>
+            <li data-id="pg044_n0019">Endelea kutunza miti, nyasi na maua uliyopanda.</li>
+          </ol>
+        </div></div>
+
+        <div class="exercise-wrap"><div class="exercise-card">
+          <div data-id="pg044_n0021" class="book-heading exercise-title">Zoezi la 3</div><div class="exercise-wave"></div>
+          <ol class="exercise-list">
+            <li data-id="pg044_n0022">Ili miti, nyasi na maua yasiharibiwe na wadudu unatakiwa kufanya nini?</li>
+            <li data-id="pg044_n0023">Kwa nini tunaweka mbolea kwenye udongo kabla ya kupanda miche?</li>
+            <li data-id="pg044_n0024">Kuna faida gani ya kupanda miti, nyasi, na maua katika mazingira yetu?</li>
+          </ol>
+        </div></div>
+
+        <div class="footer"><div class="footer-base"></div><div class="footer-left"></div><div class="footer-right"></div><div class="page-number"><div class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[1rem] not-italic text-[#245083] sm:h-12 sm:w-12 sm:text-[1.1rem]">38</div></div></div>
+      </section>
+    </div>
+  </main>
+  <div class="relative z-50" id="interface-container"></div><div class="relative z-50" id="nav-container"></div>
+  <script src="./assets/offline-preloader.js"></script><script src="./assets/scorm.js"></script><script src="./assets/base.bundle.local.js"></script>
 </body>
-
 </html>
