@@ -7,7 +7,7 @@
     <title>Jiografia na Mazingira</title>
     <meta name="title-id" content="pg002_sec001" />
     <meta name="page-section-id" content="2" />
-    <link href="./content/tailwind_output.css" rel="stylesheet">
+  <link href="./content/tailwind_output.css?v=5" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
     <style>
@@ -86,67 +86,6 @@
         text-align: left;
       }
 
-      .inside-cover__footer {
-        position: relative;
-        height: clamp(6.5rem, 12vw, 11rem);
-        margin-inline: calc(clamp(1.5rem, 7vw, 7.5rem) * -1);
-        margin-bottom: calc(var(--nav-height, 5rem) + 0.5rem);
-        overflow: hidden;
-        background: linear-gradient(171deg, transparent 0 27%, var(--teal) 27.2% 100%);
-      }
-
-      .inside-cover__footer::before {
-        content: "";
-        position: absolute;
-        inset: 0 46% 0 0;
-        background: linear-gradient(171deg, transparent 0 22%, var(--teal-deep) 22.4% 100%);
-      }
-
-      .inside-cover__footer::after {
-        content: "i";
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
-        display: grid;
-        place-items: center;
-        width: clamp(4.5rem, 7vw, 6.5rem);
-        height: clamp(5.5rem, 9vw, 8rem);
-        border-radius: 1.8rem 1.8rem 0 0;
-        color: #194a83;
-        background: linear-gradient(#047c8b, #006878);
-        box-shadow: inset 0 0.4rem 0.6rem rgb(255 255 255 / 24%);
-        font-family: Georgia, serif;
-        font-size: clamp(2.4rem, 4vw, 3.75rem);
-        font-style: italic;
-        font-weight: 700;
-      }
-
-      .inside-cover__footer-icon {
-        position: absolute;
-        z-index: 1;
-        left: 50%;
-        bottom: clamp(1rem, 2vw, 1.5rem);
-        transform: translateX(-50%);
-        width: clamp(3.25rem, 5vw, 4.6rem);
-        aspect-ratio: 1;
-        border-radius: 999px;
-        background: #fff;
-      }
-
-      .inside-cover__footer-icon::after {
-        content: "i";
-        position: absolute;
-        inset: 0;
-        display: grid;
-        place-items: center;
-        color: #194a83;
-        font-family: Georgia, serif;
-        font-size: clamp(2.4rem, 4vw, 3.75rem);
-        font-style: italic;
-        font-weight: 700;
-      }
-
       @media (max-width: 40rem) {
         .inside-cover { min-height: auto; padding-top: 2rem; }
         .inside-cover__top { gap: 1.5rem; }
@@ -192,7 +131,7 @@
       </p>
     </div>
   </div>
-  <div class="inside-cover__footer" aria-hidden="true"><span class="inside-cover__footer-icon"></span></div>
+
 </section></div>
     </main>
 

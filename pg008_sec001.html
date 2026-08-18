@@ -1,46 +1,31 @@
 <!DOCTYPE html>
 <html lang="sw-TZ">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jiografia na Mazingira</title>
-    <meta name="title-id" content="pg008_sec001" />
-    <meta name="page-section-id" content="8" />
-    <link href="./content/tailwind_output.css" rel="stylesheet">
-    <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="./assets/fonts.css" rel="stylesheet">
-    <style>
-      /* Source-faithful layout; independent of uncompiled utility classes. */
-      #content .pg8-page, #content .pg8-page * { box-sizing: border-box; }
-      #content .pg8-page { position:relative; overflow:hidden; padding:66px 0 0; color:#202124; background:#fff; }
-      #content .pg8-page:before { content:''; position:absolute; left:max(5%,calc(50% - 660px)); top:58px; width:64px; height:322px; border-radius:0 0 29px 0; background:#3394a4; opacity:.95; }
-      #content .pg8-page:after { content:'FOR ONLINE READING ONLY'; position:absolute; left:50%; top:43%; z-index:0; color:rgba(255,119,104,.37); font:700 51px/1 'Atkinson Hyperlegible',sans-serif; white-space:nowrap; transform:translate(-50%,-50%) rotate(-47deg); pointer-events:none; }
-      #content .pg8-page .pg8-content { position:relative; z-index:1; width:min(1100px,calc(100% - 190px)); margin:0 auto; }
-      #content .pg8-page .pg8-lead { margin:0 0 18px; font-family:'Atkinson Hyperlegible',sans-serif; font-size:clamp(25px,2.48vw,38px); font-style:italic; line-height:1.36; text-align:justify; }
-      #content .pg8-page .pg8-figure { width:520px; max-width:100%; margin:7px auto 17px; text-align:center; }
-      #content .pg8-page .pg8-globe { display:block; width:420px; height:420px; max-width:100%; margin:0 auto; object-fit:contain; }
-      #content .pg8-page .pg8-key-title { margin:0; font-family:'Atkinson Hyperlegible',sans-serif; font-size:clamp(28px,2.6vw,40px); font-weight:700; line-height:1.05; }
-      #content .pg8-page .pg8-key { display:flex; justify-content:center; align-items:center; gap:34px; margin:6px 0 8px; font-family:'Atkinson Hyperlegible',sans-serif; font-size:clamp(25px,2.35vw,35px); font-style:italic; }
-      #content .pg8-page .pg8-key-item { display:flex; align-items:center; gap:11px; }
-      #content .pg8-page .pg8-swatch { display:block; width:60px; height:60px; flex:0 0 60px; border:1px solid transparent; }
-      #content .pg8-page .pg8-land { background:#d5df24; border-color:#ccd31b; }
-      #content .pg8-page .pg8-water { position:relative; overflow:hidden; background:#00a0df; border-color:#008fca; }
-      #content .pg8-page .pg8-water:before, #content .pg8-page .pg8-water:after { content:''; position:absolute; left:50%; top:-10%; width:8px; height:125%; background:rgba(48,104,133,.56); transform:rotate(-37deg); }
-      #content .pg8-page .pg8-water:after { transform:rotate(45deg); }
-      #content .pg8-page .pg8-caption { margin:0; color:#202124; font-family:'Atkinson Hyperlegible',sans-serif; font-size:clamp(20px,2.15vw,31px); font-style:italic; }
-      #content .pg8-page .pg8-caption strong { font-weight:700; }
-      #content .pg8-page .pg8-section { width:min(1100px,calc(100% - 190px)); margin:23px auto 0; }
-      #content .pg8-page .pg8-heading { margin:0 0 6px; color:#0078ba; font-family:'Atkinson Hyperlegible',sans-serif; font-size:clamp(29px,2.75vw,43px); font-style:italic; font-weight:700; line-height:1.15; }
-      #content .pg8-page .pg8-body { margin:0; font-family:'Atkinson Hyperlegible',sans-serif; font-size:clamp(25px,2.48vw,38px); font-style:italic; line-height:1.36; text-align:justify; }
-      #content .pg8-page .pg8-footer { position:relative; z-index:1; width:min(1320px,calc(100% - 120px)); height:128px; margin:34px auto 0; overflow:hidden; }
-      #content .pg8-page .pg8-footer:before { content:''; position:absolute; inset:0; background:#3694a4; clip-path:polygon(0 29%,50% 81%,100% 29%,100% 100%,0 100%); }
-      #content .pg8-page .pg8-footer:after { content:''; position:absolute; left:0; bottom:17px; width:51%; height:50px; background:#006d7f; clip-path:polygon(0 0,100% 100%,0 100%); box-shadow:0 -3px 7px rgba(0,0,0,.18); }
-      #content .pg8-page .pg8-number { position:absolute; left:50%; bottom:0; z-index:2; width:105px; height:108px; transform:translateX(-50%); border-radius:28px 28px 0 0; background:#006579; }
-      #content .pg8-page .pg8-number span { position:absolute; left:15px; top:18px; display:grid; width:75px; height:75px; place-items:center; border-radius:50%; background:#fff; color:#174c80; font:400 37px/1 'Atkinson Hyperlegible',sans-serif; }
-      @media (max-width:720px) { #content .pg8-page{padding-top:27px} #content .pg8-page:before{left:14px;top:26px;width:33px;height:190px} #content .pg8-page:after{font-size:25px} #content .pg8-page .pg8-content{width:calc(100% - 46px)} #content .pg8-page .pg8-globe{width:260px;height:260px} #content .pg8-page .pg8-key{gap:14px} #content .pg8-page .pg8-swatch{width:38px;height:38px;flex-basis:38px} #content .pg8-page .pg8-footer{width:calc(100% - 28px);height:92px} #content .pg8-page .pg8-number{width:72px;height:76px;border-radius:18px 18px 0 0} #content .pg8-page .pg8-number span{left:11px;top:14px;width:50px;height:50px;font-size:25px} }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiografia na Mazingira</title>
+  <meta name="title-id" content="pg008_sec001" />
+  <meta name="page-section-id" content="8" />
+  <link href="./content/tailwind_output.css?v=5" rel="stylesheet" />
+  <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet" />
+  <link href="./assets/fonts.css" rel="stylesheet" />
+  <style>
+    #content { max-width:68rem; margin:0 auto; padding:clamp(2.5rem,6vw,5rem) clamp(1rem,5vw,4.5rem) 3rem; }
+    .pg8-page { position:relative; max-width:60rem; margin:0 auto; color:#2b2929; font-family:"Atkinson Hyperlegible", "Trebuchet MS", sans-serif; }
+    .pg8-page::before { content:""; position:absolute; top:0; left:0; width:3rem; height:15rem; border-radius:0 0 1.3rem 0; background:#3195a2; }
+    .pg8-content,.pg8-section { max-width:50rem; margin-left:auto; padding-right:4rem; }
+    .pg8-lead,.pg8-body { margin:4.75rem 0 0; font-size:clamp(1.08rem,2.35vw,1.52rem); font-style:italic; font-weight:600; line-height:1.42; }
+    .pg8-figure { margin:1rem auto; text-align:center; } .pg8-globe { width:20rem; max-width:70%; display:block; margin:0 auto; }
+    .pg8-key-title { margin:.2rem 0 0; font-size:clamp(1.25rem,2.7vw,1.8rem); font-weight:800; line-height:1; }
+    .pg8-key { display:flex; justify-content:center; gap:1rem; margin:.15rem 0; font-size:clamp(1.05rem,2.2vw,1.45rem); font-style:italic; font-weight:600; }
+    .pg8-key-item { display:flex; align-items:center; gap:.35rem; } .pg8-swatch { display:inline-block; width:2.5rem; height:2.5rem; } .pg8-land { background:#4caf50; } .pg8-water { background:#079bd2; }
+    .pg8-caption { margin:.35rem 0 0; font-size:clamp(1rem,1.85vw,1.3rem); font-style:italic; font-weight:600; }
+    .pg8-section { margin-top:.8rem; } .pg8-heading { margin:0 0 .25rem; color:#087bad; font-size:clamp(1.45rem,3vw,2rem); font-style:italic; font-weight:800; line-height:1.2; } .pg8-body { margin:0; }
+    @media (max-width:42rem) { #content { padding:2rem 1rem 2.5rem; } .pg8-page::before { width:1.2rem; height:7rem; } .pg8-content,.pg8-section { margin-left:2rem; padding-right:1.2rem; } .pg8-lead { margin-top:1rem; } }
+  </style>
 </head>
+
+
 
 <body class="min-h-screen flex items-center justify-center">
     <main class="w-full">
@@ -55,7 +40,7 @@
 
     <figure class="pg8-figure">
       <img class="pg8-globe" data-id="pg008_im001" src="images/pg008_globe.png" alt="Kielelezo cha dunia: mabara yana rangi ya kijani na bahari zina rangi ya bluu.">
-      <figcaption><h2 class="pg8-key-title" data-id="pg008_n0006">Ufunguo</h2><div class="pg8-key"><div class="pg8-key-item"><i class="pg8-swatch pg8-land" aria-hidden="true"></i><span data-id="pg008_n0007">Mabara</span></div><div class="pg8-key-item"><i class="pg8-swatch pg8-water" aria-hidden="true"></i><span data-id="pg008_n0008">Bahari</span></div></div><p class="pg8-caption" data-id="pg008_n0009"><strong>Kielelezo namba 1:</strong> Mandhari ya uso wa dunia</p></figcaption>
+      <figcaption><h2 class="pg8-key-title" data-id="pg008_n0006">Ufunguo</h2><div class="pg8-key"><div class="pg8-key-item"><i class="pg8-swatch pg8-land" aria-hidden="true"></i><span data-id="pg008_n0007">Mabara — rangi ya kijani</span></div><div class="pg8-key-item"><i class="pg8-swatch pg8-water" aria-hidden="true"></i><span data-id="pg008_n0008">Bahari — rangi ya bluu</span></div></div><p class="pg8-caption" data-id="pg008_n0009"><strong>Kielelezo namba 1:</strong> Mandhari ya uso wa dunia</p></figcaption>
     </figure>
 
     <div class="pg8-section">
@@ -71,14 +56,14 @@
           <span data-id="pg008_n0019">Maelezo kuhusu vitu vinavyounda mazingira yanaweza kufupishwa kama inavyowasilisha katika Kielelezo namba 2.</span>
         </p></div>
 
-    <div class="pg8-footer" aria-hidden="true"><div class="pg8-number"><span>2</span></div></div>
+
   </section>
 </div>
     </main>
 
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js"></script>
+    <script src="./assets/offline-preloader.js?v=10"></script>
     <script src="./assets/scorm.js"></script>
     <script src="./assets/base.bundle.local.js"></script>
 </body>

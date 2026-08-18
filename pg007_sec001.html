@@ -1,61 +1,29 @@
 <!DOCTYPE html>
 <html lang="sw-TZ">
-
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jiografia na Mazingira</title>
-    <meta name="title-id" content="pg007_sec001" />
-    <meta name="page-section-id" content="7" />
-    <link href="./content/tailwind_output.css" rel="stylesheet">
-    <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="./assets/fonts.css" rel="stylesheet">
-    <style>
-      /* Source-faithful page layout.  This page must not depend on uncompiled
-         Tailwind utilities: they made the panels expand across the viewport. */
-      #content .pg7-page, #content .pg7-page * { box-sizing: border-box; }
-      #content .pg7-page { color: #20252a; background: #fff; overflow: hidden; padding: 58px 0 0; }
-      #content .pg7-page .pg7-frame { width: min(1320px, calc(100% - 120px)); margin: 0 auto; }
-      #content .pg7-page .pg7-banner { position: relative; min-height: 410px; margin: 0 auto 54px; border-radius: 0 20px 20px 0; overflow: visible; background: linear-gradient(100deg,#244c5b 0%,#246879 48%,#008ca7 100%); box-shadow: 0 10px 18px rgba(16,46,56,.24); }
-      #content .pg7-page .pg7-banner:before { content: ''; position: absolute; inset: 0 auto 0 0; width: 38%; border-radius: 0 0 42px 0; background: rgba(26,66,80,.53); }
-      #content .pg7-page .pg7-banner:after { content: ''; position: absolute; right: -25px; top: -40px; width: 64px; height: 320px; background: #3194a5; z-index: -1; }
-      #content .pg7-page .pg7-title-block { position: relative; padding: 104px 0 0 115px; }
-      #content .pg7-page .pg7-kicker { width: 710px; max-width: calc(100% - 90px); padding: 19px 64px 20px 108px; border: 2px solid #53bde9; border-left: 0; border-radius: 0 60px 60px 0; background: #fff; box-shadow: 0 4px 10px rgba(0,0,0,.18); color: #006577; font-family: 'Atkinson Hyperlegible',sans-serif; font-size: clamp(32px,4vw,56px); font-style: italic; font-weight: 700; line-height: 1.08; }
-      #content .pg7-page .pg7-main-title { margin: 40px 40px 0 110px; color: #fff; font-family: 'Atkinson Hyperlegible',sans-serif; font-size: clamp(29px,3.5vw,50px); font-style: italic; font-weight: 700; line-height: 1.15; }
-      #content .pg7-page .pg7-intro { width: min(1100px, calc(100% - 190px)); margin: 0 auto 48px; border: 6px solid #53bde9; border-bottom-color: #006070; border-radius: 34px; overflow: hidden; background: #fff; box-shadow: 0 9px 0 #006070,0 13px 22px rgba(0,0,0,.16); }
-      #content .pg7-page .pg7-intro-top { height: 86px; position: relative; background: #006b80; }
-      #content .pg7-page .pg7-label { position: absolute; left: 0; top: 0; min-width: 355px; padding: 16px 38px 17px; border-radius: 0 28px 28px 0; background: linear-gradient(#fff,#e9edf2); box-shadow: 3px 4px 8px rgba(0,0,0,.18); color: #006579; font-family: 'Atkinson Hyperlegible',sans-serif; font-size: clamp(26px,2.5vw,40px); font-style: italic; font-weight: 700; line-height: 1.2; }
-      #content .pg7-page .pg7-intro-copy { padding: 27px 30px 29px; color: #202124; font-family: 'Atkinson Hyperlegible',sans-serif; font-size: clamp(24px,2.55vw,38px); font-style: italic; line-height: 1.45; text-align: justify; }
-      #content .pg7-page .pg7-think { width: min(1100px, calc(100% - 190px)); margin: 0 auto 27px; overflow: visible; border: 2px solid #52cfe2; border-radius: 0 0 28px 28px; background: #fff4f4; box-shadow: 0 7px 14px rgba(0,0,0,.10); }
-      #content .pg7-page .pg7-think-top { height: 57px; position: relative; border-radius: 27px 27px 0 0; background: linear-gradient(90deg,#007caf 0%,#d6cfaa 50%,#aae5df 100%); }
-      #content .pg7-page .pg7-think-label { position: absolute; left: 205px; top: -1px; min-width: 195px; padding: 9px 28px 10px; border-radius: 0 15px 15px 0; background: #0078b7; color: #fff; font-family: 'Atkinson Hyperlegible',sans-serif; font-size: clamp(23px,2vw,34px); font-weight: 700; line-height: 1.1; }
-      #content .pg7-page .pg7-think-body { min-height: 131px; display: flex; align-items: center; gap: 28px; padding: 13px 34px 12px 20px; }
-      #content .pg7-page .pg7-think-body img { width: 155px !important; height: 155px !important; max-width: none !important; object-fit: contain; flex: 0 0 155px; margin: -62px 0 -20px -2px; padding: 5px; border: 4px solid #f8c8cf; border-radius: 50%; background: #fff; }
-      #content .pg7-page .pg7-think-copy { font-family: 'Atkinson Hyperlegible',sans-serif; font-size: clamp(25px,2.4vw,36px); font-style: italic; line-height: 1.3; }
-      #content .pg7-page .pg7-body { width: min(1100px, calc(100% - 190px)); margin: 0 auto; padding-bottom: 26px; }
-      #content .pg7-page .pg7-heading { margin: 0 0 8px; color: #0077bf; font-family: 'Atkinson Hyperlegible',sans-serif; font-size: clamp(27px,2.7vw,42px); font-style: italic; font-weight: 700; line-height: 1.15; }
-      #content .pg7-page .pg7-body-copy { margin: 0; color: #202124; font-family: 'Atkinson Hyperlegible',sans-serif; font-size: clamp(24px,2.55vw,38px); font-style: italic; line-height: 1.45; text-align: justify; }
-      #content .pg7-page .pg7-footer { width: min(1320px, calc(100% - 120px)); height: 122px; margin: 24px auto 0; position: relative; overflow: hidden; }
-      #content .pg7-page .pg7-footer:before { content: ''; position:absolute; inset: 0; background:#3a98a8; clip-path: polygon(0 28%,50% 81%,100% 28%,100% 100%,0 100%); }
-      #content .pg7-page .pg7-footer:after { content:''; position:absolute; right:0; bottom:13px; width:52%; height:47px; background:#00697b; clip-path:polygon(0 100%,100% 0,100% 100%); box-shadow:0 -4px 7px rgba(0,0,0,.18); }
-      @media (max-width: 720px) {
-        #content .pg7-page { padding-top: 24px; }
-        #content .pg7-page .pg7-frame, #content .pg7-page .pg7-footer { width: calc(100% - 28px); }
-        #content .pg7-page .pg7-banner { min-height: 250px; margin-bottom: 35px; }
-        #content .pg7-page .pg7-banner:after { display: none; }
-        #content .pg7-page .pg7-title-block { padding: 65px 0 0 0; }
-        #content .pg7-page .pg7-kicker { width: 90%; max-width: none; padding: 13px 20px 14px 40px; }
-        #content .pg7-page .pg7-main-title { margin: 28px 22px 0 38px; }
-        #content .pg7-page .pg7-intro, #content .pg7-page .pg7-think, #content .pg7-page .pg7-body { width: calc(100% - 28px); }
-        #content .pg7-page .pg7-label { min-width: 220px; padding: 12px 24px; }
-        #content .pg7-page .pg7-intro-top { height: 63px; }
-        #content .pg7-page .pg7-intro-copy { padding: 21px 18px; }
-        #content .pg7-page .pg7-think-label { left: 104px; min-width: 132px; padding: 8px 16px; }
-        #content .pg7-page .pg7-think-body { gap: 15px; padding: 18px; }
-        #content .pg7-page .pg7-think-body img { width: 94px !important; height: 94px !important; flex-basis: 94px; margin: -43px 0 -12px; }
-      }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiografia na Mazingira</title>
+  <meta name="title-id" content="pg007_sec001" />
+  <meta name="page-section-id" content="7" />
+  <link href="./content/tailwind_output.css?v=5" rel="stylesheet" />
+  <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet" />
+  <link href="./assets/fonts.css" rel="stylesheet" />
+  <style>
+    #content { max-width:68rem; margin:0 auto; padding:clamp(2.5rem,5vw,4.5rem) clamp(1rem,5vw,4rem) 3rem; }
+    .pg7-page { max-width:60rem; margin:0 auto; color:#2b2929; font-family:"Atkinson Hyperlegible", "Trebuchet MS", sans-serif; }
+    .pg7-banner { min-height:17rem; padding:4.8rem 6rem; border-radius:0 0 1.3rem 0; background:linear-gradient(110deg,#244956,#00899e); box-shadow:inset 0 .35rem .4rem rgb(255 255 255 / 34%); }
+    .pg7-title-block { color:#fff; } .pg7-kicker { width:28rem; max-width:100%; margin:0 0 1.7rem -6rem; padding:.65rem 5rem; border-radius:0 2rem 2rem 0; color:#087282; background:#fff; font-size:clamp(1.7rem,3.6vw,2.5rem); font-style:italic; font-weight:800; } .pg7-main-title { margin:0; font-size:clamp(1.65rem,3.2vw,2.35rem); font-style:italic; font-weight:800; }
+    .pg7-intro { max-width:53rem; margin:1.8rem 0 0 auto; border-radius:1.2rem; background:#fff; box-shadow:0 .45rem 0 #063e45, 0 0 0 .35rem #057484; overflow:hidden; }
+    .pg7-intro-top { height:4rem; background:#006778; } .pg7-label { position:relative; top:-.7rem; display:inline-block; margin:0; padding:.65rem 2rem; border-radius:1rem 1rem 0 0; color:#087282; background:#f2fafb; font-size:clamp(1.35rem,2.8vw,1.9rem); font-style:italic; font-weight:800; }
+    .pg7-intro-copy { margin:0; padding:1rem 1.35rem; font-size:clamp(1.08rem,2.35vw,1.5rem); font-style:italic; font-weight:600; line-height:1.42; }
+    .pg7-think { max-width:53rem; margin:2rem 0 0 auto; border-radius:.7rem 0 1.2rem 1.2rem; background:#f7eaec; box-shadow:0 0 0 .22rem #7fbcc6; } .pg7-think-top { height:2.7rem; background:linear-gradient(90deg,#0788c4,#0070a6); } .pg7-think-label { display:inline-block; margin:-.2rem 0 0 10rem; color:#fff; font-size:clamp(1.25rem,2.7vw,1.8rem); font-style:italic; font-weight:800; } .pg7-think-body { display:flex; align-items:center; min-height:5.4rem; padding:.5rem 1.2rem; } .pg7-think-body img { width:6.5rem; height:6.5rem; margin:-2.8rem 1.5rem -.9rem 0; } .pg7-think-copy { margin:0; font-size:clamp(1.15rem,2.45vw,1.55rem); font-style:italic; font-weight:600; }
+    .pg7-body { max-width:53rem; margin:1.5rem 0 0 auto; } .pg7-heading { margin:0; color:#087abd; font-size:clamp(1.45rem,3vw,2rem); font-style:italic; font-weight:800; } .pg7-body-copy { margin:0; font-size:clamp(1.08rem,2.35vw,1.5rem); font-style:italic; font-weight:600; line-height:1.42; }
+    @media(max-width:42rem) { #content{padding:2rem 1rem 2.5rem}.pg7-banner{padding:3rem 1.5rem;min-height:13rem}.pg7-kicker{margin-left:-1.5rem;padding-left:1.5rem}.pg7-intro,.pg7-think,.pg7-body{margin-left:1.5rem}.pg7-think-label{margin-left:5rem}.pg7-think-body img{width:4.5rem;height:4.5rem;margin-right:.75rem} }
+  </style>
 </head>
+
+
 
 <body class="min-h-screen flex items-center justify-center">
     <main class="w-full">
@@ -76,12 +44,12 @@
 
     <aside class="pg7-think">
       <div class="pg7-think-top"><h3 data-id="pg007_n0012" class="pg7-think-label">Fikiri</h3></div>
-      <div class="pg7-think-body"><img data-id="pg007_im001" src="images/pg007_im001.png" alt="Mchoro wa mtu anayefikiri."><p class="pg7-think-copy"><span data-id="pg007_n0014">Vitu vinavyomzunguka binadamu</span></p></div>
+      <div class="pg7-think-body"><img src="images/pg007_im001.png" alt="" role="presentation" aria-hidden="true"><p class="pg7-think-copy"><span data-id="pg007_n0014">Vitu vinavyomzunguka binadamu</span></p></div>
     </aside>
 
     <div class="pg7-body"><h2 data-id="pg007_n0016" class="pg7-heading">Maana ya Jiografia</h2><p class="pg7-body-copy"><span data-id="pg007_n0018">Jiografia ni somo linalohusu binadamu na mazingira yake.</span> <span data-id="pg007_n0019">Hivyo, Jiografia inahusu dunia, angahewa, na vitu vilivyopo juu ya uso wa dunia, mtawanyiko wake na jinsi vinavyohusiana na binadamu.</span> <span data-id="pg007_n0020">Uso wa dunia una mandhari kuu mbili ambazo ni mabara, na bahari.</span> <span data-id="pg007_n0021">Mandhari hizi zinahusisha maumbo mbalimbali ambayo ni sehemu ya</span></p></div>
 
-  <div class="pg7-footer" aria-hidden="true"></div>
+
 </section></div>
     </main>
 

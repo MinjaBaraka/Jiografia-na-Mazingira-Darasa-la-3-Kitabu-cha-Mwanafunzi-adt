@@ -6,42 +6,171 @@
   <title>Jiografia na Mazingira</title>
   <meta name="title-id" content="pg044_sec001" />
   <meta name="page-section-id" content="44" />
-  <link href="./content/tailwind_output.css" rel="stylesheet">
-  <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
-  <link href="./assets/fonts.css" rel="stylesheet">
+  <link href="./content/tailwind_output.css?v=5" rel="stylesheet" />
+  <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet" />
+  <link href="./assets/fonts.css" rel="stylesheet" />
   <style>
-    .source-page, .source-page * { font-family: 'Atkinson Hyperlegible', sans-serif !important; }
-    .source-page { width: 100%; max-width: 46rem; overflow: hidden; color: #292526; font-style: italic; }
-    .source-page .book-heading { font-family: 'Merriweather', serif !important; font-style: italic; }
-    .source-page .top-marker { position: absolute; top: 1rem; left: 0; height: 8.4rem; width: 2.1rem; border-radius: 0 0 1.25rem 0; background: #5797a9; }
-    .source-page .intro { max-width: 36rem; margin: 5.5rem auto 1.5rem; padding: 0 2rem; font-size: 1.45rem; line-height: 1.28; }
-    .source-page .intro span { display: block; }
-    .source-page .card-wrap, .source-page .exercise-wrap { max-width: 40rem; margin-left: auto; margin-right: auto; padding: 0 1.25rem; }
-    .source-page .activity-card { position: relative; margin-top: 1rem; overflow: visible; border-radius: 0 0 1.4rem 1.4rem; background: #f7e6d6; padding: 2rem 2.25rem 1.5rem; box-shadow: 0 2px 4px rgb(0 0 0 / .12); }
-    .source-page .activity-rail { position: absolute; inset: 0 0 auto; height: 1.75rem; border-radius: 1.25rem 1.25rem 0 0; background: linear-gradient(90deg, #cf6c1d, #a9508b, #e95a91); }
-    .source-page .activity-icon { position: absolute; z-index: 10; top: -.25rem; left: -1.5rem; display: flex; height: 4.6rem; width: 4.6rem; align-items: center; justify-content: center; border-radius: 9999px; background: linear-gradient(135deg, #6e73ff, #a753d7, #e96662); padding: .25rem; box-shadow: 0 2px 4px rgb(0 0 0 / .12); }
-    .source-page .activity-title { position: relative; display: inline-block; margin-top: -2rem; margin-left: -2.25rem; border-radius: 0 .75rem .75rem 0; background: linear-gradient(#d37528, #a64008); padding: .25rem 1.25rem .25rem 4rem; color: white; font-size: 1.45rem; font-weight: 700; line-height: 1.2; box-shadow: 0 2px 4px rgb(0 0 0 / .12); }
-    .source-page .activity-copy { margin: .5rem 0 .5rem; font-size: 1.4rem; line-height: 1.27; }
-    .source-page .activity-list { margin: .25rem 0 0; padding-left: 1.75rem; font-size: 1.35rem; line-height: 1.35; }
-    .source-page .activity-list li { margin-bottom: .25rem; }
-    .source-page .exercise-card { position: relative; margin-top: 3.25rem; border: .6rem solid #e2ebfa; border-radius: 1.25rem; background: white; padding: 2.25rem 2rem 1.5rem; box-shadow: inset 0 -8px 0 #d3d5d8, 0 2px 3px rgb(0 0 0 / .1); }
-    .source-page .exercise-title { position: absolute; top: -2rem; left: 3rem; border-radius: .95rem; background: linear-gradient(#7560af, #55418b); padding: .45rem 3rem; color: white; font-size: 1.4rem; font-weight: 700; line-height: 1.2; box-shadow: 0 2px 4px rgb(0 0 0 / .15); }
-    .source-page .exercise-wave { position: absolute; top: -.45rem; left: 22rem; right: 4rem; height: .6rem; border-top: 4px wavy #55418b; }
-    .source-page .exercise-list { margin: 0; padding-left: 1.5rem; font-size: 1.35rem; line-height: 1.35; }
-    .source-page .exercise-list li { margin-bottom: .3rem; }
-    .source-page .footer { position: relative; height: 7rem; margin-top: 2.5rem; }
-    .source-page .footer-base { position: absolute; inset: auto 0 0; height: 5rem; background: #4c93a4; }
-    .source-page .footer-left { position: absolute; bottom: 0; left: 0; height: 7rem; width: 53%; background: #4c93a4; clip-path: polygon(0 25%, 100% 70%, 100% 100%, 0 100%); }
-    .source-page .footer-right { position: absolute; right: 0; bottom: 0; height: 7rem; width: 54%; background: #00687d; clip-path: polygon(0 70%, 100% 25%, 100% 100%, 0 100%); }
-    .source-page .page-number { position: absolute; bottom: 0; left: 50%; display: flex; height: 5rem; width: 3.5rem; transform: translateX(-50%); align-items: center; justify-content: center; border-radius: 1rem 1rem 0 0; background: #00677e; }
-    @media (max-width: 639px) { .source-page .intro { margin-top: 4.5rem; padding: 0 1.25rem; font-size: 1.05rem; } .source-page .card-wrap, .source-page .exercise-wrap { padding: 0 1rem; } .source-page .activity-card { padding: 1.75rem 1.25rem 1rem; } .source-page .activity-title { margin-left: -1.25rem; padding-left: 3.4rem; font-size: 1.05rem; } .source-page .activity-copy, .source-page .activity-list, .source-page .exercise-list { font-size: 1.05rem; } .source-page .exercise-card { padding: 2rem 1rem 1rem; } .source-page .exercise-title { left: 2rem; padding: .4rem 1.5rem; font-size: 1.05rem; } .source-page .exercise-wave { display: none; } }
+    #content {
+      max-width: 68rem;
+      padding: clamp(2.5rem, 5vw, 5rem) clamp(1.25rem, 4vw, 4rem) 3rem;
+    }
+
+    .source-page {
+      max-width: 60rem;
+      color: #282426;
+      font-family: "Atkinson Hyperlegible", "Trebuchet MS", sans-serif;
+    }
+
+    .top-marker {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3.25rem;
+      height: 15.5rem;
+      border-radius: 0 0 1.35rem 0;
+      background: #3195a2;
+    }
+
+    .intro {
+      max-width: 48rem;
+      margin: 4.75rem 0 1.75rem auto;
+      font-size: clamp(1.2rem, 2.5vw, 1.65rem);
+      font-style: italic;
+      font-weight: 600;
+      line-height: 1.42;
+      letter-spacing: .015em;
+    }
+
+    .card-wrap,
+    .exercise-wrap {
+      max-width: 54rem;
+      margin-left: auto;
+    }
+
+    .activity-card {
+      position: relative;
+      padding: 3.65rem 2.5rem 2.25rem 4.8rem;
+      border-radius: 1.35rem;
+      background: #f9e5cf;
+      box-shadow: inset 0 -0.5rem 0.7rem rgb(137 69 28 / 11%);
+    }
+
+    .activity-card::before {
+      position: absolute;
+      inset: 0 0 auto;
+      height: 3.15rem;
+      border-radius: 1.35rem 1.35rem 0 0;
+      background: linear-gradient(180deg, #df6095, #a83a68 78%, #913653);
+      content: "";
+    }
+
+    .activity-icon {
+      position: absolute;
+      z-index: 2;
+      top: .05rem;
+      left: -2.05rem;
+      width: 5.5rem;
+      height: 5.5rem;
+      padding: .5rem;
+      border-radius: 999px;
+      background: radial-gradient(circle at 34% 26%, #fff 0 40%, #f3d6d6 41% 49%, #ae3667 70%, #6c5d93 100%);
+      box-shadow: 0 .2rem .5rem rgb(0 0 0 / 18%);
+    }
+
+    .activity-title,
+    .exercise-title {
+      position: absolute;
+      z-index: 2;
+      margin: 0;
+      color: #f6f12b;
+      font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+      font-weight: 800;
+      letter-spacing: .02em;
+      line-height: 1;
+    }
+
+    .activity-title {
+      top: .25rem;
+      left: 5.25rem;
+      padding: .5rem 1rem;
+      border-radius: 0 .45rem .45rem 0;
+      background: linear-gradient(90deg, #617813, #8f5a11);
+    }
+
+    .activity-copy,
+    .activity-list,
+    .exercise-list {
+      margin: 0;
+      font-size: clamp(1.1rem, 2.35vw, 1.55rem);
+      font-style: italic;
+      font-weight: 600;
+      line-height: 1.45;
+    }
+
+    .activity-list,
+    .exercise-list {
+      padding-left: 1.55rem;
+    }
+
+    .activity-list li,
+    .exercise-list li {
+      margin-top: .35rem;
+      padding-left: .2rem;
+    }
+
+    .exercise-wrap {
+      margin-top: 4rem;
+      padding: 0 .65rem .75rem;
+      border-radius: 1.25rem;
+      background: #e7edf4;
+    }
+
+    .exercise-card {
+      position: relative;
+      padding: 3.6rem 2rem 1.8rem;
+      border-radius: 0 0 1.1rem 1.1rem;
+      background: #fff;
+      box-shadow: 0 .55rem .5rem rgb(40 50 70 / 18%);
+    }
+
+    .exercise-title {
+      top: -1.9rem;
+      left: 3.6rem;
+      padding: .8rem 3.2rem .85rem 2.3rem;
+      border-radius: 1.25rem;
+      color: #fff;
+      background: linear-gradient(135deg, #33235d, #765099);
+    }
+
+    .exercise-wave {
+      position: absolute;
+      top: -1.1rem;
+      right: 7rem;
+      width: 18rem;
+      height: 1rem;
+      border-top: .25rem solid #564080;
+      border-radius: 50%;
+    }
+
+    @media (max-width: 42rem) {
+      #content { padding: 2rem 1rem 2.5rem; }
+      .top-marker { width: 1.3rem; height: 7rem; }
+      .intro { margin-top: 1rem; margin-left: 2rem; }
+      .activity-card { padding: 3.6rem 1.25rem 1.5rem 2rem; }
+      .activity-icon { left: -.7rem; width: 4.25rem; height: 4.25rem; }
+      .activity-title { left: 3.1rem; }
+      .exercise-card { padding: 3.3rem 1.25rem 1.25rem; }
+      .exercise-title { left: 1rem; padding-inline: 1.75rem; }
+      .exercise-wave { right: 1.5rem; width: 8rem; }
+    }
   </style>
 </head>
+
 <body class="min-h-screen flex items-center justify-center">
   <main class="w-full">
     <div id="content" class="mx-auto max-w-5xl bg-white px-3 sm:px-5 lg:px-8 pt-0 pb-0 opacity-0">
       <section data-section-type="activity_open_ended_answer" data-section-id="pg044_sec001" class="source-page relative mx-auto">
-        <div class="top-marker"></div>
+
         <div class="intro">
           <span data-id="pg044_n0002">na upungufu wa unyevu katika udongo na kupalilia kila inapohitajika.</span>
           <span data-id="pg044_n0003">Aidha, ili kuzuia wadudu waharibifu, tutumie mbinu za kuzuia wadudu ambazo ni rafiki kwa mazingira.</span>
@@ -70,7 +199,7 @@
           </ol>
         </div></div>
 
-        <div class="footer"><div class="footer-base"></div><div class="footer-left"></div><div class="footer-right"></div><div class="page-number"><div class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[1rem] not-italic text-[#245083] sm:h-12 sm:w-12 sm:text-[1.1rem]">38</div></div></div>
+
       </section>
     </div>
   </main>

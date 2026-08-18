@@ -7,7 +7,7 @@
     <title>Jiografia na Mazingira</title>
     <meta name="title-id" content="pg050_sec001" />
     <meta name="page-section-id" content="50" />
-    <link href="./content/tailwind_output.css" rel="stylesheet">
+  <link href="./content/tailwind_output.css?v=5" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
     <style>
@@ -66,16 +66,27 @@
         }
 
         section[data-section-id="pg050_sec001"] input[type="text"] {
-            display: block;
-            width: 12rem !important;
+            display: inline-block;
+            width: 13rem !important;
             height: 1.2rem !important;
-            margin: -.15rem 0 .65rem 16.5rem !important;
+            margin: 0 0 .65rem .3rem !important;
             padding: 0 !important;
             border: 0 !important;
             border-bottom: 2px solid #282526 !important;
             border-radius: 0 !important;
             background: transparent !important;
             box-shadow: none !important;
+            vertical-align: baseline;
+        }
+
+        section[data-section-id="pg050_sec001"] .mb-10.bg-amber-50 > .mb-4.flex {
+            display: block !important;
+            width: auto !important;
+            margin: 0 0 .65rem !important;
+        }
+
+        section[data-section-id="pg050_sec001"] .mb-10.bg-amber-50 > .mb-4.flex > span {
+            display: inline !important;
         }
 
         section[data-section-id="pg050_sec001"] h1[data-id="pg050_n0029"] {
@@ -100,22 +111,6 @@
             margin: 0 !important;
         }
 
-        section[data-section-id="pg050_sec001"]::after {
-            content: "44";
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 3rem;
-            height: 3rem;
-            margin: 2rem auto 0;
-            border-radius: 50%;
-            background: #fff;
-            color: #114c78;
-            font-family: "Atkinson Hyperlegible", sans-serif;
-            font-size: 1.25rem;
-            font-style: normal;
-            box-shadow: 0 0 0 .65rem #087786;
-        }
     </style>
 </head>
 
@@ -136,9 +131,9 @@
                 <div class="mb-10 bg-amber-50 rounded-xl p-4">
                     <div class="mb-4 flex items-start gap-3 text-2xl"><span data-id="pg050_n0007"
                             class="font-semibold">4.</span><span data-id="pg050_n0008" class="flex-1">Ardhi ni muhimu
-                            kwa sababu</span></div><input type="text"
+                            kwa sababu</span><input type="text"
                         class="w-full p-2 border border-gray-400 rounded mb-4" data-aria-id="aria-1-0-0"
-                        aria-label="Jibu la swali la 4 kuhusu umuhimu wa ardhi" tabindex="0">
+                        aria-label="Jibu la swali la 4 kuhusu umuhimu wa ardhi" tabindex="0"></div>
                     <div class="space-y-2 pl-8 text-2xl">
                         <p><span data-id="pg050_n0010">(a) inafunika uso wa dunia</span></p>
                         <p><span data-id="pg050_n0012">(b) inahifadhi joto</span></p>
@@ -149,9 +144,9 @@
                 <div class="mb-10 bg-amber-50 rounded-xl p-4">
                     <div class="mb-4 flex items-start gap-3 text-2xl"><span data-id="pg050_n0018"
                             class="font-semibold">5.</span><span data-id="pg050_n0019" class="flex-1">Uchafuzi wa ardhi
-                            unasababishwa na mambo mbalimbali ikiwemo</span></div><input type="text"
+                            unasababishwa na mambo mbalimbali ikiwemo</span><input type="text"
                         class="w-full p-2 border border-gray-400 rounded mb-4" data-aria-id="aria-1-0-1"
-                        aria-label="Jibu la swali la 5 kuhusu uchafuzi wa ardhi" tabindex="0">
+                        aria-label="Jibu la swali la 5 kuhusu uchafuzi wa ardhi" tabindex="0"></div>
                     <div class="space-y-2 pl-8 text-2xl">
                         <p><span data-id="pg050_n0021">(a) kilimo cha umwagiliaji</span></p>
                         <p><span data-id="pg050_n0023">(b) uoto wa asili</span></p>
@@ -225,7 +220,7 @@
 
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js"></script>
+    <script src="./assets/offline-preloader.js?v=pg050-rehema-v3"></script>
     <script src="./assets/scorm.js"></script>
     <script src="./assets/base.bundle.local.js"></script>
 </body>

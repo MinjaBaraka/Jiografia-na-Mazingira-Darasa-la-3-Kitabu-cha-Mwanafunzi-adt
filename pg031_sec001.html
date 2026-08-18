@@ -2,120 +2,232 @@
 <html lang="sw-TZ">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jiografia na Mazingira</title>
-    <meta name="title-id" content="pg031_sec001" />
-    <meta name="page-section-id" content="31" />
-    <link href="./content/tailwind_output.css" rel="stylesheet">
-    <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="./assets/fonts.css" rel="stylesheet">
-    <style>
-      :root { --page-teal: #007184; --page-teal-light: #3294a4; --page-purple: #5a3e88; }
-      body { display: block !important; min-height: 100vh; background: #fff; }
-      .source-page {
-        position: relative; max-width: 1180px; min-height: 1510px; margin: 0 auto;
-        padding: 120px 92px 132px; overflow: hidden; background: #fff; color: #202020;
-        font-family: "Atkinson Hyperlegible", Arial, sans-serif;
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiografia na Mazingira</title>
+  <meta name="title-id" content="pg031_sec001" />
+  <meta name="page-section-id" content="31" />
+  <link href="./content/tailwind_output.css?v=5" rel="stylesheet" />
+  <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet" />
+  <link href="./assets/fonts.css" rel="stylesheet" />
+  <style>
+    #content {
+      max-width: 68rem;
+      margin: 0 auto;
+      padding: clamp(2.5rem, 6vw, 5rem) clamp(1rem, 5vw, 4.5rem) 3rem;
+    }
+
+    .source-page {
+      position: relative;
+      max-width: 60rem;
+      margin: 0 auto;
+      color: #2b2929;
+      font-family: "Atkinson Hyperlegible", "Trebuchet MS", sans-serif;
+    }
+
+    .source-page::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 3rem;
+      height: 15rem;
+      border-radius: 0 0 0 1.3rem;
+      background: #3195a2;
+    }
+
+    .source-copy {
+      max-width: 50rem;
+      margin: 4.75rem 0 0 auto;
+    }
+
+    .source-copy p {
+      margin: 0 0 1.35rem;
+      font-size: clamp(1.08rem, 2.35vw, 1.52rem);
+      font-style: italic;
+      font-weight: 600;
+      line-height: 1.42;
+    }
+
+    .source-heading {
+      margin: 1rem 0 .35rem;
+      font-size: clamp(1.4rem, 2.9vw, 1.95rem);
+      font-style: italic;
+      font-weight: 800;
+    }
+
+    .exercise-panel {
+      position: relative;
+      max-width: 52rem;
+      margin: 3.4rem 0 0 auto;
+      padding: .65rem;
+      border-radius: 1.35rem;
+      background: #e7edf4;
+    }
+
+    .exercise-inner {
+      padding: 3.35rem 1.6rem 1.5rem;
+      border-radius: 0 0 1.1rem 1.1rem;
+      background: #fff;
+      box-shadow: 0 .55rem .5rem rgb(40 50 70 / 18%);
+    }
+
+    .exercise-title {
+      position: absolute;
+      z-index: 2;
+      top: -1.9rem;
+      left: 3.6rem;
+      padding: .8rem 3rem .85rem 2.3rem;
+      border-radius: 1.25rem;
+      color: #fff;
+      background: linear-gradient(135deg, #33235d, #765099);
+      font-size: clamp(1.25rem, 2.6vw, 1.75rem);
+      font-style: italic;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .exercise-wave {
+      position: absolute;
+      top: -1.1rem;
+      right: 7rem;
+      width: 18rem;
+      height: 1rem;
+      border-top: .25rem solid #564080;
+      border-radius: 50%;
+    }
+
+    .questions {
+      margin: 0;
+      padding-left: 1.45rem;
+      font-size: clamp(1.08rem, 2.3vw, 1.5rem);
+      font-style: italic;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .questions li {
+      margin: .35rem 0;
+      padding-left: .2rem;
+    }
+
+    .question-text {
+      margin: 0;
+    }
+
+    .answer {
+      display: none;
+    }
+
+    @media(max-width:42rem) {
+      #content {
+        padding: 2rem 1rem 2.5rem
       }
-      .source-copy { max-width: 880px; font-family: "Atkinson Hyperlegible", Arial, sans-serif !important; font-size: 27px; line-height: 1.42; text-align: justify; }
-      .source-copy p { margin: 0; font-family: inherit !important; font-size: inherit !important; line-height: inherit !important; text-align: inherit !important; }
-      .source-copy span { font-family: inherit !important; font-size: inherit !important; line-height: inherit !important; }
-      .source-copy span + span::before { content: " "; }
-      .source-heading { margin: 46px 0 16px; font-family: "Atkinson Hyperlegible", Arial, sans-serif !important; font-size: 36px !important; line-height: 1.15 !important; font-weight: 800; }
-      .source-accent { position: absolute; right: 38px; top: 44px; width: 58px; height: 295px; object-fit: cover; object-position: center; border-radius: 0 0 0 38px; }
-      .exercise-panel { position: relative; margin-top: 50px; padding: 78px 24px 22px; border: 10px solid #e1e7f0; border-radius: 30px; background: #f6f9fc; box-shadow: inset 0 0 18px rgba(39,54,76,.13); font-family: "Atkinson Hyperlegible", Arial, sans-serif !important; }
-      .exercise-title { position: absolute; left: 72px; top: -38px; z-index: 2; min-width: 370px; padding: 14px 54px; border-radius: 22px; background: linear-gradient(105deg, #6e42a1 0%, #4d3577 65%, #321f58 100%); color: #fff; font: 800 34px/1.1 "Atkinson Hyperlegible", Arial, sans-serif; text-align: center; box-shadow: 0 8px 12px rgba(55,35,90,.25); }
-      .exercise-wave { position: absolute; top: -8px; right: 88px; width: 280px; height: 24px; border-top: 5px solid var(--page-purple); border-radius: 60% 40% 0 0; opacity: .95; }
-      .exercise-inner { border: 1px solid #cbd5e1; border-radius: 20px; background: #fff; padding: 34px 38px 30px; box-shadow: 0 8px 16px rgba(26,45,72,.13); }
-      .questions { margin: 0; padding: 0; list-style: none; }
-      .questions li { margin: 0 0 26px; }
-      .questions li:last-child { margin-bottom: 0; }
-      .question-text { margin: 0 0 10px; font-family: "Atkinson Hyperlegible", Arial, sans-serif !important; font-size: 27px !important; line-height: 1.32 !important; font-weight: 600; }
-      .question-text span { font-family: inherit !important; font-size: inherit !important; line-height: inherit !important; }
-      .answer { width: 100%; min-height: 80px; box-sizing: border-box; border: 0; border-radius: 0; resize: vertical; padding: 0; background-color: transparent; background-image: repeating-linear-gradient(to bottom, transparent 0, transparent 31px, #b8c6d8 32px, transparent 33px) !important; background-size: 100% 33px !important; font: 22px/33px "Atkinson Hyperlegible", Arial, sans-serif; }
-      .source-footer { position: absolute; left: 0; right: 0; bottom: 0; height: 114px; overflow: hidden; }
-      .source-footer .left, .source-footer .right { position: absolute; bottom: 0; height: 82px; background: var(--page-teal-light); }
-      .source-footer .left { left: 0; width: 56%; clip-path: polygon(0 20%, 100% 76%, 100% 100%, 0 100%); }
-      .source-footer .right { right: 0; width: 56%; clip-path: polygon(0 76%, 100% 20%, 100% 100%, 0 100%); }
-      .source-footer .ridge { position: absolute; right: 0; bottom: 67px; width: 49%; height: 34px; background: var(--page-teal); clip-path: polygon(0 100%, 100% 0, 100% 100%); }
-      .page-number { position: absolute; left: 50%; bottom: 0; display: grid; width: 92px; height: 92px; transform: translateX(-50%); place-items: center; border-radius: 28px 28px 0 0; background: var(--page-teal); color: #1e4b83; font: 34px/1 "Atkinson Hyperlegible", Arial, sans-serif; }
-      .page-number::before { content: ""; position: absolute; inset: 14px; border-radius: 50%; background: #fff; }
-      .page-number span { position: relative; z-index: 1; }
-      @media (max-width: 720px) {
-        .source-page { min-height: auto; padding: 58px 24px 120px; }
-        .source-copy { font-size: 20px; }
-        .source-heading { margin-top: 34px; font-size: 30px; }
-        .source-accent { right: 16px; top: 20px; width: 34px; height: 180px; border-radius: 0 0 0 24px; }
-        .exercise-panel { margin-top: 40px; padding: 54px 10px 10px; border-width: 5px; border-radius: 20px; }
-        .exercise-title { left: 24px; top: -23px; min-width: 0; padding: 10px 25px; font-size: 24px; border-radius: 14px; }
-        .exercise-wave { display: none; }
-        .exercise-inner { padding: 25px 18px 20px; border-radius: 14px; }
-        .question-text { font-size: 21px; }
-        .answer { min-height: 66px; }
+
+      .source-page::after {
+        width: 1.2rem;
+        height: 7rem
       }
-    </style>
+
+      .source-copy {
+        margin: 1rem 0 0 2rem
+      }
+
+      .exercise-panel {
+        margin-top: 3rem
+      }
+
+      .exercise-inner {
+        padding: 3.1rem 1.1rem 1.2rem
+      }
+
+      .exercise-title {
+        left: 1rem;
+        padding-inline: 1.6rem
+      }
+
+      .exercise-wave {
+        right: 1.25rem;
+        width: 8rem
+      }
+    }
+  </style>
 </head>
 
+
+
 <body>
-    <main>
-      <div id="content" class="opacity-0">
-  <section data-section-type="activity_open_ended_answer" data-section-id="pg031_sec001" class="source-page">
-      <img src="images/pg031_im001.png" data-id="pg031_im001" alt="" class="source-accent" role="presentation" aria-hidden="true">
-      <div class="source-copy">
-      <p>
-        <span data-id="pg031_n0002">Pia, sehemu za tambarare hutumika kujenga makazi ya watu, na miundombinu mingine kwa kuwa maeneo haya hayahitaji usawazishaji mkubwa wa ardhi kwa vile hayana vilima na miinuko.</span>
-        <span data-id="pg031_n0003">Vilevile, maeneo ya tambarare ni mazuri kwa shughuli za michezo na usafiri wa ardhini.</span>
-        <span data-id="pg031_n0004">Aidha, maeneo haya yanaweza kuwa na misitu inayohifadhi wanyama na viumbe wengine wa porini ambao pia ni vivutio vya utalii.</span>
-      </p>
+  <main>
+    <div id="content" class="opacity-0">
+      <section data-section-type="activity_open_ended_answer" data-section-id="pg031_sec001">
+        <div class="source-copy">
+          <p>
+            <span data-id="pg031_n0002">Pia, sehemu za tambarare hutumika kujenga makazi ya watu, na miundombinu mingine
+              kwa kuwa maeneo haya hayahitaji usawazishaji mkubwa wa ardhi kwa vile hayana vilima na miinuko.</span>
+            <span data-id="pg031_n0003">Vilevile, maeneo ya tambarare ni mazuri kwa shughuli za michezo na usafiri wa
+              ardhini.</span>
+            <span data-id="pg031_n0004">Aidha, maeneo haya yanaweza kuwa na misitu inayohifadhi wanyama na viumbe
+              wengine wa porini ambao pia ni vivutio vya utalii.</span>
+          </p>
 
-      <h1 class="source-heading" data-id="pg031_n0006">Besini</h1>
-      <p>
-        <span data-id="pg031_n0008">Hii ni sehemu ya ardhi iliyobonyea na kutengeneza umbo kama la beseni.</span>
-        <span data-id="pg031_n0009">Besini inaweza kuwa na maji au kutokuwa na maji.</span>
-        <span data-id="pg031_n0010">Besini yenye maji hutengeneza ziwa.</span>
-        <span data-id="pg031_n0011">Mfano wa besini yenye maji ni Ziwa Viktoria lililopo mikoa ya Mwanza, Kagera, Mara, Simiyu, na Geita.</span>
-        <span data-id="pg031_n0012">Ziwa Viktoria ni kubwa kuliko maziwa yote yanayopatikana Tanzania na Afrika kwa ujumla.</span>
-      </p>
+          <h1 class="source-heading" data-id="pg031_n0006">Besini</h1>
+          <p>
+            <span data-id="pg031_n0008">Hii ni sehemu ya ardhi iliyobonyea na kutengeneza umbo kama la beseni.</span>
+            <span data-id="pg031_n0009">Besini inaweza kuwa na maji au kutokuwa na maji.</span>
+            <span data-id="pg031_n0010">Besini yenye maji hutengeneza ziwa.</span>
+            <span data-id="pg031_n0011">Mfano wa besini yenye maji ni Ziwa Viktoria lililopo mikoa ya Mwanza, Kagera,
+              Mara, Simiyu, na Geita.</span>
+            <span data-id="pg031_n0012">Ziwa Viktoria ni kubwa kuliko maziwa yote yanayopatikana Tanzania na Afrika kwa
+              ujumla.</span>
+          </p>
 
-      </div>
-      <div class="exercise-panel">
-        <div class="exercise-title" data-id="pg031_n0014">Zoezi la 2</div>
-        <div class="exercise-wave" aria-hidden="true"></div>
-        <div class="exercise-inner">
-          <ol class="questions">
-            <li>
-              <p class="question-text"><span data-id="pg031_n0015">1. Eleza tofauti zilizopo kati ya Ziwa Viktoria na Tanganyika.</span></p>
-              <textarea class="answer" data-aria-id="aria-1-0-0" aria-label="Jibu la swali la kwanza kuhusu tofauti kati ya Ziwa Viktoria na Tanganyika" tabindex="0"></textarea>
-            </li>
-            <li>
-              <p class="question-text"><span data-id="pg031_n0016">2. Ni mikoa ipi ya Tanzania iliyopo katika uwanda wa juu kusini?</span></p>
-              <textarea class="answer" data-aria-id="aria-1-0-1" aria-label="Jibu la swali la pili kuhusu mikoa ya Tanzania iliyopo katika uwanda wa juu kusini" tabindex="0"></textarea>
-            </li>
-            <li>
-              <p class="question-text"><span data-id="pg031_n0017">3. Ni katika umbo lipi la sura ya nchi utapendelea zaidi kujenga nyumba yako? Kwa nini?</span></p>
-              <textarea class="answer" data-aria-id="aria-1-0-2" aria-label="Jibu la swali la tatu kuhusu umbo la sura ya nchi analopendelea kujenga nyumba na sababu" tabindex="0"></textarea>
-            </li>
-            <li>
-              <p class="question-text"><span data-id="pg031_n0018">4. Unafikiri nini kitatokea endapo watu watajenga nyumba jirani na maeneo yenye mabonde?</span></p>
-              <textarea class="answer" data-aria-id="aria-1-0-3" aria-label="Jibu la swali la nne kuhusu kitakachotokea watu wakijenga nyumba jirani na maeneo yenye mabonde" tabindex="0"></textarea>
-            </li>
-          </ol>
         </div>
-      </div>
-    <footer class="source-footer" aria-label="Ukurasa wa 25">
-      <div class="left"></div><div class="right"></div><div class="ridge"></div>
-      <div class="page-number"><span>25</span></div>
-    </footer>
-  </section>
-</div>
-    </main>
+        <div class="exercise-panel">
+          <div class="exercise-title" data-id="pg031_n0014">Zoezi la 2</div>
+          <div class="exercise-wave" aria-hidden="true"></div>
+          <div class="exercise-inner">
+            <ol class="questions">
+              <li>
+                <p class="question-text"><span data-id="pg031_n0015">1. Eleza tofauti zilizopo kati ya Ziwa Viktoria na
+                    Tanganyika.</span></p>
+                <textarea class="answer" data-aria-id="aria-1-0-0"
+                  aria-label="Jibu la swali la kwanza kuhusu tofauti kati ya Ziwa Viktoria na Tanganyika"
+                  tabindex="0"></textarea>
+              </li>
+              <li>
+                <p class="question-text"><span data-id="pg031_n0016">2. Ni mikoa ipi ya Tanzania iliyopo katika uwanda
+                    wa juu kusini?</span></p>
+                <textarea class="answer" data-aria-id="aria-1-0-1"
+                  aria-label="Jibu la swali la pili kuhusu mikoa ya Tanzania iliyopo katika uwanda wa juu kusini"
+                  tabindex="0"></textarea>
+              </li>
+              <li>
+                <p class="question-text"><span data-id="pg031_n0017">3. Ni katika umbo lipi la sura ya nchi utapendelea
+                    zaidi kujenga nyumba yako? Kwa nini?</span></p>
+                <textarea class="answer" data-aria-id="aria-1-0-2"
+                  aria-label="Jibu la swali la tatu kuhusu umbo la sura ya nchi analopendelea kujenga nyumba na sababu"
+                  tabindex="0"></textarea>
+              </li>
+              <li>
+                <p class="question-text"><span data-id="pg031_n0018">4. Unafikiri nini kitatokea endapo watu watajenga
+                    nyumba jirani na maeneo yenye mabonde?</span></p>
+                <textarea class="answer" data-aria-id="aria-1-0-3"
+                  aria-label="Jibu la swali la nne kuhusu kitakachotokea watu wakijenga nyumba jirani na maeneo yenye mabonde"
+                  tabindex="0"></textarea>
+              </li>
+            </ol>
+          </div>
+        </div>
 
-    <div class="relative z-50" id="interface-container"></div>
-    <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js"></script>
-    <script src="./assets/scorm.js"></script>
-    <script src="./assets/base.bundle.local.js"></script>
+      </section>
+    </div>
+  </main>
+
+  <div class="relative z-50" id="interface-container"></div>
+  <div class="relative z-50" id="nav-container"></div>
+  <script src="./assets/offline-preloader.js"></script>
+  <script src="./assets/scorm.js"></script>
+  <script src="./assets/base.bundle.local.js"></script>
 </body>
 
 </html>
