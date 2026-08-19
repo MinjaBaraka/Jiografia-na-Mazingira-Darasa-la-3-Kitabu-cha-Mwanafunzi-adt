@@ -8,6 +8,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OFFLINE_PRELOADER_VERSION = "italic-audit-v1"
+OFFLINE_PRELOADER_OVERRIDES = {
+    "pg009_sec001.html": "pg009-figure3-rehema-v2",
+}
 
 # Complete elements whose text is italic in the source PDF.
 FULL_ITALIC_IDS = {
@@ -55,7 +58,7 @@ def update_class_attribute(
     return attrs
 
 
-def strip_unverified_italics(html: str) -> str:
+def strip_unverified_italics(html: str, preloader_version: str) -> str:
     html = re.sub(
         r'class="([^"]*)"',
         lambda match: 'class="' + " ".join(
@@ -73,7 +76,7 @@ def strip_unverified_italics(html: str) -> str:
     )
     return re.sub(
         r"\./assets/offline-preloader\.js(?:\?v=[^\"]*)?",
-        f"./assets/offline-preloader.js?v={OFFLINE_PRELOADER_VERSION}",
+        f"./assets/offline-preloader.js?v={preloader_version}",
         html,
     )
 
@@ -159,7 +162,10 @@ def main() -> None:
     seen_full: set[str] = set()
     seen_captions: set[str] = set()
     for page in pages:
-        html = strip_unverified_italics(page.read_text())
+        preloader_version = OFFLINE_PRELOADER_OVERRIDES.get(
+            page.name, OFFLINE_PRELOADER_VERSION
+        )
+        html = strip_unverified_italics(page.read_text(), preloader_version)
         page_prefix = page.stem.split("_")[0] + "_"
         for text_id in sorted(item for item in FULL_ITALIC_IDS if item.startswith(page_prefix)):
             html = add_class_to_id(html, text_id, "italic")

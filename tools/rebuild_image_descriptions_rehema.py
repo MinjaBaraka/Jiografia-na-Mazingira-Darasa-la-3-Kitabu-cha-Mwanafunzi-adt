@@ -17,6 +17,12 @@ def figure_number(texts: dict, image_id: str) -> str | None:
     page = image_id[:5]
     special = {
         "pg009_im007": "2",
+        "pg009_im001": "3",
+        "pg009_im002": "3",
+        "pg009_im003": "3",
+        "pg009_im004": "3",
+        "pg009_im005": "3",
+        "pg009_im006": "3",
         "pg030_im001": "8",
         "pg030_im002": "9",
     }

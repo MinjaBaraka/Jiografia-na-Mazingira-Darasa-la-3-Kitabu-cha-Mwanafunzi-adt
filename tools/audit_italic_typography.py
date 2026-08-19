@@ -9,6 +9,7 @@ from pathlib import Path
 from fix_italic_typography import (
     CAPTION_IDS,
     FULL_ITALIC_IDS,
+    OFFLINE_PRELOADER_OVERRIDES,
     OFFLINE_PRELOADER_VERSION,
     ROOT,
 )
@@ -28,9 +29,10 @@ def main() -> None:
 
     for page in pages:
         html = page.read_text()
-        expected_preloader = (
-            f'./assets/offline-preloader.js?v={OFFLINE_PRELOADER_VERSION}'
+        preloader_version = OFFLINE_PRELOADER_OVERRIDES.get(
+            page.name, OFFLINE_PRELOADER_VERSION
         )
+        expected_preloader = f'./assets/offline-preloader.js?v={preloader_version}'
         if html.count(expected_preloader) != 1:
             problems.append(f"{page.name}: missing current offline-preloader version")
         if re.search(r"font-style\s*:\s*(?:italic|oblique)", html, re.IGNORECASE):
