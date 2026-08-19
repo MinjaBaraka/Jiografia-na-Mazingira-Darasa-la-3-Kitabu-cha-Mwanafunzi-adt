@@ -50,8 +50,23 @@ ZOEZI_PATTERN = re.compile(r"^\s*Zoezi la\s+(?P<number>\d+)\s*\.?\s*$", re.IGNOR
 PG013_FIRST_EXERCISE_IDS = {"pg013_n0008", "pg013_n0008_easy_read"}
 
 
+def normalize_pg002_symbols(text: str, text_id: str) -> str:
+    """Expand page-two publishing symbols into the requested spoken wording."""
+    if not text_id.startswith("pg002_"):
+        return text
+
+    speech = re.sub(r"S\s*\.\s*L\s*\.\s*P\s*\.?", "sanduku la post", text,
+                    flags=re.IGNORECASE)
+    speech = speech.replace("©", "hatimiliki ya")
+    speech = speech.replace("/", " mkwaju ")
+    speech = speech.replace("-", " dash ")
+    speech = speech.replace("+", " alama ya kumjumlisha ")
+    return re.sub(r"[ \t]+", " ", speech).strip()
+
+
 def normalize_global_narration(text: str, text_id: str) -> str:
     """Return speech-only wording without changing the visible textbook text."""
+    text = normalize_pg002_symbols(text, text_id)
     exercise = ZOEZI_PATTERN.fullmatch(text)
     if exercise:
         number = int(exercise.group("number"))
