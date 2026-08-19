@@ -16,13 +16,13 @@
       .school-page::after { content:""; position:absolute; top:0; right:0; width:3rem; height:15rem; border-radius:0 0 0 1.3rem; background:#3195a2; }
       .school-activity { position:relative; max-width:53rem; margin:4.75rem auto 0; padding:3.55rem 1.45rem 1.35rem; border-radius:1.35rem; background:#fae8d5; box-shadow:inset 0 -.45rem .65rem rgb(137 69 28 / 11%); }
       .school-activity::before { content:""; position:absolute; inset:0 0 auto; height:3.15rem; border-radius:1.35rem 1.35rem 0 0; background:linear-gradient(180deg,#df6095,#a83a68 78%,#913653); }
-      .school-title { position:absolute; z-index:2; top:.1rem; left:0; margin:0; padding:.55rem 1.2rem; border-radius:0 .55rem .55rem 0; color:#fff; background:linear-gradient(90deg,#b94b16,#8c3a12); font-size:clamp(1.2rem,2.5vw,1.7rem); font-style:italic; font-weight:800; line-height:1; }
-      .school-prompt { margin:0 0 1rem; font-size:clamp(1.08rem,2.35vw,1.52rem); font-style:italic; font-weight:400; line-height:1.4; }
+      .school-title { position:absolute; z-index:2; top:.1rem; left:0; margin:0; padding:.55rem 1.2rem; border-radius:0 .55rem .55rem 0; color:#fff; background:linear-gradient(90deg,#b94b16,#8c3a12); font-size:clamp(1.2rem,2.5vw,1.7rem); font-style: normal; font-weight:800; line-height:1; }
+      .school-prompt { margin:0 0 1rem; font-size:clamp(1.08rem,2.35vw,1.52rem); font-style: normal; font-weight:400; line-height:1.4; }
       .school-activity img { width:100%; display:block; }
-      .school-caption { margin:.8rem 0 0; text-align:center; font-size:clamp(1rem,1.8vw,1.32rem); font-style:italic; font-weight:700; }
+      .school-caption { margin:.8rem 0 0; text-align:center; font-size:clamp(1rem,1.8vw,1.32rem); font-style: normal; font-weight:700; }
       .school-questions { position:relative; max-width:53rem; margin:3rem auto 0; padding:.8rem; border-radius:0 1rem 1rem; background:#d9edf6; }
-      .school-questions h2 { position:absolute; top:-1.65rem; left:0; margin:0; padding:.6rem 2.3rem .65rem 1.25rem; border-radius:0 1rem 1rem 0; color:#fff; background:#0782bd; font-size:clamp(1.2rem,2.5vw,1.65rem); font-style:italic; font-weight:800; line-height:1; }
-      .school-questions p { margin:.75rem 1rem; font-size:clamp(1.08rem,2.3vw,1.5rem); font-style:italic; font-weight:400; line-height:1.42; }
+      .school-questions h2 { position:absolute; top:-1.65rem; left:0; margin:0; padding:.6rem 2.3rem .65rem 1.25rem; border-radius:0 1rem 1rem 0; color:#fff; background:#0782bd; font-size:clamp(1.2rem,2.5vw,1.65rem); font-style: normal; font-weight:800; line-height:1; }
+      .school-questions p { margin:.75rem 1rem; font-size:clamp(1.08rem,2.3vw,1.5rem); font-style: normal; font-weight:400; line-height:1.42; }
       @media (max-width:42rem) { #content { padding:2rem 1rem 2.5rem; } .school-page::after { width:1.2rem; height:7rem; } .school-activity { margin-top:1rem; padding:3.4rem .9rem 1rem; } .school-questions { margin-top:2.5rem; } }
     </style>
 </head>
@@ -35,7 +35,7 @@
             <h1 class="school-title" data-id="pg011_n0004">Kazi ya kufanya namba 2</h1>
             <p class="school-prompt" data-id="pg011_n0005">Chunguza Kielelezo namba 4, kisha jibu maswali yanayofuata:</p>
             <img data-id="pg011_im001" src="images/pg011_im001.jpg" alt="Mazingira ya shule yenye majengo ya madarasa yaliyopangwa kuzunguka uwanja, miti na nyasi, wanafunzi wachache, bendera ya Tanzania, sola za umeme juu ya paa, na matenki ya kuvuna maji ya mvua pembeni mwa majengo." />
-            <p class="school-caption" data-id="pg011_n0007"><strong>Kielelezo namba 4:</strong> Mazingira ya shule</p>
+            <p class="school-caption italic" data-id="pg011_n0007"><strong class="not-italic">Kielelezo namba 4:</strong> Mazingira ya shule</p>
           </div>
           <div class="school-questions"><h2 data-id="pg011_n0009">Maswali</h2>
             <p data-id="pg011_n0010">1. Ni vitu gani unaviona/ unavyochunguza katika Kielelezo namba 4?</p>
@@ -47,7 +47,7 @@
 
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js"></script>
+    <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
     <script src="./assets/scorm.js"></script>
     <script src="./assets/base.bundle.local.js"></script>

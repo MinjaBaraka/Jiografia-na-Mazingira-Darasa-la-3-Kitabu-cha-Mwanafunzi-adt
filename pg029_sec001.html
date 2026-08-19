@@ -15,8 +15,8 @@
     .source-page { position: relative; max-width: 60rem; margin: 0 auto; color: #2b2929; font-family: "Atkinson Hyperlegible", "Trebuchet MS", sans-serif; }
     .source-accent { position: absolute; top: 0; right: 0; width: 3rem; height: 15rem; object-fit: fill; }
     .source-copy { max-width: 50rem; margin: 4.75rem auto 0; padding-right: 4.75rem; }
-    .source-copy p { margin: 0 0 1.35rem; font-size: clamp(1.08rem, 2.4vw, 1.6rem); font-style: italic; font-weight: 400; line-height: 1.43; letter-spacing: .012em; }
-    .source-copy h1, .source-copy h2 { margin: 1.2rem 0 .35rem; color: #292729; font-size: clamp(1.3rem, 2.8vw, 1.9rem); font-style: italic; font-weight: 800; line-height: 1.2; }
+    .source-copy p { margin: 0 0 1.35rem; font-size: clamp(1.08rem, 2.4vw, 1.6rem); font-style: normal; font-weight: 400; line-height: 1.43; letter-spacing: .012em; }
+    .source-copy h1, .source-copy h2 { margin: 1.2rem 0 .35rem; color: #292729; font-size: clamp(1.3rem, 2.8vw, 1.9rem); font-style: normal; font-weight: 800; line-height: 1.2; }
     .source-copy h2 { margin-top: 1.7rem; }
     @media (max-width: 42rem) { #content { padding: 2rem 1rem 2.5rem; } .source-accent { width: 1.2rem; height: 7rem; } .source-copy { margin-top: 1rem; padding-right: 1.7rem; } }
   </style>
@@ -31,7 +31,7 @@
           <p><span data-id="pg029_n0002">Nyanda za juu zinaweza kutofautiana kwa umbo na kwa ukubwa.</span> <span
               data-id="pg029_n0003">Mfano wa uwanda wa juu Tanzania ni uwanda wa juu wa kusini ambao unapatikana katika
               mikoa ya Iringa, Mbeya, Songwe, na Njombe.</span></p>
-          <h1 data-id="pg029_n0005">Umuhimu wa uwanda wa juu</h1>
+          <h1 data-id="pg029_n0005" class="italic">Umuhimu wa uwanda wa juu</h1>
           <p><span data-id="pg029_n0007">Baadhi ya maeneo ya uwanda wa juu hutumika kujenga makazi na kuhifadhiwa kama
               vivutio vya utalii kutokana na uzuri wa mandhari na hali ya hewa.</span> <span
               data-id="pg029_n0008">Mfano, hifadhi ya taifa ya Kitulo ipo katika uwanda wa juu kusini mwa Tanzania
@@ -52,7 +52,7 @@
   </main>
   <div class="relative z-50" id="interface-container"></div>
   <div class="relative z-50" id="nav-container"></div>
-  <script src="./assets/offline-preloader.js"></script>
+  <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
   <script src="./assets/scorm.js"></script>
   <script src="./assets/base.bundle.local.js"></script>
