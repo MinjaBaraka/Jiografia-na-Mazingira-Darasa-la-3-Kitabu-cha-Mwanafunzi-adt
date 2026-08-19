@@ -5,6 +5,7 @@ from __future__ import annotations
 import asyncio
 import json
 import re
+import shutil
 import sys
 from pathlib import Path
 
@@ -81,13 +82,15 @@ async def main() -> None:
     audios_path.write_text(json.dumps(audios, ensure_ascii=False, indent=2) + "\n")
     preloader_path.write_text(preloader)
 
-    stale = {
-        *(audio_dir / name for name in old_names.values()),
-        *(audio_dir / f"{text_id}_male.mp3" for text_id in TARGET_IDS),
-    }
-    for path in stale:
-        if path.name not in new_names.values():
-            path.unlink(missing_ok=True)
+    # Keep legacy filenames as byte-identical aliases of the corrected Rehema
+    # clips. Browsers with a cached audios.json can otherwise pause on a 404.
+    for text_id in TARGET_IDS:
+        current = audio_dir / new_names[text_id]
+        for legacy_name in (
+            f"{text_id}_rehema_image_v1.mp3",
+            f"{text_id}_male.mp3",
+        ):
+            shutil.copyfile(current, audio_dir / legacy_name)
 
     print(
         f"Generated {len(TARGET_IDS)} new {VOICE} clips for pg009 Figure 3"

@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 from pathlib import Path
 
@@ -25,12 +26,17 @@ def main() -> None:
         path = audio_dir / expected_name
         if not path.is_file() or path.stat().st_size < 512:
             problems.append(f"{text_id}: missing or empty Rehema clip")
-        stale = [
-            item.name for item in audio_dir.glob(f"{text_id}*.mp3")
-            if item.name != expected_name
-        ]
-        if stale:
-            problems.append(f"{text_id}: stale clips remain: {stale}")
+        if path.is_file():
+            expected_digest = hashlib.sha256(path.read_bytes()).digest()
+            for legacy_name in (
+                f"{text_id}_rehema_image_v1.mp3",
+                f"{text_id}_male.mp3",
+            ):
+                legacy = audio_dir / legacy_name
+                if not legacy.is_file():
+                    problems.append(f"{text_id}: missing compatibility alias {legacy_name}")
+                elif hashlib.sha256(legacy.read_bytes()).digest() != expected_digest:
+                    problems.append(f"{text_id}: {legacy_name} still contains stale audio")
 
     preloader_path = ROOT / "assets" / "offline-preloader.js"
     source = preloader_path.read_text()
@@ -46,12 +52,15 @@ def main() -> None:
     page = (ROOT / "pg009_sec001.html").read_text()
     if inline.get("./pg009_sec001.html") != page:
         problems.append("offline pg009 HTML is stale")
-    if "offline-preloader.js?v=pg009-figure3-rehema-v2" not in page:
+    if "offline-preloader.js?v=pg009-figure3-rehema-v3" not in page:
         problems.append("pg009 cache-buster is stale")
 
     if problems:
         raise SystemExit("\n".join(problems))
-    print("AUDIT PASS: six pg009 Figure 3 descriptions use new Rehema v2 clips")
+    print(
+        "AUDIT PASS: six pg009 Figure 3 descriptions and all cached mappings "
+        "resolve to the corrected Rehema clips"
+    )
 
 
 if __name__ == "__main__":
