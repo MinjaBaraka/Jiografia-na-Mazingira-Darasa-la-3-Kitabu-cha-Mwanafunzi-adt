@@ -9,6 +9,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 OFFLINE_PRELOADER_VERSION = "italic-audit-v1"
 OFFLINE_PRELOADER_OVERRIDES = {
+    "pg003_sec001.html": "yaliyomo-navigation-v1",
     "pg009_sec001.html": "pg009-figure3-rehema-v3",
 }
 
