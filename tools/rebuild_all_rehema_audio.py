@@ -10,6 +10,8 @@ from pathlib import Path
 sys.path.insert(0, "/private/tmp/edge_tts_runtime")
 import edge_tts
 
+from rehema_speech import normalize_global_narration
+
 
 VOICE = "sw-TZ-RehemaNeural"
 ORDINALS = {
@@ -19,9 +21,10 @@ ORDINALS = {
 }
 
 
-def speech_for(text: str) -> str:
+def speech_for(text: str, text_id: str = "") -> str:
     """Make numbered prompts sound natural for a primary-school learner."""
     speech = re.sub(r"\s*/\s*", " au ", text.strip())
+    speech = normalize_global_narration(speech, text_id)
     match = re.match(r"^\s*(\d+)\.\s*(.+)$", speech, flags=re.DOTALL)
     if match and (ordinal := ORDINALS.get(int(match.group(1)))):
         return f"Swali la {ordinal}. {match.group(2).strip()}"
@@ -33,14 +36,17 @@ def speech_for(text: str) -> str:
 
 
 async def render(text_id: str, speech: str, destination: Path, limiter: asyncio.Semaphore):
+    temporary = destination.with_name(f"{destination.stem}.tmp{destination.suffix}")
     for attempt in range(1, 5):
         try:
             async with limiter:
-                await edge_tts.Communicate(speech, VOICE).save(str(destination))
-            if destination.stat().st_size < 512:
+                await edge_tts.Communicate(speech, VOICE).save(str(temporary))
+            if temporary.stat().st_size < 512:
                 raise RuntimeError("TTS returned an empty audio file")
+            temporary.replace(destination)
             return text_id, None
         except Exception as error:
+            temporary.unlink(missing_ok=True)
             if attempt == 4:
                 return text_id, str(error)
             await asyncio.sleep(attempt)
@@ -68,7 +74,7 @@ async def main():
     if unknown:
         raise SystemExit(f"Unknown audio IDs: {', '.join(sorted(unknown))}")
     clips = [
-        (text_id, speech_for(texts[text_id]), audio_dir / filename)
+        (text_id, speech_for(texts[text_id], text_id), audio_dir / filename)
         for text_id, filename in audios.items()
         if text_id in requested and texts.get(text_id, "").strip()
     ]

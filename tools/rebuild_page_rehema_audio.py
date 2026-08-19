@@ -10,6 +10,8 @@ from pathlib import Path
 sys.path.insert(0, "/private/tmp/edge_tts_runtime")
 import edge_tts
 
+from rehema_speech import normalize_global_narration
+
 VOICE = "sw-TZ-RehemaNeural"
 ORDINALS = {4: "nne", 5: "tano", 6: "sita", 7: "saba", 8: "nane", 9: "tisa", 10: "kumi", 11: "kumi na moja"}
 ONES = {0: "", 1: "moja", 2: "mbili", 3: "tatu", 4: "nne", 5: "tano", 6: "sita", 7: "saba", 8: "nane", 9: "tisa"}
@@ -33,6 +35,7 @@ def swahili_number(number: int) -> str:
 
 
 def speech_for(text: str, text_id: str) -> str:
+    text = normalize_global_narration(text, text_id)
     match = re.fullmatch(r"\s*(\d+)\.?\s*", text)
     if match and int(match.group(1)) in ORDINALS:
         return f"Swali la {ORDINALS[int(match.group(1))]}."
@@ -52,12 +55,17 @@ def speech_for(text: str, text_id: str) -> str:
 
 
 async def render(text_id, speech, destination, limiter):
+    temporary = destination.with_name(f"{destination.stem}.tmp{destination.suffix}")
     for attempt in range(1, 5):
         try:
             async with limiter:
-                await edge_tts.Communicate(speech_for(speech, text_id), VOICE).save(str(destination))
+                await edge_tts.Communicate(speech_for(speech, text_id), VOICE).save(str(temporary))
+            if temporary.stat().st_size < 512:
+                raise RuntimeError("TTS returned an empty audio file")
+            temporary.replace(destination)
             return text_id, None
         except Exception as error:
+            temporary.unlink(missing_ok=True)
             if attempt == 4:
                 return text_id, str(error)
             await asyncio.sleep(attempt)
