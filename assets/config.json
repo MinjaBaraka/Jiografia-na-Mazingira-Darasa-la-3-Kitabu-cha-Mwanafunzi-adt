@@ -19,8 +19,9 @@
     "describeImages": true,
     "notepad": false,
     "state": true,
+    "showAutoHideButton": false,
     "characterDisplay": false,
-    "highlight": false,
+    "highlight": true,
     "activities": true
   },
   "analytics": {

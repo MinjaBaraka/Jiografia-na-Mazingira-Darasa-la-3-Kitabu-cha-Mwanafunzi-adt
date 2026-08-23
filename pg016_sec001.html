@@ -2,56 +2,189 @@
 <html lang="sw-TZ">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Jiografia na Mazingira</title>
-    <meta name="title-id" content="pg016_sec001" />
-    <meta name="page-section-id" content="16" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jiografia na Mazingira</title>
+  <meta name="title-id" content="pg016_sec001" />
+  <meta name="page-section-id" content="16" />
   <link href="./content/tailwind_output.css?v=5" rel="stylesheet">
-    <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="./assets/fonts.css" rel="stylesheet">
-    <style>
-      #content { max-width: 68rem; padding: clamp(2.5rem, 6vw, 5rem) clamp(1rem, 5vw, 5rem) 3rem; }
-      .geography-page { max-width: 60rem; color:#2b2929; font-family:"Atkinson Hyperlegible", "Trebuchet MS", sans-serif; }
-      .geo-marker { position:absolute; top:0; left:0; width:3rem; height:15rem; border-radius:0 0 1.3rem 0; background:#3195a2; }
-      .geo-copy { max-width:50rem; margin:4.75rem 0 0 auto; }
-      .geo-copy p { margin:0 0 1.25rem; font-size:clamp(1.08rem,2.4vw,1.58rem); font-style: normal; font-weight:400; line-height:1.42; letter-spacing:.012em; }
-      .geo-exercise { position:relative; max-width:52rem; margin:3.65rem 0 0 auto; padding:.65rem; border-radius:1.35rem; background:#e7edf4; }
-      .geo-exercise__card { padding:3.35rem 1.8rem 1.55rem; border-radius:0 0 1.05rem 1.05rem; background:#fff; box-shadow:0 .55rem .5rem rgb(40 50 70 / 18%); }
-      .geo-exercise__title { position:absolute; top:-1.9rem; left:3.6rem; margin:0; padding:.8rem 3rem .85rem 2.3rem; border-radius:1.25rem; color:#fff; background:linear-gradient(135deg,#33235d,#765099); font-size:clamp(1.25rem,2.6vw,1.75rem); font-weight:800; line-height:1; }
-      .geo-exercise__wave { position:absolute; top:-1.1rem; right:7rem; width:18rem; height:1rem; border-top:.25rem solid #564080; border-radius:50%; }
-      .geo-exercise ol { margin:0; padding-left:1.45rem; font-size:clamp(1.08rem,2.35vw,1.52rem); font-style: normal; font-weight:400; line-height:1.42; }
-      .geo-exercise li { margin:.35rem 0; padding-left:.2rem; }
-      @media (max-width:42rem) { #content { padding:2rem 1rem 2.5rem; } .geo-marker { width:1.2rem; height:7rem; } .geo-copy { margin:1rem 0 0 2rem; } .geo-exercise { margin-top:3rem; } .geo-exercise__card { padding:3.1rem 1.1rem 1.2rem; } .geo-exercise__title { left:1rem; padding-inline:1.6rem; } .geo-exercise__wave { right:1.25rem; width:8rem; } }
-    </style>
+  <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="./assets/fonts.css" rel="stylesheet">
+  <link href="./assets/source-page-layout.css?v=1" rel="stylesheet" />
+  <style>
+    #content {
+      max-width: 68rem;
+      padding: clamp(2.5rem, 6vw, 5rem) clamp(1rem, 5vw, 5rem) 3rem;
+    }
+
+    .geography-page {
+      max-width: 60rem;
+      color: #2b2929;
+      font-family: "Atkinson Hyperlegible", "Trebuchet MS", sans-serif;
+    }
+
+    .geo-marker {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3rem;
+      height: 15rem;
+      border-radius: 0 0 1.3rem 0;
+      background: #3195a2;
+    }
+
+    .geo-copy {
+      max-width: 50rem;
+      margin: 4.75rem auto 0;
+    }
+
+    .geo-copy p {
+      margin: 0 0 1.25rem;
+      font-size: clamp(1.08rem, 2.4vw, 1.58rem);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.42;
+      letter-spacing: .012em;
+    }
+
+    .geo-exercise {
+      position: relative;
+      max-width: 52rem;
+      margin: 3.65rem auto 0;
+      padding: .65rem;
+      border-radius: 1.35rem;
+      background: #e7edf4;
+    }
+
+    .geo-exercise__card {
+      padding: 3.35rem 1.8rem 1.55rem;
+      border-radius: 0 0 1.05rem 1.05rem;
+      background: #fff;
+      box-shadow: 0 .55rem .5rem rgb(40 50 70 / 18%);
+    }
+
+    .geo-exercise__title {
+      position: absolute;
+      top: -1.9rem;
+      left: 3.6rem;
+      margin: 0;
+      padding: .8rem 3rem .85rem 2.3rem;
+      border-radius: 1.25rem;
+      color: #fff;
+      background: linear-gradient(135deg, #33235d, #765099);
+      font-size: clamp(1.25rem, 2.6vw, 1.75rem);
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .geo-exercise__wave {
+      position: absolute;
+      top: -1.1rem;
+      right: 7rem;
+      width: 18rem;
+      height: 1rem;
+      border-top: .25rem solid #564080;
+      border-radius: 50%;
+    }
+
+    .geo-exercise ol {
+      margin: 0;
+      padding-left: 1.45rem;
+      font-size: clamp(1.08rem, 2.35vw, 1.52rem);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.42;
+    }
+
+    .geo-exercise li {
+      margin: .35rem 0;
+      padding-left: .2rem;
+    }
+
+    @media (max-width:42rem) {
+      #content {
+        padding: 2rem 1rem 2.5rem;
+      }
+
+      .geo-marker {
+        width: 1.2rem;
+        height: 7rem;
+      }
+
+      .geo-copy {
+        margin: 1rem 2rem 0;
+      }
+
+      .geo-exercise {
+        margin-top: 3rem;
+      }
+
+      .geo-exercise__card {
+        padding: 3.1rem 1.1rem 1.2rem;
+      }
+
+      .geo-exercise__title {
+        left: 1rem;
+        padding-inline: 1.6rem;
+      }
+
+      .geo-exercise__wave {
+        right: 1.25rem;
+        width: 8rem;
+      }
+    }
+  </style>
 </head>
 
 <body class="min-h-screen flex items-center justify-center">
-    <main class="w-full">
-      <div class="mx-auto max-w-6xl bg-white px-4 sm:px-8 lg:px-10 py-6 opacity-0" id="content"><section data-section-type="activity_open_ended_answer" data-section-id="pg016_sec001" class="geography-page relative mx-auto overflow-visible bg-white">
-  <div class="geo-marker" aria-hidden="true"></div>
-  <div class="geo-copy">
-    <p><span data-id="pg016_n0002">nzuri na mandhari yenye kuvutia.</span> <span data-id="pg016_n0003">Vilevile, maeneo yenye milima yanaweza kuwa na hali ya hewa yenye baridi kwa sababu ya mwinuko mkubwa.</span> <span data-id="pg016_n0004">Binadamu hulazimika kuvaa nguo nzito kama sweta kujikinga na baridi.</span> <span data-id="pg016_n0005">Maeneo ya Tanzania yaliyopo karibu na mwambao wa bahari mara nyingi huwa na hali ya joto zaidi kuliko maeneo ya bara.</span> <span data-id="pg016_n0006">Hivyo, watu katika maeneo hayo wanaweza kuvaa nguo nyepesi ili kuepuka au kupunguza madhara ya joto.</span> <span data-id="pg016_n0007">Hata hivyo, hali ya joto katika maeneo ya pwani inaweza kutofautiana kutegemeana na mwinuko wa ardhi na mwelekeo wa upepo.</span></p>
-    <p><span data-id="pg016_n0009">Jiografia na Mazingira inasaidia kubaini na kuelewa majanga ya asili kama vile mafuriko na vimbunga, na jinsi ya kuepuka athari za majanga hayo.</span> <span data-id="pg016_n0010">Pia, inasaidia katika kupanga na kutekeleza ujenzi wa miundombinu na huduma za jamii.</span> <span data-id="pg016_n0011">Mifano ya miundombinu na huduma za jamii ni barabara, hospitali, na shule.</span> <span data-id="pg016_n0012">Hivyo, elimu ya Jiografia na Mazingira, inamwezesha binadamu kujua maeneo yanayohitaji kupatiwa huduma hizo.</span></p>
-    <p><span data-id="pg016_n0014">Kwa ujumla, kuna umuhimu wa kujifunza somo la Jiografia na Mazingira ili kuwa na matumizi sahihi na endelevu ya vitu vilivyomo katika mazingira.</span> <span data-id="pg016_n0015">Mfano, matumizi endelevu ya maji, misitu na ardhi.</span></p>
-  </div>
-  <div class="geo-exercise">
-    <h1 class="geo-exercise__title" data-id="pg016_n0018">Zoezi la 2</h1><div class="geo-exercise__wave" aria-hidden="true"></div>
-    <div class="geo-exercise__card"><ol>
-      <li><span data-id="pg016_n0019">1.</span> <span data-id="pg016_n0020">Kwa nini tunajifunza kuhusu Jiografia na Mazingira?</span></li>
-      <li><span data-id="pg016_n0021">2.</span> <span data-id="pg016_n0022">Uelewa kuhusu majanga ya asili unasaidia nini?</span></li>
-      <li><span data-id="pg016_n0023">3.</span> <span data-id="pg016_n0024">Ni rasilimali zipi za asili zinapatikana katika mazingira unayoishi?</span></li>
-    </ol></div>
-  </div>
-</section></div>
-    </main>
+  <main class="w-full">
+    <div class="mx-auto max-w-6xl bg-white px-4 sm:px-8 lg:px-10 py-6 opacity-0" id="content">
+      <section data-section-type="activity_open_ended_answer" data-section-id="pg016_sec001"
+        class="geography-page relative mx-auto overflow-visible bg-white">
+        <div class="geo-copy">
+          <p><span data-id="pg016_n0002">nzuri na mandhari yenye kuvutia.</span> <span data-id="pg016_n0003">Vilevile,
+              maeneo yenye milima yanaweza kuwa na hali ya hewa yenye baridi kwa sababu ya mwinuko mkubwa.</span> <span
+              data-id="pg016_n0004">Binadamu hulazimika kuvaa nguo nzito kama sweta kujikinga na baridi.</span> <span
+              data-id="pg016_n0005">Maeneo ya Tanzania yaliyopo karibu na mwambao wa bahari mara nyingi huwa na hali ya
+              joto zaidi kuliko maeneo ya bara.</span> <span data-id="pg016_n0006">Hivyo, watu katika maeneo hayo
+              wanaweza kuvaa nguo nyepesi ili kuepuka au kupunguza madhara ya joto.</span> <span
+              data-id="pg016_n0007">Hata hivyo, hali ya joto katika maeneo ya pwani inaweza kutofautiana kutegemeana na
+              mwinuko wa ardhi na mwelekeo wa upepo.</span></p>
+          <p><span data-id="pg016_n0009">Jiografia na Mazingira inasaidia kubaini na kuelewa majanga ya asili kama vile
+              mafuriko na vimbunga, na jinsi ya kuepuka athari za majanga hayo.</span> <span data-id="pg016_n0010">Pia,
+              inasaidia katika kupanga na kutekeleza ujenzi wa miundombinu na huduma za jamii.</span> <span
+              data-id="pg016_n0011">Mifano ya miundombinu na huduma za jamii ni barabara, hospitali, na shule.</span>
+            <span data-id="pg016_n0012">Hivyo, elimu ya Jiografia na Mazingira, inamwezesha binadamu kujua maeneo
+              yanayohitaji kupatiwa huduma hizo.</span></p>
+          <p><span data-id="pg016_n0014">Kwa ujumla, kuna umuhimu wa kujifunza somo la Jiografia na Mazingira ili kuwa
+              na matumizi sahihi na endelevu ya vitu vilivyomo katika mazingira.</span> <span
+              data-id="pg016_n0015">Mfano, matumizi endelevu ya maji, misitu na ardhi.</span></p>
+        </div>
+        <div class="geo-exercise">
+          <h1 class="geo-exercise__title" data-id="pg016_n0018">Zoezi la 2</h1>
+          <div class="geo-exercise__wave" aria-hidden="true"></div>
+          <div class="geo-exercise__card">
+            <ol>
+              <li><span data-id="pg016_n0019">1.</span> <span data-id="pg016_n0020">Kwa nini tunajifunza kuhusu
+                  Jiografia na Mazingira?</span></li>
+              <li><span data-id="pg016_n0021">2.</span> <span data-id="pg016_n0022">Uelewa kuhusu majanga ya asili
+                  unasaidia nini?</span></li>
+              <li><span data-id="pg016_n0023">3.</span> <span data-id="pg016_n0024">Ni rasilimali zipi za asili
+                  zinapatikana katika mazingira unayoishi?</span></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
 
-    <div class="relative z-50" id="interface-container"></div>
-    <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script>
+  <div class="relative z-50" id="interface-container"></div>
+  <div class="relative z-50" id="nav-container"></div>
+  <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
-    <script src="./assets/scorm.js"></script>
-    <script src="./assets/base.bundle.local.js"></script>
+  <script src="./assets/scorm.js"></script>
+  <script src="./assets/reader-layout.js?v=1"></script>
+  <script src="./assets/base.bundle.local.js"></script>
 </body>
 
 </html>

@@ -12,8 +12,9 @@ INLINE_MARKER = "  var INLINE = "
 END_MARKER = ";\n  var BASE_DIR"
 DATA_FILES = [
     ROOT / "assets" / "config.json",
-    ROOT / "content" / "i18n" / "sw-TZ" / "texts.json",
-    ROOT / "content" / "i18n" / "sw-TZ" / "videos.json",
+    ROOT / "content" / "pages.json",
+    ROOT / "content" / "toc.json",
+    *sorted((ROOT / "content" / "i18n").rglob("*.json")),
 ]
 
 

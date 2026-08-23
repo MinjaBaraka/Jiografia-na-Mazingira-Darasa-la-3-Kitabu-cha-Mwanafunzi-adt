@@ -10,89 +10,15 @@
   <link href="./content/tailwind_output.css?v=5" rel="stylesheet">
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
   <link href="./assets/fonts.css" rel="stylesheet">
+  <link href="./assets/source-page-layout.css?v=1" rel="stylesheet" />
   <style>
-    /* Printed page iii: this is the book artwork, separate from the ADT dock. */
     .yaliyomo-page {
       position: relative;
-      min-height: clamp(58rem, 132vw, 82rem);
-      overflow: hidden;
+      min-height: 0;
+      overflow: visible;
     }
 
-    .yaliyomo-page__content { padding-bottom: 10.5rem; }
-
-    .yaliyomo-footer {
-      position: absolute;
-      right: 3.5%;
-      bottom: 0;
-      left: 3.5%;
-      height: clamp(7.5rem, 12vw, 10rem);
-      pointer-events: none;
-    }
-
-    .yaliyomo-footer__base {
-      position: absolute;
-      inset: auto 0 0;
-      height: 72%;
-      background: #5699aa;
-    }
-
-    .yaliyomo-footer__left {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 52%;
-      height: 100%;
-      background: #5699aa;
-      clip-path: polygon(0 18%, 100% 68%, 100% 100%, 0 100%);
-    }
-
-    .yaliyomo-footer__right {
-      position: absolute;
-      right: 0;
-      bottom: 38%;
-      width: 54%;
-      height: 62%;
-      background: #00687e;
-      clip-path: polygon(0 100%, 100% 0, 100% 62%, 0 100%);
-    }
-
-    .yaliyomo-footer__accent {
-      position: absolute;
-      right: 0;
-      bottom: 40%;
-      width: 47%;
-      height: 23%;
-      background: #087890;
-      clip-path: polygon(0 100%, 100% 0, 100% 100%);
-    }
-
-    .yaliyomo-footer__capsule {
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      display: grid;
-      width: clamp(3.75rem, 6vw, 5rem);
-      height: 82%;
-      transform: translateX(-50%);
-      place-items: start center;
-      padding-top: clamp(.75rem, 1.4vw, 1rem);
-      border-radius: 1.25rem 1.25rem 0 0;
-      background: #00687e;
-      box-sizing: border-box;
-    }
-
-    .yaliyomo-footer__number {
-      display: grid;
-      width: clamp(2.7rem, 4.2vw, 3.65rem);
-      aspect-ratio: 1;
-      place-items: center;
-      border-radius: 999px;
-      background: #fff;
-      color: #245083;
-      font-family: Georgia, serif;
-      font-size: clamp(1.35rem, 2vw, 1.8rem);
-      font-style: normal;
-    }
+    .yaliyomo-page__content { padding-bottom: 0; }
 
     .yaliyomo-toc-link {
       color: inherit;
@@ -113,7 +39,7 @@
       <section data-section-type="table_of_contents" data-section-id="pg003_sec001"
         class="yaliyomo-page w-full bg-white text-slate-800">
         <div class="yaliyomo-page__content w-full">
-          <div class="mx-auto w-full max-w-5xl px-8 max-sm:px-5 pt-10 pb-6">
+          <div class="mx-auto w-full max-w-[920px] px-8 max-sm:px-5 pt-10 pb-6">
             <div class="flex items-center justify-center">
               <h1 data-id="pg003_n0002"
                 class="adt-h1 font-bold text-white bg-gradient-to-b from-sky-400 via-cyan-700 to-teal-900 rounded-full px-12 py-3 shadow-lg tracking-wide">
@@ -121,67 +47,48 @@
             </div>
           </div>
         </div>
-        <div class="relative mx-auto w-full max-w-5xl px-8 max-sm:px-5 pb-16">
+        <div class="relative mx-auto w-full max-w-[920px] px-8 max-sm:px-5 pb-16">
           <div class="relative z-10 pr-20 max-sm:pr-0 pt-2 space-y-8">
-            <a href="./pg004_sec001.html" data-adt-page="4" class="yaliyomo-toc-link flex items-baseline w-full gap-3" aria-label="Shukurani 4"><span data-id="pg003_n0005"
+            <a href="#" data-toc-section="pg004_sec001" class="yaliyomo-toc-link flex items-baseline w-full gap-3"><span data-id="pg003_n0005"
                 class="adt-body text-left text-slate-800 shrink-0">Shukurani</span><span aria-hidden="true"
-                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span
-                data-id="pg003_n0006" class="adt-body text-right text-slate-800 shrink-0">4</span></a>
-            <a href="./pg006_sec001.html" data-adt-page="6" class="yaliyomo-toc-link flex items-baseline w-full gap-3" aria-label="Utangulizi 6"><span data-id="pg003_n0008"
+                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span data-toc-position aria-hidden="true" class="adt-body text-right text-slate-800 shrink-0"></span></a>
+            <a href="#" data-toc-section="pg006_sec001" class="yaliyomo-toc-link flex items-baseline w-full gap-3"><span data-id="pg003_n0008"
                 class="adt-body text-left text-slate-800 shrink-0">Utangulizi</span><span aria-hidden="true"
-                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span
-                data-id="pg003_n0009" class="adt-body text-right text-slate-800 shrink-0">6</span></a>
-            <a href="./pg007_sec001.html" data-adt-page="7" class="yaliyomo-toc-link flex items-baseline w-full gap-3" aria-label="Sura ya Kwanza 7"><span data-id="pg003_n0011"
+                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span data-toc-position aria-hidden="true" class="adt-body text-right text-slate-800 shrink-0"></span></a>
+            <a href="#" data-toc-section="pg007_sec001" class="yaliyomo-toc-link flex items-baseline w-full gap-3"><span data-id="pg003_n0011"
                 class="adt-body text-left text-sky-600 shrink-0">Sura ya Kwanza</span><span aria-hidden="true"
-                class="flex-1 border-b-4 border-dotted border-sky-500 translate-y-[-0.15em]"></span><span
-                data-id="pg003_n0012" class="adt-body text-right text-sky-600 shrink-0">7</span></a>
-            <a href="./pg007_sec001.html" data-adt-page="7" class="yaliyomo-toc-link flex items-baseline w-full gap-3" aria-label="Dhana ya Jiografia na Mazingira 7"><span
+                class="flex-1 border-b-4 border-dotted border-sky-500 translate-y-[-0.15em]"></span><span data-toc-position aria-hidden="true" class="adt-body text-right text-sky-600 shrink-0"></span></a>
+            <a href="#" data-toc-section="pg007_sec001" class="yaliyomo-toc-link flex items-baseline w-full gap-3"><span
                 data-id="pg003_n0014" class="adt-body text-left text-slate-800 shrink-0">Dhana ya Jiografia na
                 Mazingira</span><span aria-hidden="true"
-                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span
-                data-id="pg003_n0015" class="adt-body text-right text-slate-800 shrink-0">7</span></a>
-            <a href="./pg020_sec001.html" data-adt-page="20" class="yaliyomo-toc-link flex items-baseline w-full gap-3" aria-label="Sura ya Pili 20"><span data-id="pg003_n0017"
+                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span data-toc-position aria-hidden="true" class="adt-body text-right text-slate-800 shrink-0"></span></a>
+            <a href="#" data-toc-section="pg020_sec001" class="yaliyomo-toc-link flex items-baseline w-full gap-3"><span data-id="pg003_n0017"
                 class="adt-body text-left text-sky-600 shrink-0">Sura ya Pili</span><span aria-hidden="true"
-                class="flex-1 border-b-4 border-dotted border-sky-500 translate-y-[-0.15em]"></span><span
-                data-id="pg003_n0018" class="adt-body text-right text-sky-600 shrink-0">20</span></a>
-            <a href="./pg020_sec001.html" data-adt-page="20" class="yaliyomo-toc-link flex items-baseline w-full gap-3" aria-label="Sura ya nchi. 20"><span data-id="pg003_n0020"
+                class="flex-1 border-b-4 border-dotted border-sky-500 translate-y-[-0.15em]"></span><span data-toc-position aria-hidden="true" class="adt-body text-right text-sky-600 shrink-0"></span></a>
+            <a href="#" data-toc-section="pg020_sec001" class="yaliyomo-toc-link flex items-baseline w-full gap-3"><span data-id="pg003_n0020"
                 class="adt-body text-left text-slate-800 shrink-0">Sura ya nchi.</span><span aria-hidden="true"
-                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span
-                data-id="pg003_n0021" class="adt-body text-right text-slate-800 shrink-0">20</span></a>
-            <a href="./pg034_sec001.html" data-adt-page="34" class="yaliyomo-toc-link flex items-baseline w-full gap-3" aria-label="Sura ya Tatu 34"><span data-id="pg003_n0023"
+                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span data-toc-position aria-hidden="true" class="adt-body text-right text-slate-800 shrink-0"></span></a>
+            <a href="#" data-toc-section="pg034_sec001" class="yaliyomo-toc-link flex items-baseline w-full gap-3"><span data-id="pg003_n0023"
                 class="adt-body text-left text-sky-600 shrink-0">Sura ya Tatu</span><span aria-hidden="true"
-                class="flex-1 border-b-4 border-dotted border-sky-500 translate-y-[-0.15em]"></span><span
-                data-id="pg003_n0024" class="adt-body text-right text-sky-600 shrink-0">34</span></a>
-            <a href="./pg034_sec001.html" data-adt-page="34" class="yaliyomo-toc-link flex items-baseline w-full gap-3" aria-label="Utunzaji wa mazingira 34"><span
+                class="flex-1 border-b-4 border-dotted border-sky-500 translate-y-[-0.15em]"></span><span data-toc-position aria-hidden="true" class="adt-body text-right text-sky-600 shrink-0"></span></a>
+            <a href="#" data-toc-section="pg034_sec001" class="yaliyomo-toc-link flex items-baseline w-full gap-3"><span
                 data-id="pg003_n0026" class="adt-body text-left text-slate-800 shrink-0">Utunzaji wa
                 mazingira</span><span aria-hidden="true"
-                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span
-                data-id="pg003_n0027" class="adt-body text-right text-slate-800 shrink-0">34</span></a>
-            <a href="./pg052_sec001.html" data-adt-page="52" class="yaliyomo-toc-link flex items-baseline w-full gap-3" aria-label="Sura ya Nne 52"><span data-id="pg003_n0029"
+                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span data-toc-position aria-hidden="true" class="adt-body text-right text-slate-800 shrink-0"></span></a>
+            <a href="#" data-toc-section="pg052_sec001" class="yaliyomo-toc-link flex items-baseline w-full gap-3"><span data-id="pg003_n0029"
                 class="adt-body text-left text-sky-600 shrink-0">Sura ya Nne</span><span aria-hidden="true"
-                class="flex-1 border-b-4 border-dotted border-sky-500 translate-y-[-0.15em]"></span><span
-                data-id="pg003_n0030" class="adt-body text-right text-sky-600 shrink-0">52</span></a>
-            <a href="./pg052_sec001.html" data-adt-page="52" class="yaliyomo-toc-link flex items-baseline w-full gap-3" aria-label="Uharibifu wa mazingira 52"><span
+                class="flex-1 border-b-4 border-dotted border-sky-500 translate-y-[-0.15em]"></span><span data-toc-position aria-hidden="true" class="adt-body text-right text-sky-600 shrink-0"></span></a>
+            <a href="#" data-toc-section="pg052_sec001" class="yaliyomo-toc-link flex items-baseline w-full gap-3"><span
                 data-id="pg003_n0032" class="adt-body text-left text-slate-800 shrink-0">Uharibifu wa
                 mazingira</span><span aria-hidden="true"
-                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span
-                data-id="pg003_n0033" class="adt-body text-right text-slate-800 shrink-0">52</span></a>
-            <a href="./pg085_sec001.html" data-adt-page="85" class="yaliyomo-toc-link flex items-baseline w-full gap-3" aria-label="Jaribio 85"><span data-id="pg003_n0035"
+                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span data-toc-position aria-hidden="true" class="adt-body text-right text-slate-800 shrink-0"></span></a>
+            <a href="#" data-toc-section="pg085_sec001" class="yaliyomo-toc-link flex items-baseline w-full gap-3"><span data-id="pg003_n0035"
                 class="adt-body text-left text-slate-800 shrink-0">Jaribio</span><span aria-hidden="true"
-                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span
-                data-id="pg003_n0036" class="adt-body text-right text-slate-800 shrink-0">85</span></a>
-            <a href="./pg088_sec001.html" data-adt-page="88" class="yaliyomo-toc-link flex items-baseline w-full gap-3" aria-label="Marejeleo 88"><span data-id="pg003_n0038"
+                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span data-toc-position aria-hidden="true" class="adt-body text-right text-slate-800 shrink-0"></span></a>
+            <a href="#" data-toc-section="pg088_sec001" class="yaliyomo-toc-link flex items-baseline w-full gap-3"><span data-id="pg003_n0038"
                 class="adt-body text-left text-slate-800 shrink-0">Marejeleo</span><span aria-hidden="true"
-                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span
-                data-id="pg003_n0039" class="adt-body text-right text-slate-800 shrink-0">88</span></a>
+                class="flex-1 border-b-4 border-dotted border-slate-700 translate-y-[-0.15em]"></span><span data-toc-position aria-hidden="true" class="adt-body text-right text-slate-800 shrink-0"></span></a>
           </div>
-        </div>
-        <div class="yaliyomo-footer" aria-hidden="true">
-          <div class="yaliyomo-footer__base"></div>
-          <div class="yaliyomo-footer__left"></div>
-          <div class="yaliyomo-footer__right"></div>
-          <div class="yaliyomo-footer__accent"></div>
-          <div class="yaliyomo-footer__capsule"><span class="yaliyomo-footer__number">iii</span></div>
         </div>
       </section>
     </div>
@@ -192,7 +99,9 @@
   <script src="./assets/offline-preloader.js?v=yaliyomo-navigation-v1"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
   <script src="./assets/scorm.js"></script>
+  <script src="./assets/reader-layout.js?v=1"></script>
   <script src="./assets/base.bundle.local.js"></script>
+  <script src="./assets/toc-navigation-sync.js?v=1"></script>
 </body>
 
 </html>

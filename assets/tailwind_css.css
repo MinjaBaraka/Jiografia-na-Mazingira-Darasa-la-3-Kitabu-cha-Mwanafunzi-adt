@@ -183,6 +183,7 @@ span[data-word-index].bg-yellow-300,
 span[data-word-index].bg-yellow-300 span {
   background-color: #fde047 !important;
   color: #000 !important;
+  border: 0 !important;
   border-radius: 3px;
 }
 

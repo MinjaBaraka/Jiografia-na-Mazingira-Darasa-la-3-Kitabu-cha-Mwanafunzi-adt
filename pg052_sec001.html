@@ -10,9 +10,10 @@
   <link href="./content/tailwind_output.css?v=5" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
+  <link href="./assets/source-page-layout.css?v=1" rel="stylesheet" />
     <style>
         /* Match the compact printed Chapter 4 opener rather than the generic cards. */
-        #content { max-width: 48rem !important; padding: 2.5rem 1.2rem 0 !important; }
+        #content.source-book-page { width:min(100%, 48rem); max-width:48rem !important; margin-inline:auto; padding:2.5rem 1.2rem 0 !important; }
         section[data-section-id="pg052_sec001"] { font-family: "Atkinson Hyperlegible", sans-serif !important; }
         section[data-section-id="pg052_sec001"] .adt-body { font-family: "Atkinson Hyperlegible", sans-serif !important; font-style: normal; }
         section[data-section-id="pg052_sec001"] > div { width: 100% !important; }
@@ -33,7 +34,7 @@
 
 <body class="min-h-screen flex items-center justify-center">
     <main class="w-full">
-      <div id="content" class="container mx-auto w-full max-w-5xl px-5 md:px-8 py-6 md:py-8 bg-white opacity-0">
+      <div id="content" class="container mx-auto w-full max-w-[920px] px-5 md:px-8 py-6 md:py-8 bg-white opacity-0">
   <section data-section-type="text_and_single_image" data-section-id="pg052_sec001" class="w-full text-slate-800 relative font-serif">
     <div class="hidden md:block absolute left-2 top-2 w-12 h-7 bg-cyan-700/60"></div>
 
@@ -58,7 +59,7 @@
           </div>
         </div>
         <p class="adt-body px-4 md:px-5 py-4 md:py-3 leading-tight md:leading-snug text-left text-[1rem] md:text-[1.08rem]">
-          <span data-id="pg052_n0010" class="italic">Binadamu na viumbe wengine wanahitaji mazingira yaliyotunzwa ili waweze kustawi na kuongezeka.</span> <span data-id="pg052_n0011" class="italic">Uharibifu wa mazingira ni kikwazo cha ustawi wa binadamu na viumbe wengine.</span> <span data-id="pg052_n0012" class="italic">Hivyo, ni vema kuzingatia utunzaji wa mazingira kwa ustawi wa binadamu na viumbe wengine.</span> <span data-id="pg052_n0013" class="italic">Katika sura hii utajifunza kuhusu vyanzo vya uharibifu wa mazingira, shughuli za binadamu zinavyoweza kuharibu mazingira, athari za uharibifu wa mazingira na jinsi uharibifu wa mazingira unavyoathiri tabianchi.</span> <span data-id="pg052_n0014" class="italic">Umahiri utakaoujenga katika sura hii utakuwezesha kuepuka uharibifu wa mazingira mahali unapoishi.</span>
+          <span data-id="pg052_n0010" >Binadamu na viumbe wengine wanahitaji mazingira yaliyotunzwa ili waweze kustawi na kuongezeka.</span> <span data-id="pg052_n0011" >Uharibifu wa mazingira ni kikwazo cha ustawi wa binadamu na viumbe wengine.</span> <span data-id="pg052_n0012" >Hivyo, ni vema kuzingatia utunzaji wa mazingira kwa ustawi wa binadamu na viumbe wengine.</span> <span data-id="pg052_n0013" >Katika sura hii utajifunza kuhusu vyanzo vya uharibifu wa mazingira, shughuli za binadamu zinavyoweza kuharibu mazingira, athari za uharibifu wa mazingira na jinsi uharibifu wa mazingira unavyoathiri tabianchi.</span> <span data-id="pg052_n0014" >Umahiri utakaoujenga katika sura hii utakuwezesha kuepuka uharibifu wa mazingira mahali unapoishi.</span>
         </p>
       </div>
     </div>
@@ -115,7 +116,8 @@
     <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
     <script src="./assets/scorm.js"></script>
-    <script src="./assets/base.bundle.local.js"></script>
+    <script src="./assets/reader-layout.js?v=1"></script>
+  <script src="./assets/base.bundle.local.js"></script>
 </body>
 
 </html>

@@ -9,6 +9,7 @@
   <link href="./content/tailwind_output.css?v=5" rel="stylesheet" />
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet" />
   <link href="./assets/fonts.css" rel="stylesheet" />
+  <link href="./assets/source-page-layout.css?v=1" rel="stylesheet" />
   <style>
     #content {
       max-width: 68rem;
@@ -33,7 +34,7 @@
 
     .intro {
       max-width: 48rem;
-      margin: 4.75rem 0 1.75rem auto;
+      margin: 4.75rem auto 1.75rem;
       font-size: clamp(1.2rem, 2.5vw, 1.65rem);
       font-style: normal;
       font-weight: 400;
@@ -44,6 +45,7 @@
     .card-wrap,
     .exercise-wrap {
       max-width: 54rem;
+      margin-right: auto;
       margin-left: auto;
     }
 
@@ -155,7 +157,7 @@
     @media (max-width: 42rem) {
       #content { padding: 2rem 1rem 2.5rem; }
       .top-marker { width: 1.3rem; height: 7rem; }
-      .intro { margin-top: 1rem; margin-left: 2rem; }
+      .intro { margin-top: 1rem; margin-right: 2rem; margin-left: 2rem; }
       .activity-card { padding: 3.6rem 1.25rem 1.5rem 2rem; }
       .activity-icon { left: -.7rem; width: 4.25rem; height: 4.25rem; }
       .activity-title { left: 3.1rem; }
@@ -168,7 +170,7 @@
 
 <body class="min-h-screen flex items-center justify-center">
   <main class="w-full">
-    <div id="content" class="mx-auto max-w-5xl bg-white px-3 sm:px-5 lg:px-8 pt-0 pb-0 opacity-0">
+    <div id="content" class="mx-auto max-w-[920px] bg-white px-3 sm:px-5 lg:px-8 pt-0 pb-0 opacity-0">
       <section data-section-type="activity_open_ended_answer" data-section-id="pg044_sec001" class="source-page relative mx-auto">
 
         <div class="intro">
@@ -204,7 +206,8 @@
     </div>
   </main>
   <div class="relative z-50" id="interface-container"></div><div class="relative z-50" id="nav-container"></div>
-  <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script><script src="./assets/scorm.js"></script><script src="./assets/base.bundle.local.js"></script>
+  <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script><script src="./assets/scorm.js"></script><script src="./assets/reader-layout.js?v=1"></script>
+  <script src="./assets/base.bundle.local.js"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
 </body>
 </html>

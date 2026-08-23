@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="sw-TZ">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,41 +10,236 @@
   <link href="./content/tailwind_output.css?v=5" rel="stylesheet" />
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet" />
   <link href="./assets/fonts.css" rel="stylesheet" />
+  <link href="./assets/source-page-layout.css?v=1" rel="stylesheet" />
   <style>
     /* PDF-derived pg039 layout. The ADT navigation remains outside this section. */
-    #content { max-width: 1020px; padding: 4.7rem 4.8rem 3rem; }
-    .source-page { max-width: 800px; color: #282427; overflow: visible !important; }
-    .top-marker { position:absolute; right:-1.1rem; top:0; width:2.9rem; height:12rem; background:#3593a0; border-radius:0 0 0 1.3rem; }
-    .source-list { margin: .25rem 0 1rem 4rem; font-size:1.44rem; line-height:1.22; letter-spacing:.01em; }
-    .source-list span:first-child { max-width: 620px; }
-    .activity-wrap { margin: .7rem 0 1.7rem; padding-left: .2rem; }
-    .activity-card { position:relative; overflow:visible; border-radius:1.35rem; background:#f8e4d2; padding:3.65rem .8rem .7rem; box-shadow: inset 0 -10px 16px rgba(180,106,56,.12); }
-    .activity-rail { position:absolute; inset:0 0 auto; height:3.3rem; border-radius:1.35rem 1.35rem 0 0; background:linear-gradient(180deg,#cf85b5 0%,#c06a9a 55%,#a55480 100%); }
-    .activity-icon { position:absolute; z-index:4; left:-3.35rem; top:-.5rem; width:6rem; height:6rem; padding:.42rem; border-radius:50%; box-sizing:border-box; background:linear-gradient(135deg,#4d82c8,#9c5fa8 45%,#f26d63); box-shadow:0 1px 4px #765; }
-    .activity-icon > div { width:100%; height:100%; min-width:0; min-height:0; border-radius:50% !important; }
-    .activity-icon svg { display:block; width:3.25rem !important; height:3.25rem !important; flex:none; }
-    .activity-title { position:absolute; z-index:3; left:3.2rem; top:0; height:3.3rem; display:flex; align-items:center; padding:0 1.25rem; border-radius:0 .75rem .75rem 0; color:#fff; background:linear-gradient(90deg,#cb6b24,#9d4908); font-size:1.42rem; font-weight:800; }
-    .activity-prompt { margin:0 1rem .65rem 3.2rem; font-size:1.4rem; line-height:1.25; }
-    .figure-frame { margin:0; }
-    .figure-frame img { width:100%; aspect-ratio:1.72 / 1; object-fit:cover; }
-    .figure-caption { margin:.55rem .65rem 0; font-size:1.22rem; line-height:1.2; font-style: normal; }
-    .questions-wrap { margin:0; }
-    .questions-card { position:relative; min-height:11rem; border-radius:.75rem; padding:2.65rem 2.5rem .8rem 3.3rem; background:#d9edf4; }
-    .questions-title { position:absolute; top:-.9rem; left:0; min-width:13rem; height:2.75rem; display:flex; align-items:center; padding:0 1.25rem; border-radius:0 1.4rem 1.4rem 0; color:#fff; background:linear-gradient(90deg,#027fc0,#05a5ca); font-size:1.42rem; font-weight:800; }
-    .questions-list { margin:0; padding-left:1.5rem; font-size:1.36rem; line-height:1.28; }
-    .questions-list li + li { margin-top:.45rem; }
-    @media (max-width:640px) { #content { padding:2rem 1.1rem; } .source-list{margin-left:1.8rem;font-size:1.1rem}.top-marker{right:0;height:7rem;width:2rem}.activity-card{padding-top:3.15rem}.activity-icon{left:-.9rem;top:-.25rem;width:4.5rem;height:4.5rem}.activity-icon svg{width:2.4rem !important;height:2.4rem !important}.activity-title{left:2.8rem;font-size:1.05rem;padding:0 .8rem}.activity-prompt{margin-left:.4rem;font-size:1.15rem}.questions-card{padding:2.45rem 1rem .8rem 2.2rem}.questions-list{font-size:1.12rem} }
+    #content {
+      max-width: 1020px;
+      padding: 4.7rem 4.8rem 3rem;
+    }
+
+    .source-page {
+      width: min(100%, 800px) !important;
+      max-width: 800px !important;
+      margin-inline: auto;
+      color: #282427;
+      overflow: visible !important;
+    }
+
+    .top-marker {
+      position: absolute;
+      right: -1.1rem;
+      top: 0;
+      width: 2.9rem;
+      height: 12rem;
+      background: #3593a0;
+      border-radius: 0 0 0 1.3rem;
+    }
+
+    .source-list {
+      margin: .25rem 0 1rem 4rem;
+      font-size: 1.44rem;
+      line-height: 1.22;
+      letter-spacing: .01em;
+    }
+
+    .source-list span:first-child {
+      max-width: 620px;
+    }
+
+    .activity-wrap {
+      margin: .7rem 0 1.7rem;
+      padding-left: .2rem;
+    }
+
+    .activity-card {
+      position: relative;
+      overflow: visible;
+      border-radius: 1.35rem;
+      background: #f8e4d2;
+      padding: 3.65rem .8rem .7rem;
+      box-shadow: inset 0 -10px 16px rgba(180, 106, 56, .12);
+    }
+
+    .activity-rail {
+      position: absolute;
+      inset: 0 0 auto;
+      height: 3.3rem;
+      border-radius: 1.35rem 1.35rem 0 0;
+      background: linear-gradient(180deg, #cf85b5 0%, #c06a9a 55%, #a55480 100%);
+    }
+
+    .activity-icon {
+      position: absolute;
+      z-index: 4;
+      left: -3.35rem;
+      top: -.5rem;
+      width: 6rem;
+      height: 6rem;
+      padding: .42rem;
+      border-radius: 50%;
+      box-sizing: border-box;
+      background: linear-gradient(135deg, #4d82c8, #9c5fa8 45%, #f26d63);
+      box-shadow: 0 1px 4px #765;
+    }
+
+    .activity-icon>div {
+      width: 100%;
+      height: 100%;
+      min-width: 0;
+      min-height: 0;
+      border-radius: 50% !important;
+    }
+
+    .activity-icon svg {
+      display: block;
+      width: 3.25rem !important;
+      height: 3.25rem !important;
+      flex: none;
+    }
+
+    .activity-title {
+      position: absolute;
+      z-index: 3;
+      left: 3.2rem;
+      top: 0;
+      height: 3.3rem;
+      display: flex;
+      align-items: center;
+      padding: 0 1.25rem;
+      border-radius: 0 .75rem .75rem 0;
+      color: #fff;
+      background: linear-gradient(90deg, #cb6b24, #9d4908);
+      font-size: 1.42rem;
+      font-weight: 800;
+    }
+
+    .activity-prompt {
+      margin: 0 1rem .65rem 3.2rem;
+      font-size: 1.4rem;
+      line-height: 1.25;
+    }
+
+    .figure-frame {
+      margin: 0;
+    }
+
+    .figure-frame img {
+      width: 100%;
+      aspect-ratio: 1.72 / 1;
+      object-fit: cover;
+    }
+
+    .figure-caption {
+      margin: .55rem .65rem 0;
+      font-size: 1.22rem;
+      line-height: 1.2;
+      font-style: normal;
+    }
+
+    .questions-wrap {
+      margin: 0;
+    }
+
+    .questions-card {
+      position: relative;
+      min-height: 11rem;
+      border-radius: .75rem;
+      padding: 2.65rem 2.5rem .8rem 3.3rem;
+      background: #d9edf4;
+    }
+
+    .questions-title {
+      position: absolute;
+      top: -.9rem;
+      left: 0;
+      min-width: 13rem;
+      height: 2.75rem;
+      display: flex;
+      align-items: center;
+      padding: 0 1.25rem;
+      border-radius: 0 1.4rem 1.4rem 0;
+      color: #fff;
+      background: linear-gradient(90deg, #027fc0, #05a5ca);
+      font-size: 1.42rem;
+      font-weight: 800;
+    }
+
+    .questions-list {
+      margin: 0;
+      padding-left: 1.5rem;
+      font-size: 1.36rem;
+      line-height: 1.28;
+    }
+
+    .questions-list li+li {
+      margin-top: .45rem;
+    }
+
+    @media (max-width:640px) {
+      #content {
+        padding: 2rem 1.1rem;
+      }
+
+      .source-list {
+        margin-left: 1.8rem;
+        font-size: 1.1rem
+      }
+
+      .top-marker {
+        right: 0;
+        height: 7rem;
+        width: 2rem
+      }
+
+      .activity-card {
+        padding-top: 3.15rem
+      }
+
+      .activity-icon {
+        left: -.9rem;
+        top: -.25rem;
+        width: 4.5rem;
+        height: 4.5rem
+      }
+
+      .activity-icon svg {
+        width: 2.4rem !important;
+        height: 2.4rem !important
+      }
+
+      .activity-title {
+        left: 2.8rem;
+        font-size: 1.05rem;
+        padding: 0 .8rem
+      }
+
+      .activity-prompt {
+        margin-left: .4rem;
+        font-size: 1.15rem
+      }
+
+      .questions-card {
+        padding: 2.45rem 1rem .8rem 2.2rem
+      }
+
+      .questions-list {
+        font-size: 1.12rem
+      }
+    }
   </style>
 </head>
 
 <body class="min-h-screen flex items-center justify-center">
   <main class="w-full">
-    <div id="content" class="mx-auto max-w-5xl bg-white px-3 sm:px-5 lg:px-8 pt-4 pb-0 opacity-0">
-      <section data-section-type="activity_open_ended_answer" data-section-id="pg039_sec001" class="source-page relative mx-auto max-w-[46rem] overflow-hidden">
-        <div class="relative min-h-[4.5rem] sm:min-h-[5.5rem]"><div class="top-marker"></div></div>
+    <div id="content" class="mx-auto max-w-[920px] bg-white px-3 sm:px-5 lg:px-8 pt-4 pb-0 opacity-0">
+      <section data-section-type="activity_open_ended_answer" data-section-id="pg039_sec001"
+        class="source-page relative mx-auto max-w-[46rem] overflow-hidden">
+
 
         <div class="source-list">
-          <span data-id="pg039_n0003" class="block">(e) kukusanya taka kwa kuzitenganisha taka zinazoza na zisizoza na kuzihifadhi katika vifaa maalumu;</span>
+          <span data-id="pg039_n0003" class="block">(e) kukusanya taka kwa kuzitenganisha taka zinazoza na zisizoza na
+            kuzihifadhi katika vifaa maalumu;</span>
           <span data-id="pg039_n0005" class="block">(f) kudeki sakafu;</span>
           <span data-id="pg039_n0007" class="block">(g) kupanga madawati na meza za darasa; na</span>
           <span data-id="pg039_n0009" class="block">(h) kufagia na kuokota uchafu maeneo ya nje kuzunguka darasa.</span>
@@ -53,13 +249,25 @@
           <div class="activity-card">
             <div class="activity-rail"></div>
             <div class="activity-icon">
-              <div class="flex h-full w-full items-center justify-center rounded-full bg-white"><svg viewBox="0 0 64 64" class="h-9 w-9 sm:h-11 sm:w-11 text-[#432f38]" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="36" cy="18" r="10" /><path d="M16 48c4-11 9-18 16-18 5 0 8 2 12 5" /><path d="M24 29l-6 19" /><path d="M28 35l-6-6" /><path d="M30 48h22" /></svg></div>
+              <div class="flex h-full w-full items-center justify-center rounded-full bg-white"><svg viewBox="0 0 64 64"
+                  class="h-9 w-9 sm:h-11 sm:w-11 text-[#432f38]" fill="none" stroke="currentColor" stroke-width="2"
+                  aria-hidden="true">
+                  <circle cx="36" cy="18" r="10" />
+                  <path d="M16 48c4-11 9-18 16-18 5 0 8 2 12 5" />
+                  <path d="M24 29l-6 19" />
+                  <path d="M28 35l-6-6" />
+                  <path d="M30 48h22" />
+                </svg></div>
             </div>
             <div data-id="pg039_n0011" class="source-heading activity-title">Kazi ya kufanya namba 5</div>
-            <p data-id="pg039_n0012" class="activity-prompt">Chunguza Kielelezo namba 2, kisha jibu maswali yanayofuata:</p>
+            <p data-id="pg039_n0012" class="activity-prompt">Chunguza Kielelezo namba 2, kisha jibu maswali yanayofuata:
+            </p>
             <figure class="figure-frame">
-              <img src="images/pg039_im001.jpg" alt="Wanafunzi wakifanya usafi wa darasa kwa kufuta meza na ubao, kufagia sakafu, na kukusanya uchafu kwa kutumia vifaa vya usafi." data-id="pg039_im001" class="block w-full" style="max-width: 100%; height: auto;">
-              <figcaption data-id="pg039_n0014" class="figure-caption italic"><strong class="not-italic">Kielelezo namba 2:</strong> Wanafunzi wakifanya usafi wa darasa</figcaption>
+              <img src="images/pg039_im001.jpg"
+                alt="Wanafunzi wakifanya usafi wa darasa kwa kufuta meza na ubao, kufagia sakafu, na kukusanya uchafu kwa kutumia vifaa vya usafi."
+                data-id="pg039_im001" class="block w-full" style="max-width: 100%; height: auto;">
+              <figcaption data-id="pg039_n0014" class="figure-caption "><strong>Kielelezo namba 2:</strong> Wanafunzi
+                wakifanya usafi wa darasa</figcaption>
             </figure>
           </div>
         </div>
@@ -83,6 +291,8 @@
   <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
   <script src="./assets/scorm.js"></script>
+  <script src="./assets/reader-layout.js?v=1"></script>
   <script src="./assets/base.bundle.local.js"></script>
 </body>
+
 </html>

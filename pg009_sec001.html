@@ -10,6 +10,7 @@
   <link href="./content/tailwind_output.css?v=5" rel="stylesheet" />
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet" />
   <link href="./assets/fonts.css" rel="stylesheet" />
+  <link href="./assets/source-page-layout.css?v=1" rel="stylesheet" />
   <style>
     #content {
       max-width: 68rem;
@@ -23,6 +24,14 @@
       margin: 0 auto;
       color: #292728;
       font-family: "Atkinson Hyperlegible", "Trebuchet MS", sans-serif;
+    }
+
+    #content.source-book-page > .pg9-page::after { content: none; }
+
+    #content.source-book-page .pg9-content {
+      width: 72.7cqw;
+      max-width: none;
+      margin: 8.5cqw 0 0 13.65cqw;
     }
 
     .pg9-page::after {
@@ -235,12 +244,12 @@
           <div class="pg9-node pg9-leaf pg9-leaf--bottom"><span data-id="pg009_n0008">Vitu vilivyotengenezwa na
               binadamu</span></div>
         </div>
-        <p class="pg9-caption italic" data-id="pg009_n0009"><strong class="not-italic">Kielelezo namba 2:</strong> Vipengele vya mazingira</p>
+        <p class="pg9-caption " data-id="pg009_n0009"><strong >Kielelezo namba 2:</strong> Vipengele vya mazingira</p>
         <p class="pg9-copy"><span data-id="pg009_n0011">Vitu vyote vya asili na vilivyotengenezwa na binadamu vinaweza
             kupatikana nyumbani, shuleni, au mahali popote.</span> <span data-id="pg009_n0012">Binadamu hutegemea
             mazingira kufanya shughuli zake zote zinazomwezesha kuishi.</span> <span data-id="pg009_n0013">Hivyo,
             binadamu ana wajibu wa kutunza na kuhifadhi mazingira kwa matumizi endelevu.</span> <span
-            data-id="pg009_n0014">Kielelezo namba 3 kinawasilisha baadhi ya vitu vinavyopatikana katika
+            data-id="pg009_n0014">Kielelezo namba 3 kinaonesha baadhi ya vitu vinavyopatikana katika
             mazingira.</span></p>
         <div class="pg9-gallery">
           <figure><img data-id="pg009_im001" src="images/pg009_im001.jpg"
@@ -268,7 +277,7 @@
             <figcaption data-id="pg009_n0027">(vi)</figcaption>
           </figure>
         </div>
-        <p class="pg9-bottom-caption italic" data-id="pg009_n0028"><strong class="not-italic">Kielelezo namba 3:</strong> Baadhi ya vitu
+        <p class="pg9-bottom-caption " data-id="pg009_n0028"><strong >Kielelezo namba 3:</strong> Baadhi ya vitu
           vinavyopatikana katika mazingira</p>
       </div>
 
@@ -279,6 +288,7 @@
   <script src="./assets/offline-preloader.js?v=pg009-figure3-rehema-v3"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
   <script src="./assets/scorm.js"></script>
+  <script src="./assets/reader-layout.js?v=1"></script>
   <script src="./assets/base.bundle.local.js"></script>
 </body>
 

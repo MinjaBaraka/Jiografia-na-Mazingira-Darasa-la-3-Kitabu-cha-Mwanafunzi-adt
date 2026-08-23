@@ -10,6 +10,7 @@
   <link href="./content/tailwind_output.css?v=5" rel="stylesheet">
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
   <link href="./assets/fonts.css" rel="stylesheet">
+  <link href="./assets/source-page-layout.css?v=1" rel="stylesheet" />
   <style>
     #content {
       max-width: 64rem !important;
@@ -92,9 +93,14 @@
       padding-bottom: 0 !important;
     }
 
+    @media (max-width: 64rem) {
+      section[data-section-id="pg055_sec001"]::before {
+        right: .75rem;
+      }
+    }
+
     @media (max-width: 700px) {
       section[data-section-id="pg055_sec001"]::before {
-        right: -.55rem;
         width: 2rem;
         height: 9rem;
       }
@@ -116,7 +122,7 @@
               <span data-id="pg055_n0005">Hii ni kwa sababu moshi una hewaukaa ambayo husababisha uchafuzi wa hewa na
                 ongezeko la joto duniani.</span> <span data-id="pg055_n0006">Matumizi ya kuni na mkaa katika kupikia
                 huzalisha hewaukaa ambayo huchafua hewa na hivyo, kuharibu mazingira.</span> <span
-                data-id="pg055_n0007">Kielelezo namba 2 kinawasilisha uchafuzi wa hewa utokanao na moshi wa viwandani na
+                data-id="pg055_n0007">Kielelezo namba 2 kinaonesha uchafuzi wa hewa utokanao na moshi wa viwandani na
                 magari.</span>
             </p>
           </div>
@@ -126,7 +132,7 @@
             <figure class="w-full"><img data-id="pg055_im001" src="images/pg055_im001.jpg"
                 alt="Moshi mnene ukitoka kwenye bomba la kiwanda na lori la mafuta, ukionyesha uchafuzi wa hewa."
                 class="w-full h-auto block" style="max-width: 100%; height: auto;">
-              <figcaption data-id="pg055_n0009" class="adt-caption text-slate-900 text-center mt-3 italic"><strong class="not-italic">Kielelezo namba 2:</strong> Uchafuzi wa hewa utokanao na moshi wa kiwandani na gari</figcaption>
+              <figcaption data-id="pg055_n0009" class="adt-caption text-slate-900 text-center mt-3 "><strong >Kielelezo namba 2:</strong> Uchafuzi wa hewa utokanao na moshi wa kiwandani na gari</figcaption>
             </figure>
           </div>
         </div>
@@ -149,6 +155,7 @@
   <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
   <script src="./assets/scorm.js"></script>
+  <script src="./assets/reader-layout.js?v=1"></script>
   <script src="./assets/base.bundle.local.js"></script>
 </body>
 

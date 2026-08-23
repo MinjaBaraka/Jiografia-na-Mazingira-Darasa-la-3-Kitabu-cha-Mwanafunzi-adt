@@ -10,6 +10,7 @@
   <link href="./content/tailwind_output.css?v=5" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
+  <link href="./assets/source-page-layout.css?v=1" rel="stylesheet" />
     <style>
       /* Page 2 follows the printed copyright page: its teal rule and footer
          frame the publishing details without reducing the reading column. */
@@ -80,10 +81,21 @@
       }
 
       .inside-cover__rights {
-        max-width: 36rem;
+        max-width: 46rem;
         margin: auto 0 clamp(3rem, 6vw, 5.5rem) 0;
         font-style: normal;
         text-align: left;
+      }
+
+      /* The two localized copyright spans form one printed paragraph. The
+         Easy Read formatter normally makes spans within a paragraph blocks;
+         retain one continuous, readable rights statement on this cover page. */
+      .inside-cover__rights span {
+        display: inline !important;
+        margin-block-end: 0 !important;
+        font-family: "Atkinson Hyperlegible", sans-serif;
+        font-style: normal;
+        font-weight: 400;
       }
 
       @media (max-width: 40rem) {
@@ -98,7 +110,7 @@
 <body class="min-h-screen flex items-center justify-center">
     <main class="w-full">
       <h1 class="sr-only" id="page-heading">Jiografia na Mazingira</h1>
-      <div id="content" class="container opacity-0"><section data-section-type="inside_cover" data-section-id="pg002_sec001" class="inside-cover mx-auto w-full max-w-5xl bg-white text-slate-800 relative overflow-hidden">
+      <div id="content" class="container opacity-0"><section data-section-type="inside_cover" data-section-id="pg002_sec001" class="inside-cover mx-auto w-full max-w-[920px] bg-white text-slate-800 relative overflow-hidden">
   <div class="inside-cover__top">
     <img src="images/pg002_im001.png" alt="" data-id="pg002_im001" class="inside-cover__rule shrink-0" style="max-width: 100%; height: auto;" role="presentation" aria-hidden="true">
     <div class="inside-cover__details">
@@ -140,7 +152,8 @@
     <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
     <script src="./assets/scorm.js"></script>
-    <script src="./assets/base.bundle.local.js"></script>
+    <script src="./assets/reader-layout.js?v=1"></script>
+  <script src="./assets/base.bundle.local.js"></script>
 </body>
 
 </html>

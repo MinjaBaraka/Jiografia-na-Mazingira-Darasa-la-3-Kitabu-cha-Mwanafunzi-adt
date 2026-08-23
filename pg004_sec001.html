@@ -10,24 +10,156 @@
   <link href="./content/tailwind_output.css?v=5" rel="stylesheet">
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
   <link href="./assets/fonts.css" rel="stylesheet">
+  <link href="./assets/source-page-layout.css?v=1" rel="stylesheet" />
+  <style>
+    .credits-page {
+      position: relative;
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 64rem;
+      min-height: 0;
+      margin: 0 auto;
+      overflow: visible;
+      background: #fff;
+      color: #252525;
+    }
+
+    .credits-content {
+      position: relative;
+      z-index: 2;
+      padding: clamp(7rem, 11vw, 9rem) clamp(3rem, 9vw, 7.5rem) 4rem clamp(7rem, 14vw, 10rem);
+    }
+
+    .credits-side-rule {
+      position: absolute;
+      z-index: 1;
+      top: 2.75rem;
+      left: clamp(2.5rem, 5vw, 4rem);
+      width: 3rem;
+      height: auto;
+    }
+
+    .credits-title-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: clamp(2.25rem, 4vw, 3.5rem);
+    }
+
+    .credits-title {
+      min-width: min(22rem, 72vw);
+      padding: .65rem 3rem;
+      border-radius: 999px;
+      background: linear-gradient(to bottom, #d7f2f2 0%, #438f9e 32%, #006477 100%);
+      box-shadow: inset 0 .35rem .55rem rgb(255 255 255 / 45%), inset 0 -.25rem .45rem rgb(0 0 0 / 24%);
+      color: #fff;
+      font-family: "Atkinson Hyperlegible", sans-serif;
+      font-size: clamp(1.55rem, 3vw, 2rem);
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1;
+      text-align: center;
+    }
+
+    .credits-copy,
+    .credits-closing {
+      margin: 0;
+      color: #252525;
+      font-family: "Atkinson Hyperlegible", sans-serif;
+      font-size: clamp(1.12rem, 2.25vw, 1.55rem);
+      font-style: normal;
+      font-weight: 400;
+      line-height: 1.42;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .credits-copy { margin-bottom: clamp(1.5rem, 3vw, 2.25rem); }
+
+    /* Easy Read normally turns each localized span inside a paragraph into a
+       separate block. These spans are consecutive parts of one printed
+       paragraph, so keep them flowing together. */
+    .credits-copy span,
+    .credits-closing span {
+      display: inline !important;
+      margin-block-end: 0 !important;
+      font: inherit;
+    }
+
+    .credits-table-wrap { margin: 0 0 clamp(1.5rem, 3vw, 2.25rem); }
+
+    .credits-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 .55rem;
+      color: #252525;
+    }
+
+    .credits-table td {
+      padding: 0;
+      color: #252525;
+      font-family: "Atkinson Hyperlegible", sans-serif;
+      font-size: clamp(1.05rem, 2.05vw, 1.42rem);
+      font-style: normal;
+      line-height: 1.38;
+      text-align: left !important;
+      vertical-align: top;
+    }
+
+    .credits-table td:first-child {
+      width: 13.5rem;
+      padding-right: 1.25rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .credits-table td:last-child { font-weight: 400; }
+
+    .credits-table span {
+      display: inline !important;
+      margin-block-end: 0 !important;
+      white-space: normal !important;
+    }
+
+    .credits-watermark {
+      position: absolute;
+      z-index: 3;
+      top: 54%;
+      left: 50%;
+      width: 105%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      color: rgb(255 118 118 / 38%);
+      font-family: Arial, sans-serif;
+      font-size: clamp(2.5rem, 6vw, 4.5rem);
+      font-style: normal;
+      font-weight: 800;
+      letter-spacing: .03em;
+      text-align: center;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    @media (max-width: 42rem) {
+      .credits-page { min-height: 0; }
+      .credits-content { padding: 6.5rem 1.5rem 4rem 5rem; }
+      .credits-side-rule { left: 1.5rem; width: 2.5rem; }
+      .credits-table td:first-child { width: 7.6rem; padding-right: .7rem; }
+      .credits-watermark { font-size: 2.25rem; }
+    }
+  </style>
 </head>
 
 <body class="min-h-screen flex items-center justify-center">
   <main class="w-full">
     <div id="content" class="container opacity-0">
-      <section data-section-type="credits" data-section-id="pg004_sec001" class="bg-white">
-        <div
-          class="mx-auto w-full max-w-5xl px-5 sm:px-8 lg:px-10 pt-8 sm:pt-10 lg:pt-12 pb-14 sm:pb-20 lg:pb-24 relative text-slate-800">
-
-          <div class="ml-14 sm:ml-20 lg:ml-24">
-            <div class="flex justify-center mb-8 sm:mb-10 lg:mb-12">
-              <h1
-                class="adt-h2 text-white font-bold bg-gradient-to-b from-sky-400 via-teal-500 to-teal-800 rounded-full px-8 sm:px-12 lg:px-20 py-2.5 sm:py-3 leading-none tracking-wide shadow-[inset_0_5px_8px_rgba(255,255,255,0.35),inset_0_-4px_8px_rgba(0,0,0,0.2),0_8px_14px_rgba(0,0,0,0.12)]">
+      <section data-section-type="credits" data-section-id="pg004_sec001" class="credits-page">
+        <div class="credits-content">
+          <div>
+            <div class="credits-title-wrap">
+              <h1 class="credits-title">
                 <span data-id="pg004_n0002">Shukurani</span></h1>
             </div>
-            <div class="max-w-4xl mx-auto">
-              <p
-                class="adt-body text-left text-[1.2rem] sm:text-[1.45rem] lg:text-[1.55rem] leading-[1.55] sm:leading-[1.6] font-normal text-slate-700 mb-8 sm:mb-10 lg:mb-8">
+            <div>
+              <p class="credits-copy">
                 <span data-id="pg004_n0004">Taasisi ya Elimu Tanzania (TET) inatambua na kuthamini mchango muhimu wa
                   washiriki kutoka taasisi mbalimbali za serikali na zisizo za serikali zilizoshiriki kufanikisha
                   uandishi wa kitabu hiki cha mwanafunzi.</span> <span data-id="pg004_n0005">Kipekee, TET inatoa
@@ -35,57 +167,46 @@
                   Hifadhi na Usimamizi wa Mazingira-NEMC, Idara ya Uthibiti Ubora wa Shule, vyuo vya ualimu, na shule za
                   msingi.</span> <span data-id="pg004_n0006">Pia, TET inatoa shukurani za dhati kwa mchango uliotolewa
                   na wataalamu wafuatao:</span></p>
-              <div class="mb-8 sm:mb-10 lg:mb-8">
-                <table class="mx-auto border-separate border-spacing-y-3 sm:border-spacing-y-4">
+              <div class="credits-table-wrap">
+                <table class="credits-table">
                   <tbody>
                     <tr class="align-top">
-                      <td
-                        class="adt-body font-bold text-[1.05rem] sm:text-[1.35rem] lg:text-[1.45rem] pr-4 sm:pr-6 whitespace-nowrap text-left text-slate-800">
+                      <td>
                         <span data-id="pg004_n0010">Waandishi:</span></td>
-                      <td
-                        class="adt-body text-[1.05rem] sm:text-[1.35rem] lg:text-[1.45rem] leading-[1.55] sm:leading-[1.6] text-left text-slate-700">
+                      <td>
                         <span data-id="pg004_n0012">Bi. Blandina F. Ajali, Bw. Karani H. Mdee, na Bi. Selestina C.
                           Lwanga</span></td>
                     </tr>
                     <tr class="align-top">
-                      <td
-                        class="adt-body font-bold text-[1.05rem] sm:text-[1.35rem] lg:text-[1.45rem] pr-4 sm:pr-6 whitespace-nowrap text-left text-slate-800">
+                      <td>
                         <span data-id="pg004_n0015">Wahariri:</span></td>
-                      <td
-                        class="adt-body text-[1.05rem] sm:text-[1.35rem] lg:text-[1.45rem] leading-[1.55] sm:leading-[1.6] text-left text-slate-700">
+                      <td>
                         <span data-id="pg004_n0017">Dkt. Christopher M. William, Dkt. Mromba C. Mikidadi, Dkt. Johnstone
                           M. Andrea, Dkt. Lydia A. Kimaryo, Bi. Ndimbumi J. Mboneke, na Bi. Dalia C. Kilamlya</span>
                       </td>
                     </tr>
                     <tr class="align-top">
-                      <td
-                        class="adt-body font-bold text-[1.05rem] sm:text-[1.35rem] lg:text-[1.45rem] pr-4 sm:pr-6 whitespace-nowrap text-left text-slate-800">
+                      <td>
                         <span data-id="pg004_n0020">Wasanifu:</span></td>
-                      <td
-                        class="adt-body text-[1.05rem] sm:text-[1.35rem] lg:text-[1.45rem] leading-[1.55] sm:leading-[1.6] text-left text-slate-700">
+                      <td>
                         <span data-id="pg004_n0022">Bw. Maulid M. Ramadhani</span></td>
                     </tr>
                     <tr class="align-top">
-                      <td
-                        class="adt-body font-bold text-[1.05rem] sm:text-[1.35rem] lg:text-[1.45rem] pr-4 sm:pr-6 whitespace-nowrap text-left text-slate-800">
+                      <td>
                         <span data-id="pg004_n0025">Wachoraji:</span></td>
-                      <td
-                        class="adt-body text-[1.05rem] sm:text-[1.35rem] lg:text-[1.45rem] leading-[1.55] sm:leading-[1.6] text-left text-slate-700">
+                      <td>
                         <span data-id="pg004_n0027">Bw. Fikiri A. Msimbe na Yohana P. Mwenda</span></td>
                     </tr>
                     <tr class="align-top">
-                      <td
-                        class="adt-body font-bold text-[1.05rem] sm:text-[1.35rem] lg:text-[1.45rem] pr-4 sm:pr-6 whitespace-nowrap text-left text-slate-800">
+                      <td>
                         <span data-id="pg004_n0030">Mratibu:</span></td>
-                      <td
-                        class="adt-body text-[1.05rem] sm:text-[1.35rem] lg:text-[1.45rem] leading-[1.55] sm:leading-[1.6] text-left text-slate-700">
+                      <td>
                         <span data-id="pg004_n0032">Bi. Blandina F. Ajali</span></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
-              <p
-                class="adt-body text-left text-[1.2rem] sm:text-[1.45rem] lg:text-[1.55rem] leading-[1.55] sm:leading-[1.6] font-normal text-slate-700">
+              <p class="credits-closing">
                 <span data-id="pg004_n0034">Vilevile, TET inatoa shukurani kwa walimu wote wa shule za msingi na
                   wanafunzi walioshiriki katika ujaribishaji wa kitabu hiki.</span></p>
             </div>
@@ -100,6 +221,7 @@
   <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
   <script src="./assets/scorm.js"></script>
+  <script src="./assets/reader-layout.js?v=1"></script>
   <script src="./assets/base.bundle.local.js"></script>
 </body>
 

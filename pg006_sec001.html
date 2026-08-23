@@ -9,135 +9,228 @@
   <meta name="page-section-id" content="6" />
   <link href="./content/tailwind_output.css?v=5" rel="stylesheet">
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
-  <link href="./assets/fonts.css" rel="stylesheet">
+  <link href="./assets/fonts.css?v=sassoon-source-v2" rel="stylesheet">
+  <link href="./assets/source-page-layout.css?v=1" rel="stylesheet" />
   <style>
-    #content {
-      max-width: 68rem;
-      margin: 0 auto;
-      padding: clamp(2.5rem, 6vw, 5rem) clamp(1rem, 5vw, 4.5rem) 3rem;
-    }
-
     .foreword-page {
       position: relative;
-      max-width: 60rem;
+      box-sizing: border-box;
+      container-type: inline-size;
+      width: 100%;
+      max-width: 64rem;
+      min-height: 0;
       margin: 0 auto;
+      overflow: visible;
+      background: #fff;
       color: #2b2929;
-      font-family: "Atkinson Hyperlegible", "Trebuchet MS", sans-serif;
     }
 
     .foreword-page::before {
       content: "";
       position: absolute;
-      top: 0;
-      left: 0;
-      width: 3rem;
-      height: 15rem;
-      border-radius: 0 0 1.3rem 0;
-      background: #3195a2;
+      z-index: 1;
+      top: 3.55cqw;
+      left: 4.4cqw;
+      width: 4.35cqw;
+      height: 21.45cqw;
+      border-radius: 0 0 2.1cqw 0;
+      background: #3893a0;
     }
 
     .foreword-page::after {
       content: "";
       position: absolute;
-      top: 2rem;
-      right: 0;
-      width: 1.7rem;
-      height: 18rem;
-      background: linear-gradient(#254854, #fff 25%, #fff 50%, #254854 75%);
+      z-index: 1;
+      top: 5.5cqw;
+      right: 3.7cqw;
+      width: 2.15cqw;
+      height: 27.5cqw;
+      background: linear-gradient(to bottom, #254854 0 26%, #fff 26% 50%, #fff 50% 57%, #254854 57% 100%);
+    }
+
+    .foreword-content {
+      position: relative;
+      z-index: 2;
+      padding: 13.45cqw 13.65cqw 0;
     }
 
     .foreword-title {
       display: block;
-      width: max-content;
-      max-width: 80%;
-      margin: 3.5rem auto 1rem;
-      padding: .55rem 3rem;
-      border-radius: 1.4rem;
+      width: 29.85cqw;
+      margin: 0 auto 2.05cqw;
+      padding: .65cqw 2cqw;
+      border-radius: 999px;
       color: #fff;
-      background: linear-gradient(180deg, #5aa2af, #006578);
-      font-size: clamp(1.45rem, 3vw, 2rem);
+      background: linear-gradient(to bottom, #d7f2f2 0%, #438f9e 32%, #006477 100%);
+      box-shadow: inset 0 .55cqw .8cqw rgb(255 255 255 / 45%), inset 0 -.35cqw .6cqw rgb(0 0 0 / 24%);
+      font-family: "Sassoon Primary", "Comic Sans MS", "Chalkboard SE", "Atkinson Hyperlegible", sans-serif;
+      font-size: 3.162cqw !important;
       font-style: normal;
-      font-weight: 800;
-      line-height: 1;
+      font-weight: 700;
+      line-height: 1 !important;
+      text-align: center;
     }
 
     .foreword-copy {
-      max-width: 52rem;
+      width: 100%;
+      max-width: none;
       margin: 0 auto;
-      font-size: clamp(1.08rem, 2.35vw, 1.52rem);
+      color: #252525;
+      font-family: "Sassoon Primary", "Comic Sans MS", "Chalkboard SE", "Atkinson Hyperlegible", sans-serif;
+      font-size: 3.35cqw !important;
       font-style: normal;
       font-weight: 400;
-      line-height: 1.38;
+      line-height: 3.338cqw !important;
+      text-align: justify;
+      text-justify: inter-word;
     }
 
     .foreword-copy p {
-      margin: 0 0 1rem;
+      margin: 0 0 1.35cqw;
+      font-family: "Sassoon Primary", "Comic Sans MS", "Chalkboard SE", "Atkinson Hyperlegible", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 3.35cqw !important;
+      line-height: 3.338cqw !important;
     }
 
-    .foreword-bottom {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      align-items: end;
-      gap: 1rem;
-      max-width: 52rem;
-      margin: 1.35rem auto 0;
+    .foreword-copy span {
+      display: inline !important;
+      margin-block-end: 0 !important;
+      font-family: "Sassoon Primary", "Comic Sans MS", "Chalkboard SE", "Atkinson Hyperlegible", sans-serif !important;
+      font-style: normal !important;
+      font-weight: 400;
+      font-size: 3.35cqw !important;
+      line-height: 3.338cqw !important;
+      white-space: normal !important;
     }
 
-    .foreword-qr {
-      width: 7rem;
+    .foreword-extra {
+      width: 100%;
+      max-width: none;
+      margin: 2.65cqw auto 0;
+      color: #252525;
+      font-family: "Sassoon Primary", "Comic Sans MS", "Chalkboard SE", "Atkinson Hyperlegible", sans-serif;
+      font-style: normal;
     }
 
     .foreword-links {
-      font-size: clamp(1.05rem, 2.2vw, 1.42rem);
+      margin: 0 0 .15cqw;
+      font-family: "Sassoon Primary", "Comic Sans MS", "Chalkboard SE", "Atkinson Hyperlegible", sans-serif;
+      font-size: 3.149cqw !important;
       font-style: normal;
       font-weight: 400;
-      line-height: 1.35;
+      line-height: 1.167 !important;
+      text-align: left;
     }
+
+    .foreword-links span {
+      display: inline !important;
+      margin-block-end: 0 !important;
+      font-family: "Sassoon Primary", "Comic Sans MS", "Chalkboard SE", "Atkinson Hyperlegible", sans-serif !important;
+      font-style: normal !important;
+      font-weight: 400;
+      font-size: 3.149cqw !important;
+      line-height: 1.167 !important;
+    }
+
+    .foreword-bottom-row {
+      display: grid;
+      grid-template-columns: 11.5cqw 1fr;
+      align-items: end;
+      gap: 3.5cqw;
+    }
+
+    .foreword-qr { width: 11.5cqw; height: auto; }
 
     .foreword-institute {
-      margin: 0 0 .7rem;
+      margin: 0 0 2.75cqw;
       text-align: right;
-      font-size: clamp(1.05rem, 2.2vw, 1.42rem);
+      font-family: "Sassoon Primary", "Comic Sans MS", "Chalkboard SE", "Atkinson Hyperlegible", sans-serif;
+      font-size: 2.811cqw !important;
       font-style: normal;
       font-weight: 400;
+      line-height: 1 !important;
     }
 
-    @media(max-width:42rem) {
-      #content {
-        padding: 2rem 1rem 2.5rem
+    .foreword-watermark {
+      position: absolute;
+      z-index: 3;
+      top: 52%;
+      left: 50%;
+      width: 112%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      color: rgb(255 118 118 / 50%);
+      font-family: Arial, sans-serif;
+      font-size: 6.5cqw;
+      font-style: normal;
+      font-weight: 800;
+      letter-spacing: .035em;
+      text-align: center;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    /* Page-specific source typography must outrank the reader's generic
+       #content type scale, while remaining scoped to this book page. */
+    #content .foreword-page .foreword-title {
+      font-size: 3.162cqw !important;
+      line-height: 1 !important;
+    }
+
+    #content .foreword-page .foreword-copy,
+    #content .foreword-page .foreword-copy p,
+    #content .foreword-page .foreword-copy span {
+      font-size: 3.35cqw !important;
+      line-height: 3.338cqw !important;
+      font-weight: 400 !important;
+      font-style: normal !important;
+    }
+
+    #content .foreword-page .foreword-links,
+    #content .foreword-page .foreword-links span {
+      font-size: 3.149cqw !important;
+      line-height: 1.167 !important;
+      font-weight: 400 !important;
+      font-style: normal !important;
+    }
+
+    #content .foreword-page .foreword-institute {
+      font-size: 2.811cqw !important;
+      line-height: 1 !important;
+      font-weight: 400 !important;
+      font-style: normal !important;
+    }
+
+    @media (max-width: 40rem) {
+      #content .foreword-page .foreword-title {
+        width: auto;
+        min-width: 9rem;
+        font-size: 1.125rem !important;
       }
 
-      .foreword-page::before {
-        width: 1.2rem;
-        height: 7rem
+      #content .foreword-page .foreword-copy,
+      #content .foreword-page .foreword-copy p,
+      #content .foreword-page .foreword-copy span {
+        font-size: 1rem !important;
+        line-height: 1.4 !important;
       }
 
-      .foreword-page::after {
-        display: none
+      #content .foreword-page .foreword-copy br {
+        display: none;
       }
 
-      .foreword-title {
-        margin-top: 1rem;
-        padding-inline: 1.75rem
+      #content .foreword-page .foreword-links,
+      #content .foreword-page .foreword-links span {
+        font-size: 1rem !important;
+        line-height: 1.35 !important;
       }
 
-      .foreword-copy {
-        margin-left: 2rem
-      }
-
-      .foreword-bottom {
-        margin-left: 2rem;
-        grid-template-columns: 5rem 1fr
-      }
-
-      .foreword-qr {
-        width: 5rem
-      }
-
-      .foreword-institute {
-        text-align: left
+      #content .foreword-page .foreword-institute {
+        font-size: .875rem !important;
       }
     }
+
   </style>
 </head>
 
@@ -145,28 +238,41 @@
   <main class="w-full">
     <div id="content" class="container mx-auto bg-white opacity-0">
       <section data-section-type="foreword" data-section-id="pg006_sec001"
-        class="relative w-full bg-white">
-        <h1 class="foreword-title" data-id="pg006_n0002">Utangulizi</h1>
-        <div class="foreword-copy">
-          <p><span data-id="pg006_n0004">Kitabu cha Jiografia na Mazingira kimetayarishwa kwa kuzingatia muhtasari wa
-              somo la Jiografia na Mazingira elimu ya msingi Darasa la III-VI uliotolewa na Wizara ya Elimu Sayansi na
-              Teknolojia mwaka 2023.</span> <span data-id="pg006_n0005">Baadhi ya maudhui ya kitabu hiki yamechukuliwa
-              kutoka katika kitabu cha Maarifa ya Jamii Darasa la Tatu na la Nne vilivyochapishwa mwaka 2018 kwa
-              kuzingatia muhtasari wa mwaka 2016.</span> <span data-id="pg006_n0006">Kitabu kina sura nne ambazo ni:
-              dhana ya Jiografia na Mazingira; sura ya nchi; utunzaji wa mazingira; na uharibifu wa mazingira.</span>
-            <span data-id="pg006_n0007">Kwa kujifunza maudhui ya kitabu hiki utamudu maarifa, stadi na mwelekeo wa
-              kutunza mazingira na kuthamini maliasili za taifa.</span></p>
-          <p><span data-id="pg006_n0009">Maudhui ya kitabu hiki yamewasilishwa kwa njia ya matini, kazi za kufanya,
-              michoro na picha mbalimbali ili kukuwezesha kujenga umahiri uliokusudiwa katika kila sura.</span> <span
-              data-id="pg006_n0010">Kila sura ina mazoezi ya kutosha yatakayokuwezesha kupima uelewa wako kuhusu maudhui
-              husika.</span> <span data-id="pg006_n0011">Hivyo, unashauriwa kufanya kazi na mazoezi yote yaliyopo katika
-              kitabu hiki pamoja na kazi zingine utakazopewa na mwalimu ili kujenga umahiri uliokusudiwa.</span></p>
-        </div>
-        <div class="foreword-bottom"><img class="foreword-qr" data-id="pg006_im001" src="images/pg006_im001.jpg"
-            alt="Msimbo wa QR wa kufungua Maktaba Mtandao kwa kujifunza zaidi." />
-          <div>
-            <p class="foreword-links"><span data-id="pg006_n0013">Jifunze zaidi kupitia Maktaba Mtandao <span class="italic">https://ol.tie.go.tz</span></span><br><span data-id="pg006_n0014">au <span class="italic">ol.tie.go.tz</span></span></p>
-            <p class="foreword-institute" data-id="pg006_n0015">Taasisi ya Elimu Tanzania</p>
+        class="foreword-page">
+        <div class="foreword-content">
+          <h1 class="foreword-title" data-id="pg006_n0002">Utangulizi</h1>
+          <div class="foreword-copy">
+          <p><span data-id="pg006_n0004">Kitabu cha Jiografia na Mazingira kimetayarishwa<br>
+              kwa kuzingatia muhtasari wa somo la Jiografia<br>
+              na Mazingira elimu ya msingi Darasa la III-VI<br>
+              uliotolewa na Wizara ya Elimu Sayansi na Teknolojia<br>
+              mwaka 2023.</span> <span data-id="pg006_n0005">Baadhi ya maudhui ya kitabu hiki<br>
+              yamechukuliwa kutoka katika kitabu cha Maarifa<br>
+              ya Jamii Darasa la Tatu na la Nne vilivyochapishwa<br>
+              mwaka 2018 kwa kuzingatia muhtasari wa mwaka<br>
+              2016.</span> <span data-id="pg006_n0006">Kitabu kina sura nne ambazo ni: dhana ya<br>
+              Jiografia na Mazingira; sura ya nchi; utunzaji wa<br>
+              mazingira; na uharibifu wa mazingira.</span> <span data-id="pg006_n0007">Kwa kujifunza<br>
+              maudhui ya kitabu hiki utamudu maarifa, stadi<br>
+              na mwelekeo wa kutunza mazingira na kuthamini<br>
+              maliasili za taifa.</span></p>
+          <p><span data-id="pg006_n0009">Maudhui ya kitabu hiki yamewasilishwa kwa njia ya<br>
+              matini, kazi za kufanya, michoro na picha mbalimbali<br>
+              ili kukuwezesha kujenga umahiri uliokusudiwa<br>
+              katika kila sura.</span> <span data-id="pg006_n0010">Kila sura ina mazoezi ya kutosha<br>
+              yatakayokuwezesha kupima uelewa wako kuhusu<br>
+              maudhui husika.</span> <span data-id="pg006_n0011">Hivyo, unashauriwa kufanya kazi<br>
+              na mazoezi yote yaliyopo katika kitabu hiki pamoja<br>
+              na kazi zingine utakazopewa na mwalimu ili kujenga<br>
+              umahiri uliokusudiwa.</span></p>
+          </div>
+          <div class="foreword-extra">
+            <p class="foreword-links"><span data-id="pg006_n0013">Jifunze zaidi kupitia Maktaba Mtandao https://ol.tie.go.tz</span><br><span data-id="pg006_n0014">au ol.tie.go.tz</span></p>
+            <div class="foreword-bottom-row">
+              <img class="foreword-qr" data-id="pg006_im001" src="images/pg006_im001.jpg"
+                alt="Msimbo wa QR wa kufungua Maktaba Mtandao kwa kujifunza zaidi." />
+              <p class="foreword-institute" data-id="pg006_n0015">Taasisi ya Elimu Tanzania</p>
+            </div>
           </div>
         </div>
       </section>
@@ -178,6 +284,7 @@
   <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
   <script src="./assets/scorm.js"></script>
+  <script src="./assets/reader-layout.js?v=1"></script>
   <script src="./assets/base.bundle.local.js"></script>
 </body>
 

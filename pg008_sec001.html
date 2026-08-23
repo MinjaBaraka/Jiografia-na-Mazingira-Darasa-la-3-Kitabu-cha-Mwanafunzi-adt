@@ -10,6 +10,7 @@
   <link href="./content/tailwind_output.css?v=5" rel="stylesheet" />
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet" />
   <link href="./assets/fonts.css" rel="stylesheet" />
+  <link href="./assets/source-page-layout.css?v=1" rel="stylesheet" />
   <style>
     #content {
       max-width: 68rem;
@@ -24,6 +25,40 @@
       color: #2b2929;
       font-family: "Atkinson Hyperlegible", "Trebuchet MS", sans-serif;
     }
+
+    /* Source-page geometry (569.244 × 779.008 pt). */
+    #content.source-book-page > .pg8-page {
+      min-height: 136.85cqw;
+      padding-top: 13.35cqw;
+    }
+
+    #content.source-book-page > .pg8-page::before { content: none; }
+
+    #content.source-book-page .pg8-content,
+    #content.source-book-page .pg8-section {
+      box-sizing: border-box;
+      width: 72.7cqw;
+      max-width: none;
+      margin-left: 13.65cqw;
+      padding-right: 0;
+    }
+
+    #content.source-book-page .pg8-lead { margin-top: 0; }
+
+    #content.source-book-page .pg8-figure {
+      margin: 1.9cqw auto 0;
+    }
+
+    #content.source-book-page .pg8-globe {
+      width: 26.9cqw;
+      max-width: none;
+    }
+
+    #content.source-book-page .pg8-key-title { margin-top: .15cqw; }
+    #content.source-book-page .pg8-key { gap: 1.35cqw; margin-block: .1cqw; }
+    #content.source-book-page .pg8-swatch { width: 3.85cqw; height: 3.1cqw; }
+    #content.source-book-page .pg8-caption { margin-top: .65cqw; }
+    #content.source-book-page .pg8-section { margin-top: 1.8cqw; }
 
     .pg8-page::before {
       content: "";
@@ -159,7 +194,7 @@
             <span data-id="pg008_n0002">mazingira.</span>
             <span data-id="pg008_n0003">Jiografia imejikita katika kumwezesha binadamu kujenga stadi za msingi
               zitakazomwezesha kuyafahamu mazingira yake na kuhusiana nayo kwa njia endelevu.</span>
-            <span data-id="pg008_n0004">Kielelezo namba 1 kinawasilisha mandhari ya uso wa dunia.</span>
+            <span data-id="pg008_n0004">Kielelezo namba 1 kinaonesha mandhari ya uso wa dunia.</span>
           </p>
         </div>
 
@@ -174,7 +209,7 @@
               <div class="pg8-key-item"><i class="pg8-swatch pg8-water" aria-hidden="true"></i><span
                   data-id="pg008_n0008">Bahari</span></div>
             </div>
-            <p class="pg8-caption italic" data-id="pg008_n0009"><strong class="not-italic">Kielelezo namba 1:</strong> Mandhari ya uso wa dunia
+            <p class="pg8-caption " data-id="pg008_n0009"><strong >Kielelezo namba 1:</strong> Mandhari ya uso wa dunia
             </p>
           </figcaption>
         </figure>
@@ -193,7 +228,7 @@
             <span data-id="pg008_n0018">Vitu vilivyotengenezwa na binadamu ni kama vile nyumba, barabara, bustani, meza,
               magari na vitu vingine vyote ambavyo siyo vya asili.</span>
             <span data-id="pg008_n0019">Maelezo kuhusu vitu vinavyounda mazingira yanaweza kufupishwa kama
-              inavyowasilisha katika Kielelezo namba 2.</span>
+              inavyoonekana katika Kielelezo namba 2.</span>
           </p>
         </div>
 
@@ -207,6 +242,7 @@
   <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
   <script src="./assets/scorm.js"></script>
+  <script src="./assets/reader-layout.js?v=1"></script>
   <script src="./assets/base.bundle.local.js"></script>
 </body>
 

@@ -9,17 +9,18 @@
   <link href="./content/tailwind_output.css?v=5" rel="stylesheet" />
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet" />
   <link href="./assets/fonts.css" rel="stylesheet" />
+  <link href="./assets/source-page-layout.css?v=1" rel="stylesheet" />
   <style>
     #content { max-width:68rem; margin:0 auto; padding:clamp(2.5rem,5vw,4.5rem) clamp(1rem,5vw,4rem) 3rem; }
     .pg7-page { max-width:60rem; margin:0 auto; color:#2b2929; font-family:"Atkinson Hyperlegible", "Trebuchet MS", sans-serif; }
     .pg7-banner { min-height:17rem; padding:4.8rem 6rem; border-radius:0 0 1.3rem 0; background:linear-gradient(110deg,#244956,#00899e); box-shadow:inset 0 .35rem .4rem rgb(255 255 255 / 34%); }
     .pg7-title-block { color:#fff; } .pg7-kicker { width:28rem; max-width:100%; margin:0 0 1.7rem -6rem; padding:.65rem 5rem; border-radius:0 2rem 2rem 0; color:#087282; background:#fff; font-size:clamp(1.7rem,3.6vw,2.5rem); font-style: normal; font-weight:800; } .pg7-main-title { margin:0; font-size:clamp(1.65rem,3.2vw,2.35rem); font-style: normal; font-weight:800; }
-    .pg7-intro { max-width:53rem; margin:1.8rem 0 0 auto; border-radius:1.2rem; background:#fff; box-shadow:0 .45rem 0 #063e45, 0 0 0 .35rem #057484; overflow:hidden; }
+    .pg7-intro { max-width:53rem; margin:1.8rem auto 0; border-radius:1.2rem; background:#fff; box-shadow:0 .45rem 0 #063e45, 0 0 0 .35rem #057484; overflow:hidden; }
     .pg7-intro-top { height:4rem; background:#006778; } .pg7-label { position:relative; top:-.7rem; display:inline-block; margin:0; padding:.65rem 2rem; border-radius:1rem 1rem 0 0; color:#087282; background:#f2fafb; font-size:clamp(1.35rem,2.8vw,1.9rem); font-style: normal; font-weight:800; }
     .pg7-intro-copy { margin:0; padding:1rem 1.35rem; font-size:clamp(1.08rem,2.35vw,1.5rem); font-style: normal; font-weight:400; line-height:1.42; }
-    .pg7-think { max-width:53rem; margin:2rem 0 0 auto; border-radius:.7rem 0 1.2rem 1.2rem; background:#f7eaec; box-shadow:0 0 0 .22rem #7fbcc6; } .pg7-think-top { height:2.7rem; background:linear-gradient(90deg,#0788c4,#0070a6); } .pg7-think-label { display:inline-block; margin:-.2rem 0 0 10rem; color:#fff; font-size:clamp(1.25rem,2.7vw,1.8rem); font-style: normal; font-weight:800; } .pg7-think-body { display:flex; align-items:center; min-height:5.4rem; padding:.5rem 1.2rem; } .pg7-think-body img { width:6.5rem; height:6.5rem; margin:-2.8rem 1.5rem -.9rem 0; } .pg7-think-copy { margin:0; font-size:clamp(1.15rem,2.45vw,1.55rem); font-style: normal; font-weight:400; }
-    .pg7-body { max-width:53rem; margin:1.5rem 0 0 auto; } .pg7-heading { margin:0; color:#087abd; font-size:clamp(1.45rem,3vw,2rem); font-style: normal; font-weight:800; } .pg7-body-copy { margin:0; font-size:clamp(1.08rem,2.35vw,1.5rem); font-style: normal; font-weight:400; line-height:1.42; }
-    @media(max-width:42rem) { #content{padding:2rem 1rem 2.5rem}.pg7-banner{padding:3rem 1.5rem;min-height:13rem}.pg7-kicker{margin-left:-1.5rem;padding-left:1.5rem}.pg7-intro,.pg7-think,.pg7-body{margin-left:1.5rem}.pg7-think-label{margin-left:5rem}.pg7-think-body img{width:4.5rem;height:4.5rem;margin-right:.75rem} }
+    .pg7-think { max-width:53rem; margin:2rem auto 0; border-radius:.7rem 0 1.2rem 1.2rem; background:#f7eaec; box-shadow:0 0 0 .22rem #7fbcc6; } .pg7-think-top { height:2.7rem; background:linear-gradient(90deg,#0788c4,#0070a6); } .pg7-think-label { display:inline-block; margin:-.2rem 0 0 10rem; color:#fff; font-size:clamp(1.25rem,2.7vw,1.8rem); font-style: normal; font-weight:800; } .pg7-think-body { display:flex; align-items:center; min-height:5.4rem; padding:.5rem 1.2rem; } .pg7-think-body img { width:6.5rem; height:6.5rem; margin:-2.8rem 1.5rem -.9rem 0; } .pg7-think-copy { margin:0; font-size:clamp(1.15rem,2.45vw,1.55rem); font-style: normal; font-weight:400; }
+    .pg7-body { max-width:53rem; margin:1.5rem auto 0; } .pg7-heading { margin:0; color:#087abd; font-size:clamp(1.45rem,3vw,2rem); font-style: normal; font-weight:800; } .pg7-body-copy { margin:0; font-size:clamp(1.08rem,2.35vw,1.5rem); font-style: normal; font-weight:400; line-height:1.42; }
+    @media(max-width:42rem) { #content{padding:2rem 1rem 2.5rem}.pg7-banner{padding:3rem 1.5rem;min-height:13rem}.pg7-kicker{margin-left:-1.5rem;padding-left:1.5rem}.pg7-intro,.pg7-think,.pg7-body{margin-right:1.5rem;margin-left:1.5rem}.pg7-think-label{margin-left:5rem}.pg7-think-body img{width:4.5rem;height:4.5rem;margin-right:.75rem} }
   </style>
 </head>
 
@@ -39,7 +40,7 @@
 
   <div class="pg7-intro">
       <div class="pg7-intro-top"><h3 data-id="pg007_n0005" class="pg7-label">Utangulizi</h3></div>
-      <p class="pg7-intro-copy"><span data-id="pg007_n0007" class="italic">Binadamu anapaswa kuielewa Jiografia na kuyafahamu vema mazingira yanayomzunguka ili kujua namna bora ya kuhusiana nayo.</span> <span data-id="pg007_n0008" class="italic">Jiografia inamwezesha binadamu kuyaelewa mazingira yanayomzunguka, jinsi ya kuyatumia na kuyahifadhi sasa na kwa vizazi vijavyo.</span> <span data-id="pg007_n0009" class="italic">Katika sura hii, utajifunza kuhusu maana ya Jiografia na Mazingira, uhusiano baina ya Jiografia na Mazingira, na umuhimu wa kujifunza Jiografia na Mazingira.</span> <span data-id="pg007_n0010" class="italic">Umahiri utakaoujenga utakuwezesha kuthamini somo la Jiografia na Mazingira.</span></p>
+      <p class="pg7-intro-copy"><span data-id="pg007_n0007" >Binadamu anapaswa kuielewa Jiografia na kuyafahamu vema mazingira yanayomzunguka ili kujua namna bora ya kuhusiana nayo.</span> <span data-id="pg007_n0008" >Jiografia inamwezesha binadamu kuyaelewa mazingira yanayomzunguka, jinsi ya kuyatumia na kuyahifadhi sasa na kwa vizazi vijavyo.</span> <span data-id="pg007_n0009" >Katika sura hii, utajifunza kuhusu maana ya Jiografia na Mazingira, uhusiano baina ya Jiografia na Mazingira, na umuhimu wa kujifunza Jiografia na Mazingira.</span> <span data-id="pg007_n0010" >Umahiri utakaoujenga utakuwezesha kuthamini somo la Jiografia na Mazingira.</span></p>
   </div>
 
     <aside class="pg7-think">
@@ -58,7 +59,8 @@
     <script src="./assets/offline-preloader.js?v=italic-audit-v1"></script>
   <script src="./assets/default-image-descriptions.js?v=1"></script>
     <script src="./assets/scorm.js"></script>
-    <script src="./assets/base.bundle.local.js"></script>
+    <script src="./assets/reader-layout.js?v=1"></script>
+  <script src="./assets/base.bundle.local.js"></script>
 </body>
 
 </html>

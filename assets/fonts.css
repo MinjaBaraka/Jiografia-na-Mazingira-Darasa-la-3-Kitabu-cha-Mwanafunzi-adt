@@ -39,6 +39,16 @@
   font-display: swap;
 }
 
+/* Embedded from the source book PDF so page typography keeps the original
+   Sassoon shapes and metrics instead of falling back to a browser font. */
+@font-face {
+  font-family: 'Sassoon Primary';
+  src: url('./fonts/SassoonPrimary-Subset.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @font-face {
   font-family: 'Merriweather';
   src: url('./fonts/Merriweather-Italic-VariableFont.woff2') format('woff2');
@@ -47,9 +57,30 @@
   font-display: swap;
 }
 
-/* Apply the font globally */
-body, p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, select {
-  font-family: "Merriweather", serif;
+/* The source PDF uses Sassoon Primary for the textbook.  Its naturally
+   handwritten/slanted shapes are regular glyphs, not CSS italics.  Keep the
+   reader chrome on Atkinson below, while book content uses the real source
+   face and inherits the correct weight/style from its semantic element. */
+#content,
+#content p,
+#content h1,
+#content h2,
+#content h3,
+#content h4,
+#content h5,
+#content h6,
+#content span,
+#content div,
+#content li,
+#content td,
+#content th,
+#content label,
+#content button,
+#content input,
+#content textarea,
+#content select {
+  font-family: "Sassoon Primary", "Comic Sans MS", "Chalkboard SE", sans-serif;
+  font-style: normal;
 }
 
 /* Chrome UI font. FontAwesome marker classes are exempt: this ID+universal
@@ -58,4 +89,15 @@ body, p, h1, h2, h3, h4, h5, h6, span, div, button, input, textarea, select {
 #nav-container, #nav-container *:not(.fa):not(.fas):not(.far):not(.fab):not(.fa-solid):not(.fa-regular):not(.fa-brands),
 #interface-container, #interface-container *:not(.fa):not(.fas):not(.far):not(.fab):not(.fa-solid):not(.fa-regular):not(.fa-brands) {
   font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
+/* Keep running book text comfortable to scan while aligning both edges of
+   paragraphs and list items. Titles, captions, controls, and images retain
+   their authored alignment. */
+#content p,
+#content li,
+#content td,
+#content blockquote {
+  text-align: justify;
+  text-justify: inter-word;
 }

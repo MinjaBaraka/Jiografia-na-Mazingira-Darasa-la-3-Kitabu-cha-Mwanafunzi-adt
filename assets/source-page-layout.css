@@ -1,0 +1,238 @@
+/* Shared content geometry reconstructed from the source PDF. Printed page
+   navigation is intentionally excluded: the ADT dock is the only navigator. */
+body:has(#content) > main {
+  padding-bottom: calc(5rem + env(safe-area-inset-bottom));
+}
+
+/* Some exported pages place #content directly under body instead of inside
+   main. Keep the same ADT-dock clearance without changing page internals. */
+body:has(> #content) > #content {
+  margin-bottom: calc(5rem + env(safe-area-inset-bottom));
+}
+
+#content.source-cover-page {
+  box-sizing: border-box;
+  width: min(100%, 64rem);
+  max-width: 64rem !important;
+  margin-inline: auto;
+}
+
+#content.source-cover-page > section {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none !important;
+}
+
+#content.source-front-page {
+  container-type: inline-size;
+  box-sizing: border-box;
+  width: min(100%, 64rem);
+  max-width: 64rem !important;
+  margin-inline: auto;
+}
+
+#content.source-front-page > section {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none !important;
+  min-height: 0 !important;
+}
+
+#content.source-front-page > section:not([data-section-id="pg006_sec001"])
+  :is(p, li, td, th, label) {
+  font-size: 2.8cqw !important;
+  line-height: 1.17 !important;
+  font-style: normal !important;
+}
+
+#content.source-front-page > section:not([data-section-id="pg006_sec001"])
+  :is(h1, h2, h3, h4) {
+  font-size: 2.8cqw !important;
+  line-height: 1.12 !important;
+  font-style: normal !important;
+}
+
+#content.source-book-page {
+  position: relative;
+  isolation: isolate;
+  container-type: inline-size;
+  box-sizing: border-box;
+  width: min(100%, 64rem);
+  max-width: 64rem !important;
+  margin-inline: auto;
+  padding: 0 !important;
+  overflow: visible;
+  background: #fff;
+  color: #292728;
+}
+
+#content.source-book-page > section {
+  position: relative;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none !important;
+  min-height: 0 !important;
+  height: auto;
+  overflow: visible !important;
+}
+
+#content.source-book-page > section.max-w-4xl {
+  width: 72.7cqw;
+  margin-right: 0;
+  margin-left: 13.65cqw;
+}
+
+/* The exporter uses max-width utility wrappers for the PDF's recurring text
+   column.  Resolve those wrappers from the page geometry, not from viewport
+   breakpoints, so image and paragraph widths retain the source proportions. */
+#content.source-book-page > section > .max-w-4xl {
+  box-sizing: border-box;
+  width: 72.7cqw;
+  max-width: none !important;
+  margin-right: 0;
+  margin-left: 13.65cqw;
+}
+
+#content.source-book-page > section > [class*="max-w-[46rem]"] {
+  box-sizing: border-box;
+  width: 72.7cqw;
+  max-width: none !important;
+  margin-right: 0;
+  margin-left: 13.65cqw;
+}
+
+/* Open-response activity panels are the wider recurring PDF column. */
+#content.source-book-page > section:has(textarea).max-w-4xl,
+#content.source-book-page > section:has(textarea) > [class*="max-w-[46rem]"] {
+  width: 80.5cqw;
+  max-width: none !important;
+  margin-right: 0;
+  margin-left: 9.75cqw;
+}
+
+#content.source-book-page > section[class*="pt-8"][class*="pb-16"] {
+  padding-top: 10.5cqw !important;
+  padding-bottom: clamp(2.5rem, 5cqw, 4rem) !important;
+}
+
+/* Image-led source pages use a narrower recurring column even when the
+   exported utility wrapper was generated from a desktop pixel maximum. */
+#content.source-book-page > section > [class*="max-w-[980px]"] {
+  box-sizing: border-box;
+  width: 72.7cqw;
+  max-width: none !important;
+  margin-inline: 13.65cqw !important;
+}
+
+#content.source-book-page > section > [class*="max-w-[1100px]"]
+  [class*="max-w-[900px]"],
+#content.source-book-page > section > [class*="max-w-[1100px]"]
+  figure > [class*="max-w-[830px]"],
+#content.source-book-page > section[class*="max-w-[1100px]"]
+  > [class*="max-w-[830px]"] {
+  box-sizing: border-box;
+  width: 72.7cqw;
+  max-width: none !important;
+  margin-inline: auto !important;
+  padding-inline: 0 !important;
+}
+
+/* Glossary rows form the wider source column. */
+#content.source-book-page > section.max-w-[920px]:has(> .flex > .flex-1 > .grid) {
+  width: 80.5cqw;
+  max-width: none !important;
+  margin-right: 0;
+  margin-left: 9.75cqw;
+}
+
+/* Sassoon's embedded web metrics run wider than the PDF text matrix.  These
+   calibrated container sizes preserve the PDF's actual line wrapping: normal
+   body and ordinary headings are visually 18 pt, captions 14 pt. */
+#content.source-book-page :is(p, li, td, th, label) {
+  font-size: 2.8cqw !important;
+  line-height: 1.17 !important;
+}
+
+#content.source-book-page :is(h1, h2, h3, h4, .adt-h1, .adt-h2, .adt-h3) {
+  font-size: 2.8cqw !important;
+  line-height: 1.12 !important;
+}
+
+#content.source-book-page :is(.adt-caption, figcaption) {
+  font-size: 2.18cqw !important;
+  line-height: 1.14 !important;
+}
+
+#content.source-book-page :is(figcaption, .adt-caption, [class*="caption"]) {
+  text-align: center !important;
+}
+
+#content.source-book-page :is(p, li, td, th, h1, h2, h3, h4, span, label) {
+  font-style: normal !important;
+}
+
+/* Learner responses remain keyboard/touch accessible without turning compact
+   printed activities into giant web cards.  The line expands while editing. */
+#content.source-book-page textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 2.8cqw !important;
+  min-height: 0 !important;
+  padding: .2cqw .55cqw !important;
+  border: 0 !important;
+  border-bottom: .12cqw solid #94a3b8 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: #292728;
+  font-size: 2.35cqw !important;
+  line-height: 1.2 !important;
+  resize: vertical;
+  transition: height 160ms ease, background-color 160ms ease;
+}
+
+#content.source-book-page textarea:focus {
+  height: 12cqw !important;
+  background: #fff !important;
+  outline: .2cqw solid #0878a9;
+  outline-offset: .2cqw;
+}
+
+/* The runtime's floating, disabled activity action is exporter chrome, not a
+   textbook control. Hide it by structure/state rather than by translated text. */
+body:has(#content.source-book-page)
+  #nav-container .bottom-18:has(button[disabled][data-disabled]) {
+  display: none !important;
+}
+
+@media (max-width: 40rem) {
+  #content.source-book-page {
+    width: 100%;
+  }
+
+  #content.source-front-page > section:not([data-section-id="pg006_sec001"])
+    :is(p, li, td, th, label),
+  #content.source-book-page :is(p, li, td, th, label) {
+    font-size: max(1rem, 2.8cqw) !important;
+  }
+
+  #content.source-front-page > section:not([data-section-id="pg006_sec001"])
+    :is(h1, h2, h3, h4),
+  #content.source-book-page :is(h1, h2, h3, h4, .adt-h1, .adt-h2, .adt-h3) {
+    font-size: max(1.125rem, 2.8cqw) !important;
+  }
+
+  #content.source-book-page :is(.adt-caption, figcaption) {
+    font-size: max(.875rem, 2.18cqw) !important;
+  }
+
+  #content.source-book-page textarea {
+    height: max(2.5rem, 2.8cqw) !important;
+    font-size: max(1rem, 2.35cqw) !important;
+  }
+
+  #content.source-book-page textarea:focus {
+    height: max(8rem, 12cqw) !important;
+  }
+}
