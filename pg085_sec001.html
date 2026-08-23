@@ -100,7 +100,7 @@
         .jaribio-option {
             display: flex;
             align-items: flex-start;
-            gap: .45rem;
+            gap: 0;
             padding: .08rem .18rem;
             border-radius: .25rem;
             cursor: pointer;
@@ -112,10 +112,16 @@
         }
 
         .jaribio-option input {
-            width: 1.05rem;
-            height: 1.05rem;
-            margin: .3rem 0 0;
-            accent-color: #157989;
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            margin: -1px;
+            padding: 0;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            clip-path: inset(50%);
+            white-space: nowrap;
+            border: 0;
         }
 
         .feedback-container {
