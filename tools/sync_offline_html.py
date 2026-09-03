@@ -18,7 +18,11 @@ def main() -> None:
     end = source.index(END_MARKER, start)
     inline = json.loads(source[start:end])
 
-    pages = [ROOT / "index.html", *sorted(ROOT.glob("pg*_sec*.html"))]
+    pages = [
+        ROOT / "index.html",
+        *sorted(ROOT.glob("pg*_sec*.html")),
+        ROOT / "back_cover_sec001.html",
+    ]
     for page in pages:
         inline[f"./{page.name}"] = page.read_text()
 

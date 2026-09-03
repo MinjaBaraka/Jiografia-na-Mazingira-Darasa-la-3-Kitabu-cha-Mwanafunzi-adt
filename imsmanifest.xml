@@ -71,6 +71,7 @@
       <file href="assets/symbols/smog.png"/>
       <file href="assets/tailwind_css.css"/>
       <file href="assets/toc-navigation-sync.js"/>
+      <file href="back_cover_sec001.html"/>
       <file href="content/i18n/sw-TZ/audio/gl001.mp3"/>
       <file href="content/i18n/sw-TZ/audio/gl001_def.mp3"/>
       <file href="content/i18n/sw-TZ/audio/gl001_def_rehema.mp3"/>
@@ -3753,6 +3754,8 @@
       <file href="content/tailwind_output.css"/>
       <file href="content/toc.json"/>
       <file href="cover.png"/>
+      <file href="images/back_cover.png"/>
+      <file href="images/front_cover.png"/>
       <file href="images/pg001_im001.jpg"/>
       <file href="images/pg002_im001.png"/>
       <file href="images/pg003_im001.png"/>
@@ -3844,6 +3847,7 @@
       <file href="images/pg087_im001.png"/>
       <file href="images/pg088_im001.png"/>
       <file href="index.html"/>
+      <file href="pg001_sec001.html"/>
       <file href="pg002_sec001.html"/>
       <file href="pg003_sec001.html"/>
       <file href="pg004_sec001.html"/>
