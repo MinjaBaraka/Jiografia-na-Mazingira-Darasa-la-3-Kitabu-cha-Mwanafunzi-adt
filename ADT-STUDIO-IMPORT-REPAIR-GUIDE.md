@@ -73,6 +73,7 @@ Inspect it on a copy. Check SQLite integrity and Studio's schema compatibility. 
 4. **Build a real database.** Use the compatible schema. Populate source pages and extracted PDF text. Generate PDF page previews and register images with valid paths, dimensions, and IDs.
 5. **Recover content.** Map the reading manifest and HTML into page sectioning and rendering records. Preserve stable text IDs, section order, inline text, styling, images, extra covers, and any activity behavior that can be recovered. Check image URLs against Studio's preview and export conventions.
 6. **Recover catalogs.** Import text, glossary, table of contents, audio mappings, and audio files. Follow the version's speech catalog requirements. Record unknown voice/model/provider-text provenance honestly. Do not claim that recovered text is a verified transcription of an audio file.
+   **Include sign language when present.** Preserving videos inside `adt/` alone does not register them with Studio. Recover the reader's video mappings, resolve each navigation index through its reading manifest to a stable section ID, copy the video files into the project's `videos/` directory, and register and assign them using the target version's sign-language storage format. Verify that each video belongs to the correct section, including any cover-page offsets.
 7. **Keep processing status honest.** Mark only steps with recovered output complete. Do not invent AI decisions, prompts, generation logs, caches, or editing history. Unrecoverable stages must remain identified as incomplete or unavailable.
 8. **Finalize SQLite compatibility.** Close connections and checkpoint any WAL transactions. If the target SQLite runtime cannot read a WAL-mode database, finalize a copy with `PRAGMA journal_mode=DELETE` after checkpointing, then retest it. Verify with the actual runtime rather than assuming Python's integrity check proves compatibility.
 9. **Package the project.** Put the database and matching PDF at the ZIP root. Include required project resources and the preserved reader. Do not include temporary database sidecars after the database has been finalized.
@@ -90,6 +91,7 @@ Inspect it on a copy. Check SQLite integrity and Studio's schema compatibility. 
 - Representative pages render correctly through Studio's preview, including text, styles, and images.
 - Navigation order and added covers/sections are checked.
 - Audio mappings resolve and representative audio files load.
+- When sign-language videos exist, Studio lists their registrations, its generated preview enables sign language, section mappings match the original reader, and representative video endpoints serve the expected files. Video files in the preserved reader alone are insufficient.
 - Missing or partially recovered features are documented; successful import alone does not prove every feature is fully restored.
 
 Keep validation output with the repaired ZIP. Avoid rerunning content generation until reconstructed semantics and any activities have been reviewed. Re-exporting from Studio may differ from the preserved reader.
