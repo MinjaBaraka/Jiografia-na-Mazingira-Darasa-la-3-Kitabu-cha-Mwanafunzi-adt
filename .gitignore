@@ -1,2 +1,13 @@
 .DS_Store
 **/.DS_Store
+
+# Generated repair outputs (keep final archives locally)
+/output/
+
+# Temporary files and Python caches
+__pycache__/
+*.py[cod]
+*.tmp
+*.log
+/.cache/
+/tmp/
