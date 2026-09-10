@@ -1,6 +1,6 @@
 {
   "title": "Jiografia na Mazingira",
-  "bundleVersion": "8",
+  "bundleVersion": "1",
   "languages": {
     "available": [
       "sw-TZ"
@@ -9,7 +9,7 @@
   },
   "features": {
     "signLanguage": true,
-    "easyRead": true,
+    "easyRead": false,
     "glossary": true,
     "eli5": false,
     "readAloud": true,
@@ -19,9 +19,8 @@
     "describeImages": true,
     "notepad": false,
     "state": true,
-    "showAutoHideButton": false,
     "characterDisplay": false,
-    "highlight": true,
+    "highlight": false,
     "activities": true
   },
   "analytics": {

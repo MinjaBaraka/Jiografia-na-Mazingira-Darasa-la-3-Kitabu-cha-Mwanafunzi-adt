@@ -4,11 +4,11 @@ This document describes the structure of this Accessible Digital Textbook (ADT) 
 
 ## About This Book
 
-**Jiografia na Mazingira** — Hiki ni kitabu cha mwanafunzi cha Jiografia na Mazingira kilichoandaliwa na Taasisi ya Elimu Tanzania kwa elimu ya msingi, hasa ngazi ya Darasa la III hadi VI, na kimeandikwa kwa Kiswahili cha Tanzania. Kinaeleza dhana za jiografia na mazingira, sura ya nchi ya Tanzania, utunzaji wa mazingira, na athari za uharibifu wa mazingira pamoja na mabadiliko ya tabianchi. Kutokana na maudhui, mifano ya maeneo ya Tanzania, na shughuli za vitendo, kitabu hiki kimetokana na Tanzania na kinatumia mbinu ya kujifunza kwa umahiri kupitia matini, michoro, kazi za kufanya, na mazoezi ya kujenga maarifa, stadi, na tabia ya kuhifadhi mazingira na maliasili.
+**Jiografia na Mazingira**
 
 - **Source language**: `sw-TZ`
 - **Available languages in this bundle**: `sw-TZ`
-- **Total pages**: 88
+- **Total pages**: 90
 - **Glossary**: yes
 
 ## Quick Overview
@@ -25,7 +25,7 @@ The `adt/` subdirectory is the self-contained web app. Other top-level files (`.
 ## Directory Structure
 
 ```
-JEOGRAFIA-NA-MAZINGIRA-DARASA-LA-3/
+JEOGRAFIA-NA-MAZINGIRA-DARASA-LA-3-recovered/
 ├── adt/                              # THE WEB APP
 │   ├── index.html                    # Redirects to first page
 │   ├── cover.png                     # Book cover image
@@ -49,6 +49,7 @@ JEOGRAFIA-NA-MAZINGIRA-DARASA-LA-3/
 │   │   └── i18n/
 │   │       └── {lang}/               # One directory per language: sw-TZ
 │   │           ├── texts.json        # All text content (textId → string)
+│   │           ├── speech_texts.json # Prepared read-aloud text (textId → string)
 │   │           ├── audios.json       # Audio mappings (textId → mp3 filename)
 │   │           ├── videos.json       # Video mappings (currently unused)
 │   │           ├── glossary.json     # Glossary entries (word → object)
@@ -72,8 +73,8 @@ JEOGRAFIA-NA-MAZINGIRA-DARASA-LA-3/
 │   └── ...
 ├── audio/                            # Source audio files (pipeline artifact)
 │   └── {lang}/                       # TTS audio per language
-├── JEOGRAFIA-NA-MAZINGIRA-DARASA-LA-3.db                    # SQLite database (pipeline state)
-├── JEOGRAFIA-NA-MAZINGIRA-DARASA-LA-3.pdf                   # Original source PDF
+├── JEOGRAFIA-NA-MAZINGIRA-DARASA-LA-3-recovered.db                    # SQLite database (pipeline state)
+├── JEOGRAFIA-NA-MAZINGIRA-DARASA-LA-3-recovered.pdf                   # Original source PDF
 └── config.yaml                       # Pipeline configuration
 ```
 
@@ -174,11 +175,12 @@ Page renders follow the pattern `pg{NNN}_page.png`:
 
 ## The Text ID System
 
-Every piece of displayable text has a unique, stable **text ID**. This ID is the key that connects everything together. The same ID appears in three places simultaneously:
+Every piece of displayable text has a unique, stable **text ID**. This ID is the key that connects everything together. The same ID can appear in four places:
 
 1. As a `data-id` attribute on HTML elements in page files
 2. As a key in `content/i18n/{lang}/texts.json` (the string value)
-3. As a key in `content/i18n/{lang}/audios.json` (the audio filename)
+3. As a key in `content/i18n/{lang}/speech_texts.json` (the prepared read-aloud wording)
+4. As a key in `content/i18n/{lang}/audios.json` (the audio filename)
 
 ### ID Naming Conventions
 
@@ -199,11 +201,11 @@ An ordered array that defines the navigation spine. Every page section and quiz 
 
 ```json
 [
-  { "section_id": "pg001_sec001", "href": "index.html" },
+  { "section_id": "front_cover_sec001", "href": "index.html" },
+  { "section_id": "pg001_sec001", "href": "pg001_sec001.html" },
   { "section_id": "pg002_sec001", "href": "pg002_sec001.html" },
   { "section_id": "pg003_sec001", "href": "pg003_sec001.html" },
-  { "section_id": "pg004_sec001", "href": "pg004_sec001.html" },
-  { "section_id": "pg005_sec001", "href": "pg005_sec001.html" }
+  { "section_id": "pg004_sec001", "href": "pg004_sec001.html" }
 ]
 ```
 
@@ -220,11 +222,17 @@ A flat `Record<textId, string>` containing every piece of text in the book. Exam
 ```json
 {
   "pg001_gp001_tx001": "",
-  "pg001_im001": "Cheti cha ithibati cha Wizara ya Elimu, Sayansi na Teknolojia kwa kitabu cha Jiografia na Mazingira Kitabu cha Mwanafunzi Darasa la Tatu, Na. 1143, kikiidhinishwa tarehe 23 Oktoba 2023 na kusainiwa na Kamishna wa Elimu, Dkt. Lyabwene M. Mtahabwa.",
+  "pg001_im001": "",
   "gl001": "afya",
   "gl001_def": "hali ya mwili na akili kuwa salama na vizuri."
 }
 ```
+
+### `content/i18n/{lang}/speech_texts.json` — Prepared Read-Aloud Text
+
+`speech_texts.json` maps the same IDs to the exact wording synthesized for
+read-aloud. It may differ from `texts.json` after LaTeX conversion or
+language-specific normalization; missing IDs are intentionally withheld from TTS.
 
 ### `content/i18n/{lang}/audios.json` — Audio Mappings
 
@@ -271,8 +279,8 @@ Controls which features the reader UI enables. This book's config:
     "default": "sw-TZ"
   },
   "features": {
-    "signLanguage": false,
-    "easyRead": true,
+    "signLanguage": true,
+    "easyRead": false,
     "glossary": true,
     "eli5": false,
     "readAloud": true,
@@ -319,7 +327,7 @@ Each page is a standalone HTML file at the root of `adt/`. Key structural elemen
 <!DOCTYPE html>
 <html lang="sw-TZ">
 <head>
-    <meta name="title-id" content="pg007_sec001" />      <!-- section identity -->
+    <meta name="title-id" content="front_cover_sec001" />      <!-- section identity -->
     <meta name="page-section-id" content="2" />           <!-- 1-based index in pages.json -->
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
@@ -328,7 +336,7 @@ Each page is a standalone HTML file at the root of `adt/`. Key structural elemen
 <body>
     <div id="content" class="opacity-0">
         <section role="article" data-section-type="text_and_single_image"
-                 data-section-id="pg007_sec001">
+                 data-section-id="front_cover_sec001">
             <!-- Images use relative paths and carry data-id for alt text lookup -->
             <img data-id="pg001_im001" src="images/pg001_im001.png" ...>
 
@@ -346,7 +354,7 @@ Each page is a standalone HTML file at the root of `adt/`. Key structural elemen
 
 Key conventions:
 
-- **`data-id` on text elements** links to `texts.json` and `audios.json` — the runtime replaces inner text with the value from the active language's `texts.json` and wires up audio playback from `audios.json`
+- **`data-id` on text elements** links to `texts.json`, `speech_texts.json`, and `audios.json` — the runtime preserves display text from `texts.json` while using prepared wording for read-aloud
 - **`data-id` on images** links to image description text and audio
 - **Images** use relative paths: `images/{filename}`
 - **`page-section-id`** meta tag is the 1-based numeric index of this page's position in `pages.json` — the runtime uses this for navigation
@@ -354,11 +362,12 @@ Key conventions:
 
 ## How to Edit Text
 
-To change text content for a given language, you must update all three locations that reference the text:
+To change text content for a given language, update the display text independently from its read-aloud wording:
 
 1. **`texts.json`** — Change the value in `content/i18n/{lang}/texts.json` for the text ID.
 2. **The HTML file** — The text also appears inline in the page HTML. Update the inner text of the element with the matching `data-id`. The runtime replaces this on load, but the inline text serves as fallback.
-3. **Audio** (if applicable) — Regenerate the MP3 at `content/i18n/{lang}/audio/{textId}.mp3` and verify `audios.json` maps the text ID to the correct filename.
+3. **Speech text** (if applicable) — Update `speech_texts.json` with the exact wording to synthesize without changing display text.
+4. **Audio** (if applicable) — Regenerate the MP3 at `content/i18n/{lang}/audio/{textId}.mp3` and verify `audios.json` maps the text ID to the correct filename.
 
 ### Editing Glossary
 
@@ -409,6 +418,7 @@ Update both:
 | Entry point | `adt/index.html` (redirects to first page) |
 | Page images | `adt/images/` |
 | All text content | `adt/content/i18n/{lang}/texts.json` |
+| Prepared read-aloud text | `adt/content/i18n/{lang}/speech_texts.json` |
 | Audio file mappings | `adt/content/i18n/{lang}/audios.json` |
 | Audio MP3 files | `adt/content/i18n/{lang}/audio/` |
 | Glossary | `adt/content/i18n/{lang}/glossary.json` |
@@ -419,8 +429,8 @@ Update both:
 | JS runtime | `adt/assets/base.bundle.min.js` |
 | UI string translations | `adt/assets/interface_translations/{lang}/` |
 | Cover image | `adt/cover.png` |
-| Original PDF | `JEOGRAFIA-NA-MAZINGIRA-DARASA-LA-3.pdf` |
-| Pipeline database | `JEOGRAFIA-NA-MAZINGIRA-DARASA-LA-3.db` (SQLite) |
+| Original PDF | `JEOGRAFIA-NA-MAZINGIRA-DARASA-LA-3-recovered.pdf` |
+| Pipeline database | `JEOGRAFIA-NA-MAZINGIRA-DARASA-LA-3-recovered.db` (SQLite) |
 | Raw page renders | `images/pg{NNN}_page.png` (visual reference for original pages) |
 | Raw extracted images | `images/pg{NNN}_im{NNN}.png` (pipeline artifact) |
 | Source TTS audio | `audio/{lang}/` (pipeline artifact) |
