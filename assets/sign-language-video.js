@@ -19,8 +19,27 @@
     return Math.max(minimum, Math.min(value, maximum));
   }
 
-  function movePlayer(player, x, y) {
+  function playerArea() {
     var size = viewportSize();
+    var bottom = size.top + size.height;
+    // Reserve the bottom navigation and narration controls, including the
+    // floating TTS bar on phones. Keep this independent of translated labels.
+    var controls = document.querySelectorAll(
+      '#nav-container > [role="group"], ' +
+      '#interface-container > div > [role="group"], ' +
+      '[data-dock-panel] > [role="group"]'
+    );
+    controls.forEach(function (control) {
+      var rect = control.getBoundingClientRect();
+      if (rect.width && rect.height && rect.top >= size.top + size.height / 2) {
+        bottom = Math.min(bottom, rect.top - 12);
+      }
+    });
+    return { left: size.left, top: size.top, width: size.width, height: Math.max(0, bottom - size.top) };
+  }
+
+  function movePlayer(player, x, y) {
+    var size = playerArea();
     var width = player.offsetWidth;
     var height = player.offsetHeight;
     var nextX = clamp(x, size.left, Math.max(size.left, size.left + size.width - width));
@@ -35,7 +54,7 @@
     window.requestAnimationFrame(function () {
       if (!player.isConnected) return;
       var rect = player.getBoundingClientRect();
-      var size = viewportSize();
+      var size = playerArea();
       var fullyVisible = rect.left >= size.left && rect.top >= size.top &&
         rect.right <= size.left + size.width && rect.bottom <= size.top + size.height;
       if (!fullyVisible) movePlayer(player, rect.left, rect.top);
@@ -104,6 +123,9 @@
         return child.getAttribute && child.getAttribute("role") === "button";
       });
       if (handle) enhanceHandle(handle, player);
+      // An existing handle is already enhanced, but its player still needs
+      // to be repositioned after a resize or when the TTS controls appear.
+      keepPlayerOnScreen(player);
     });
   }
   function scheduleInstall() {

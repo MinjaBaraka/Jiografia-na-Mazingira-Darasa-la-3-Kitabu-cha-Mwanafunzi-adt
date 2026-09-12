@@ -457,3 +457,9 @@ Update both:
 TTS narration and sign-language video must operate independently and may play at the same time. Starting, pausing, resuming, stopping, or closing either player must not pause, reset, restart, or disable the other player on the same page. Each player keeps its own position and controls; do not synchronize their playback clocks.
 
 Keep this behavior in `assets/media-playback-independence.js`; preserve the compiled runtime. Cover narration remains separate from the silent sign-language videos. Verify both start orders, native video pause/resume, TTS pause/resume/stop, closing the video while narration continues, and audio loading delays longer than two seconds.
+
+## Responsive Reader Controls
+
+Below 640 CSS pixels, preserve the runtime's compact navigation (contents, previous/next, page count, accessibility menu). The accessibility tools open in a two-column bottom sheet, with the final settings tool centered. Match the Writing Pupil’s Book reference at 425 × 1027.
+
+Use `assets/mobile-sheet-drag.css` and `assets/mobile-sheet-drag.js` for the 44-pixel touch handle, Swahili accessible label, downward swipe and keyboard dismissal, safe-area padding, and scrolling on short screens. Keep the compiled runtime unchanged. Closing a sheet must not change TTS or sign-language playback. Verify phone and desktop layouts after changes.

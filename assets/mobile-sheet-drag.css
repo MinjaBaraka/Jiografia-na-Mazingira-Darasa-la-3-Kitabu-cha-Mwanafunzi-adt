@@ -1,0 +1,49 @@
+/* The reader already switches to compact navigation below 640px.
+   Match the reference book's spacious, touch-accessible bottom sheets. */
+@media (max-width: 639px) {
+  [data-mobile-sheet-draggable] {
+    max-height: calc(100dvh - 1rem);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding-bottom: max(1rem, env(safe-area-inset-bottom, 0px));
+  }
+
+  [data-mobile-sheet-drag-handle] {
+    position: relative;
+    width: 100% !important;
+    height: 44px !important;
+    min-height: 44px;
+    flex-shrink: 0;
+    margin-inline: auto;
+    background: transparent !important;
+    border-radius: 0.5rem;
+    cursor: grab;
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  [data-mobile-sheet-drag-handle]::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40px;
+    height: 6px;
+    transform: translate(-50%, -50%);
+    border-radius: 999px;
+    background: currentColor;
+    opacity: 0.25;
+  }
+
+  [data-mobile-sheet-drag-handle]:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+  }
+
+  [data-mobile-sheet-dragging] {
+    transform: translate3d(0, var(--mobile-sheet-offset, 0px), 0) !important;
+    transition: none !important;
+  }
+  [data-mobile-sheet-dragging] [data-mobile-sheet-drag-handle] { cursor: grabbing; }
+}
