@@ -451,3 +451,9 @@ Update both:
 - **`assets/fonts/`** — font files
 - **`assets/sounds/`** — UI feedback sounds
 - **`content/tailwind_output.css`** — compiled from all HTML files; if you add new Tailwind classes to HTML, this file must be regenerated
+
+## Independent TTS and Sign-Language Playback
+
+TTS narration and sign-language video must operate independently and may play at the same time. Starting, pausing, resuming, stopping, or closing either player must not pause, reset, restart, or disable the other player on the same page. Each player keeps its own position and controls; do not synchronize their playback clocks.
+
+Keep this behavior in `assets/media-playback-independence.js`; preserve the compiled runtime. Cover narration remains separate from the silent sign-language videos. Verify both start orders, native video pause/resume, TTS pause/resume/stop, closing the video while narration continues, and audio loading delays longer than two seconds.

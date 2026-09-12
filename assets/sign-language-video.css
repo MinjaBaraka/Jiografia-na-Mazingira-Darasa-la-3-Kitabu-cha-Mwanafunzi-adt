@@ -4,6 +4,9 @@
   visibility: visible !important;
   opacity: 1 !important;
   z-index: 59 !important;
+  /* Leave room above the dock for the separate TTS control bar. Dragged
+     players keep their explicit top position and fixed height. */
+  bottom: calc(9rem + env(safe-area-inset-bottom, 0px)) !important;
   max-width: calc(100vw - 2rem) !important;
 }
 [data-sign-language-player] video {
