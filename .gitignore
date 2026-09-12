@@ -11,3 +11,11 @@ __pycache__/
 *.log
 /.cache/
 /tmp/
+
+# Finder metadata and generated distribution files
+._*
+__MACOSX/
+*.zip
+*.zip.sha256
+/.adt-video-job.json
+/dist/
