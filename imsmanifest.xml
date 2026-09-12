@@ -225,6 +225,8 @@
       <file href="content/navigation/nav.html" />
       <file href="content/pages.json" />
       <file href="content/toc.json" />
+      <file href="content/i18n/sw-TZ/audio/front_cover_gp001_tx001.mp3" />
+      <file href="content/i18n/sw-TZ/audio/back_cover_gp001_tx001.mp3" />
 </resource>
   </resources>
 

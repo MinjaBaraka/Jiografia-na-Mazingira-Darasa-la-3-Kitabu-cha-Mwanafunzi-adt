@@ -1708,5 +1708,7 @@
   "gl192": "gl192.wav",
   "gl192_def": "gl192_def.wav",
   "gl193": "gl193.wav",
-  "gl193_def": "gl193_def.wav"
+  "gl193_def": "gl193_def.wav",
+  "front_cover_gp001_tx001": "front_cover_gp001_tx001.mp3",
+  "back_cover_gp001_tx001": "back_cover_gp001_tx001.mp3"
 }
